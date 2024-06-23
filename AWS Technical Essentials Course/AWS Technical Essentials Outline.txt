@@ -1,0 +1,104 @@
+AWS Technical Essentials introduces you to essential Amazon Web Services and common solutions. The course covers the fundamental AWS concepts related to compute, database, storage, networking, monitoring, and security. You will start working in AWS through hands-on course experiences. The course covers the concepts necessary to increase your understanding of AWS services, so that you can make informed decisions about solutions that meet business requirements. Throughout the course, you will gain information on how to build, compare, and apply highly available, fault tolerant, scalable, and cost-effective cloud solutions.
+
+Course level: Fundamental
+Duration:4 Hours
+
+Activities
+This course includes reading text, interactive lessons, videos, demonstrations, and knowledge check questions.
+
+Course objectives
+In this course, you will learn to do the following:
+
+Describe terminology and concepts related to AWS services.
+Navigate the AWS Management Console.
+Articulate key concepts of AWS security measures and AWS Identity and Access Management (IAM).
+Distinguish between several AWS compute services, including Amazon Elastic Compute Cloud (Amazon EC2) and AWS Lambda.
+Distinguish between several AWS container services, including Amazon Elastic Container Service (Amazon ECS) and Amazon Elastic Kubernetes Services (Amazon EKS).
+Describe AWS database and storage offerings, including Amazon Relational Database Service (Amazon RDS), Amazon DynamoDB, and Amazon Simple Storage Service (Amazon S3).
+Explore AWS networking services.
+Access and configure Amazon CloudWatch monitoring features.
+Intended audience
+This course is intended for the following roles:
+
+Individuals responsible for articulating technical benefits of AWS services to customers
+Individuals interested in learning how to get started with AWS
+SysOps administrators
+Solutions architects
+Developers
+Prerequisites
+We recommend that attendees of this course have the following background:
+
+IT experience
+Basic knowledge of common data center architectures and components (servers, networking, databases, applications, and so on)
+No prior cloud computing or AWS experience is required.
+Course outline
+Course Introduction
+Lesson 1: How to Use This Course
+Lesson 2: Welcome to the Course
+Lesson 3: Meet the Instructors
+
+Module 1: Introduction to Amazon Web Services
+Lesson 4: What Is AWS?
+Lesson 5: AWS Global Infrastructure
+Lesson 6: Interacting with AWS
+Lesson 7: Security and the AWS Shared Responsibility Model
+Lesson 8: Protecting the AWS Root User
+Lesson 9: AWS Identity and Access Management
+Lesson 10: Demonstration: Implementing Security with IAM
+Lesson 11: Hosting the Employee Directory Application on AWS
+Lesson 12: Module 1 Knowledge Check
+
+Module 2: AWS Compute
+Lesson 13: Compute as a Service
+Lesson 14: Getting Started with Amazon EC2
+Lesson 15: Amazon EC2 Instance Lifecycle
+Lesson 16: Demonstration: Launching the Employee Directory Application on Amazon EC2
+Lesson 17: Container Services
+Lesson 18: Introduction to Serverless
+Lesson 19: Serverless with AWS Fargate
+Lesson 20: Serverless with AWS Lambda
+Lesson 21: Choosing the Right Compute Service
+Lesson 22: Module 2 Knowledge Check
+
+Module 3: AWS Networking
+Lesson 23: Introduction to Networking
+Lesson 24: Amazon VPC
+Lesson 25: Amazon VPC Routing
+Lesson 26: Amazon VPC Security
+Lesson 27: Demonstration: Relaunching the Employee Directory Application in Amazon EC2
+Lesson 28: Module 3 Knowledge Check
+
+Module 4: AWS Storage
+Lesson 29: Storage Types
+Lesson 30: File Storage with Amazon EFS and Amazon FSx
+Lesson 31: Block Storage with Amazon EC2 Instance Store and Amazon EBS
+Lesson 32: Object Storage with Amazon S3
+Lesson 33: Choosing the Right Storage Service
+Lesson 34: Demonstration: Creating an Amazon S3 Bucket
+Lesson 35: Module 4 Knowledge Check
+
+Module 5: Databases on AWS
+Lesson 36: Introduction to Databases on AWS
+Lesson 37: Amazon RDS
+Lesson 38: Purpose-Built Databases
+Lesson 39: Amazon DynamoDB
+Lesson 40: Choosing the Right Database Service
+Lesson 41: Demonstration: Implementing and Managing Amazon DynamoDB
+Lesson 42: Module 5 Knowledge Check
+
+Module 6: Monitoring, Load Balancing, and Scaling
+Lesson 43: Monitoring
+Lesson 44: Amazon CloudWatch
+Lesson 45: Solution Optimization
+Lesson 46: Traffic Routing with Elastic Load Balancing
+Lesson 47: Amazon EC2 Auto Scaling
+Lesson 48: Demonstration: Making the Employee Directory Application Highly Available
+Lesson 49: Employee Directory Application Redesign
+Lesson 50: Module 6 Knowledge Check
+
+What’s New
+Lesson 51: Innovation with AWS
+End of Course Assessment
+Lesson 52: End of Course Assessment
+Thank You and Feedback
+Lesson 53: Thank You and Feedback

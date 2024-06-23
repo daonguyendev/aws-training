@@ -1,0 +1,44 @@
+Entry-Level Certification: 
+1. AWS Technical Essentials
+2. AWS Certified Cloud Practitioner
+
+Associate-Level Certificates:
+1. AWS Certified Developer - Associate
+2. AWS Certified Solutions Architect - Associate
+3. AWS Certified SysOps Administrator - Associate
+
+Professional-Level Certifications:
+1. AWS Certified Solutions Architect - Professional
+2. AWS Certified DevOps Engineer - Professional
+
+1. Sự khác nhau giữa 2 cert Developer Associate với Solutions Architect? Nên thi cert nào trước?
+-> Developer Associate (hands on nhiều hơn, tình huống thực tế, cụ thể nhiều hơn),
+Solutions Architect (tổng quan giải pháp hơn, bài toán lớn, bức tranh toàn cảnh, chi phí,...hơn)
+
+2. Anh ôn thi cert Associate trong bao lâu? -> 3 tháng
+3. Anh ôn thi cert Solutions Architect trong bao lâu? -> 3 tháng
+
+4. Sự khác nhau giữa IaaS và PaaS và SaaS? -> em chia sẻ thêm thôi, nó là...
+=> Câu hỏi Slack có chức năng tạo chatbot để trigger việc build software, vậy nó thuộc IaaS và PaaS?
+
+5. Chi phí của AWS tính theo đơn vị tiền tệ của nước ngoài, vậy việc sử dụng server ở các bên
+cung cấp trong nước rẻ hơn? Vậy lợi hại, khi sử dụng server địa phương so với AWS là như thế nào?
+
+6. Theo em biết, để triển khai sản phẩm lên server, vẫn có những cty lớn họ dùng Server bình thường,
+chưa dùng tới AWS. Họ chỉ cần sử dụng Docker, Kubernetes cấu hình CI/CD để build, deploy lên server.
+Vậy lợi hại như thế nào khi sử dụng các kỹ năng Server bình thường so với sử dụng AWS là gì?
+
+7. Theo em biết có 3 thằng cloud đang phổ biến nhất hiện nay, AWS, Azure, Google Cloud. Theo anh
+đánh giá tiêu chí đánh giá để team dev chọn 1 loại cloud để xài là gì?
+
+8. Anh có nói tới Data Center, AZ, Region, vậy sự khác nhau giữa Data Center, AZ và Region là gì thế anh?
+
+9. Cơ chế lưu trữ của các thằng đấy là backup đi khắp nơi, vậy chúng ta có mất thêm chi phí cho việc backup
+dữ liệu trên nhiều Data Center, AZ, Region khác nhau không anh?
+-> Có mất thêm chi phí backup
+
+Lời khuyên: ôn thêm trên
+1. Course trên Udemy
+2. Ôn đề trên AWS
+3. Học hằng ngày
+4. Lúc làm bài thi thử thì thi trên đề test thi của AWS và thi canh thời gian thiệt

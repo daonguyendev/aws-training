@@ -1,0 +1,18 @@
+1. Which of the following can a route table be attached to?
+A. AWS accounts 
+B. Availability Zones
+C. Subnets
+D. Regions
+-> C
+
+2. Which of the following is true for a security group's default setting?
+A. It allows all inbound traffic and blocks all outbound traffic.
+B. It blocks all inbound traffic and allows all outbound traffic.
+C. It allows all inbound and outbound traffic.
+D. It blocks all inbound and outbound traffic.
+-> B
+
+3. A network access control list (network ACL) filters traffic at the Amazon EC2 instance level.
+A. True
+B. False
+-> B

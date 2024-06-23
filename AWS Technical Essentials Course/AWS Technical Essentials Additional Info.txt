@@ -1,0 +1,6 @@
+Domain: Cloud Essentials
+Course Level: Fundamental
+Roles: Account/Sales Manager, Architect, Cloud Operator, Developer
+Version: 01.02.00
+AWS Services: Amazon CodeWhisperer
+Training Category: Digital Course

@@ -1,0 +1,22 @@
+Link: file:///F:/codegym/aws-training/AWS%20Technical%20Essentials%20Course/Module%2001%20-%20Introduction%20to%20Amazon%20Web%20Services/Lesson%2009%20-%20Module%2001%20Knowledge%20Check/AWS%20Skill%20Builder%20-%20Module%2001%20Knowledge%20Check.html
+
+1. What are the four main factors that you should take into consideration when choosing a Region?
+A. Latency, high availability, taxes, and compliance
+B. Latency, price, service availability, and compliance
+C. Latency, taxes, speed, and compliance
+D. Latency, security, high availability, and resiliency
+-> B
+
+2. Which of the following best describes the relationship between Regions, Availability Zones, and data centers?
+A. Regions are a grouping of Availability Zones. Data centers are one or more discrete Availability Zones.
+B. Data centers are a grouping of Regions. Regions are one or more discrete Availability Zones.
+C. Regions are a grouping of Availability Zones. Availability Zones are one or more discrete data centers.
+D. Availability Zones are a grouping of Regions. Regions are one or more discrete data centers.
+-> C
+
+3. Which of the following is a benefit of cloud computing?
+A. Run and maintain your own data centers.
+B. Increase time to market.
+C. Overprovision for scale.
+D. Pay as you go.
+-> D

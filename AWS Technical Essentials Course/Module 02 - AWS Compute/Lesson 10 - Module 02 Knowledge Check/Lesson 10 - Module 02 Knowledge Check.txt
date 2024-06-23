@@ -1,0 +1,13 @@
+1. What does an Amazon EC2 instance type indicate?
+A. Instance placement and instance size
+B. Instance family and instance size
+C. Instance tenancy and instance billing
+D. Instance AMI and networking speed
+-> B
+
+2. Which of the following is true about serverless?
+A. You must provision and manage servers.
+B. You must manually scale serverless resources.
+C. You must manage availability and fault tolerance.
+D. You never pay for idle resources.
+-> D

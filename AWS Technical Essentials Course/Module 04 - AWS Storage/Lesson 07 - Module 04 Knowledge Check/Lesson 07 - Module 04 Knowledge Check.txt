@@ -1,0 +1,20 @@
+1. Which of the following is a typical use case for Amazon S3?
+A. Object storage for media hosting
+B. Object storage for a boot drive
+C. Block storage for an Amazon EC2 instance
+D. File storage for multiple Amazon EC2 instances
+-> A
+
+2. A company that works with customers around the globe in multiple Regions hosts a static website in an Amazon S3 bucket. The company has decided that they want to reduce latency and increase data transfer speed by storing cache. Which solution should they choose to make their content more accessible?
+A. Configure Amazon CloudFront to deliver the content in the S3 bucket.
+B. Create multiple S3 buckets and put Amazon EC2 and Amazon S3 in the same AWS Region.
+C. Enable cross-Region replication to several AWS Regions to serve customers from different locations.
+D. Use S3 Intelligent-Tiering to automatically move their website to a bucket that would reduce their latency.
+-> A
+
+3. Which of the following storage services is recommended if a customer needs a storage layer for a high-transaction relational database on an Amazon EC2 instance?
+A. Amazon S3
+B. Amazon Elastic File System (Amazon EFS)
+C. Amazon Elastic Block Store (Amazon EBS)
+D. Amazon S3 Glacier Deep Archive
+-> C
