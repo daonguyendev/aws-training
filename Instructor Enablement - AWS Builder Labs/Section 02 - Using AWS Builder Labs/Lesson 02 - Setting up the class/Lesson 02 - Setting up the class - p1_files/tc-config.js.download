@@ -1,0 +1,20 @@
+/* Tin Can configuration */
+
+//
+// ActivityID that is sent for the statement's object
+//
+TC_COURSE_ID = "http://qqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise"
+
+//
+// CourseName for the activity
+//
+TC_COURSE_NAME = {
+  "en-US": "Instructor Enablement: AWS Builder Labs"
+};
+
+//
+// CourseDesc for the activity
+//
+TC_COURSE_DESC = {
+  "en-US": "&lt;p&gt;Welcome to this Digital Instructor Guide (DIG) for the launch of&lt;em&gt;&amp;nbsp;AWS Builder Labs&lt;/em&gt;.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;This DIG is for AWS Authorized Instructors (AAIs) who are ramping on the new process for delivery of ILT and vILT courses with labs. To that end, this guide walks you through the current tool features including specific callouts and guidance for you.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;In addition, the DIG includes recorded demonstrations of the tool features by the Global Delivery Readiness Technical Lead, as well as multimedia and interactive content that complement those recorded demonstrations. The DIG also includes a final assessment to challenge you to reinforce what you have learned and to check your preparedness to deliver an ILT with labs. Completing the final instructor assessment with an 80% or higher score is required.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;We hope you enjoy this instructor enablement resource and find it helpful in your efforts to prepare you to use this new tool.&lt;/p&gt;"
+};

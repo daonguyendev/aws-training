@@ -1,0 +1,20 @@
+/* Tin Can configuration */
+
+//
+// ActivityID that is sent for the statement's object
+//
+TC_COURSE_ID = "http://-M0rS--4jSVhvOMyo1bx8YEpa3VSgMKP_rise"
+
+//
+// CourseName for the activity
+//
+TC_COURSE_NAME = {
+  "en-US": "AWS Skill Builder Learner Guide"
+};
+
+//
+// CourseDesc for the activity
+//
+TC_COURSE_DESC = {
+  "en-US": "&lt;p&gt;&lt;span style=&#34;font-size: 20px;&#34;&gt;In this course, you will learn how to navigate AWS Skill Builder and use its features. Skill Builder contains more than 600 free courses, over 150 self-paced labs, and many game-based learning options. This guide will help you navigate these resources.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&#34;font-size: 20px;&#34;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&#34;font-size: 20px;&#34;&gt;To begin this course, choose &lt;strong&gt;START COURSE&lt;/strong&gt;. To advance to a specific topic, choose from the following lesson titles. For further information on how to use this course, choose How to Use This Course.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&#34;font-size: 20px;&#34;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&#34;font-size: 20px;&#34;&gt;&amp;copy; 2023, Amazon Web Services, Inc. or its affiliates. All rights reserved.&lt;/span&gt;&lt;/p&gt;"
+};

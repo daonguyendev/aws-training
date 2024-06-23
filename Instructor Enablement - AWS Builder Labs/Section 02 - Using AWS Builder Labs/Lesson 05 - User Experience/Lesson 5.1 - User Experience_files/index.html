@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<!-- saved from url=(1167)https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/index.html?enhanced_signature=B_iRyK6ZqnyVuT9r5JhYybM0ZDE3_XOMA75jVnSree0&endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&auth=Basic%20NDY2OTFiYzMtMWVlMS00MDc4LTk1ZGEtNTFhNTcxYjY4Y2FhOmRkYTNjZWU0MGYyZTgzNThlMjRjYjNlNmI5MWUyMzk3&actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&registration=e6b07960-869b-4818-8fe6-d9123311edc4&activity_id=http%3A%2F%2FqqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise&Accept-Language=en&course_id=12814&content_token=e6b07960-869b-4818-8fe6-d9123311edc4&session_context=lms&host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&path=/v1/xApi/&rs=66782e37ef94b&crct=b57366adcf5fbe2d81946e935f9555330d1ebc996f4e2c2300b6c7f5c4b52d4a6398381dbfb3f6f9dd4ea4231f91a9a361517b7776043524f066062db6dc200b&course_code=TCAI-DIG-100-IELABS-0100-EN-US&course_id=12814&username=10f075a5-e390-4aab-8711-e5d2ae4c106b&user_id=5359856&hash=1736e84256cb4518d0eb9952f424d3c47e2655b79cdff70715447fa51cb84c48#/lessons/9BkZ6iygChRdkNMfctsIrSU_XQzo2TuS -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><style type="text/css">.styles_image__32Tdo{display:inline-block}</style><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid:not(.vjs-audio-only-mode) {
+        padding-top: 56.25%
+      }
+    </style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>User Experience - Instructor Enablement: AWS Builder Labs</title>
+
+    <link type="text/css" rel="stylesheet" href="./icomoon.css">
+    <script type="text/javascript" src="./player-0.0.11.min.js.download"></script>
+    <script type="text/javascript" src="./lzwcompress.js.download"></script>
+
+    <!-- Resize Hack -->
+    <script type="text/javascript">
+      window.resizeTo(screen.width, screen.height);
+    </script>
+    
+    <script type="text/javascript" src="./tc-config.js.download"></script>
+    <script type="text/javascript" src="./tincan.js.download"></script>
+    <script type="text/javascript" src="./lms.js.download"></script>
+    
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script id="__ENTRY__" type="application/json">
+      {".js":["rise/9696b894.js"]}
+    </script>
+
+    <script id="__REMOTE_ENTRIES__" type="application/json">
+      {"mondrian":{".js":["mondrian/entry.js"]}}
+    </script>
+
+    <script>
+      (function() {
+        const jsonp = {}
+
+        function loadModule(manifest) {
+          const p = []
+
+          if (manifest['.css'] != null) {
+            for (var idx = 0; idx < manifest['.css'].length; idx++) {
+              p.push(new Promise((resolve, reject) => {
+                var link = document.createElement('link')
+                link.onload = resolve
+                link.onerror = reject
+                link.rel = 'stylesheet'
+                link.href = 'lib/' + manifest['.css'][idx]
+                document.body.appendChild(link)
+              }))
+            }
+          }
+
+          if (manifest['.js'] != null) {
+            for (var idx = 0; idx < manifest['.js'].length; idx++) {
+              p.push(new Promise((resolve, reject) => {
+                var script = document.createElement('script')
+                script.onload = resolve
+                script.onerror = reject
+                script.src = 'lib/' + manifest['.js'][idx]
+                document.body.appendChild(script)
+              }))
+            }
+          }
+
+          return Promise.all(p)
+        }
+
+        function deserialize(str) {
+          const buffer = Uint8Array.from(atob(str), c => c.charCodeAt(0))
+          const json = new TextDecoder().decode(buffer)
+          const result = JSON.parse(json)
+          return result
+        }
+
+        function __loadEntry() {
+          return loadModule(JSON.parse(document.getElementById('__ENTRY__').textContent))
+        }
+
+        function __loadRemoteEntry(name) {
+          const manifest = JSON.parse(document.getElementById('__REMOTE_ENTRIES__').textContent)
+          if (manifest[name] == null) throw new Error(`Missing manifest for remote entry "${name}".`)
+          return loadModule(manifest[name])
+        }
+        
+        async function __loadJsonp(id, path) {
+          try {
+            return await new Promise((resolve, reject) => {
+              try {
+                jsonp[id] = resolve
+                const script = document.createElement('script')
+                script.onerror = reject
+                script.src = `./${path}`
+                document.head.appendChild(script)
+              } catch (err) {
+                reject(err)
+              }
+            })
+          } finally {
+            delete jsonp[id]
+          }
+        }
+
+        function __resolveJsonp(id, data) {
+          const resolve = jsonp[id]
+          if (typeof resolve !== 'function') {
+            throw new Error(`Could not load JSONP "${id}"`)
+          }
+          resolve(data)
+        }
+
+        async function __fetchCourse(name) {
+          name = name == null ? window.i18n.default : name
+          if (!window.i18n.available.includes(name)) {
+            console.warn(`Could not load locale "${name}"`)
+            name = window.i18n.available[0]
+          }
+          const encoded = await __loadJsonp(`course:${name}`, `locales/${name}.js`)
+          const courseData = deserialize(encoded)
+          return courseData
+        }
+
+        window.__loadEntry = __loadEntry
+        window.__loadRemoteEntry = __loadRemoteEntry
+        window.__loadJsonp = __loadJsonp
+        window.__resolveJsonp = __resolveJsonp
+        window.__fetchCourse = __fetchCourse
+      })()
+    </script>
+  <link rel="stylesheet" type="text/css" href="./11732e6a.css"><link rel="stylesheet" type="text/css" href="./c03b54e1.css"><script src="./und.js.download"></script><style id="focus-ring-style">:focus{outline: none}</style></head>
+  <body data-new-gr-c-s-check-loaded="14.1184.0" data-gr-ext-installed="">
+    <div id="app"><div class="visually-hidden-always" role="log" aria-live="polite" aria-atomic="true" aria-relevant="additions text">Step 3. Number of Licenses Available</div><div class="visually-hidden-always" role="log" aria-live="polite" aria-atomic="true" aria-relevant="additions text"></div><div class="visually-hidden-always" role="log" aria-live="assertive" aria-atomic="true" aria-relevant="additions text"></div><div class="visually-hidden-always" role="log" aria-live="assertive" aria-atomic="true" aria-relevant="additions text"></div><div id="innerApp" class="theme classic" data-ba="learn.course"><div><style>
+  :root {
+    --color-theme-contrast-complementary-rgb: 0,0,0;
+    --color-theme-contrast-complementary: #000;
+    --color-theme-contrast-rgb: 255,255,255;
+    --color-theme-contrast: #fff;
+    --color-theme-rgb: 0,130,150;
+    --color-theme-tint: #e6f3f5;
+    --color-theme-transparent: #0082961A;
+    --color-theme: #008296;
+    --font-family-body: Amazon Ember Light1;
+    --font-family-head: Amazon Ember RC1;
+    --font-family-ui: Lato;
+
+    --mon-theme-font-body: var(--font-family-body);
+    --mon-theme-font-heading: var(--font-family-head);
+  }
+
+  .brand--head, .brand--head *   {
+    font-family: var(--font-family-head) !important;
+  }
+
+  .brand--body, .brand--body *   {
+    font-family: var(--font-family-body) !important;
+  }
+
+  .brand--lhead, .brand--lhead * {
+    font-family: var(--font-family-head) !important;
+  }
+
+  .brand--lbody, .brand--lbody * {
+    font-family: var(--font-family-body) !important;
+  }
+
+  .brand--ui, .brand--ui * {
+    font-family: var(--font-family-ui) !important;
+  }
+
+  .brand--beforeHead:before {
+    font-family: var(--font-family-ui) !important;
+  }
+
+  .brand--afterHead:after {
+    font-family: var(--font-family-ui) !important;
+  }
+
+  .brand--background {
+    background-color: var(--color-theme) !important;
+  }
+
+  .brand--background-all * {
+    background-color: var(--color-theme) !important;
+  }
+
+  .brand--border {
+    border-color: var(--color-theme) !important;
+
+    @media (forced-colors: active) {
+      border-color: transparent !important;
+    }
+  }
+
+  .brand--color {
+    color: var(--color-theme) !important;
+  }
+
+  .brand--color-all * {
+    color: var(--color-theme) !important;
+  }
+
+  .brand--shadow {
+    box-shadow: 0 0 0 0.2rem var(--color-theme) !important;
+  }
+
+  .brand--shadow-all * {
+    box-shadow: 0 0 0 0.2rem var(--color-theme) !important;
+  }
+
+  .brand--fill {
+    fill: var(--color-theme) !important;
+  }
+
+  .brand--stroke {
+    stroke: var(--color-theme) !important;
+  }
+
+  .brand--beforeBackground:before {
+    background-color: var(--color-theme) !important;
+  }
+
+  .brand--beforeBorder:before {
+    border-color: var(--color-theme) !important;
+  }
+
+  .brand--beforeColor:before {
+    color: var(--color-theme) !important;
+  }
+
+  .brand--afterBackground:after {
+    background-color: var(--color-theme) !important;
+  }
+
+  .brand--afterBorder:after {
+    border-color: var(--color-theme) !important;
+  }
+
+  .brand--afterColor:after {
+    color: var(--color-theme) !important;
+  }
+
+  /* should be applied to containers where links
+     need to appear in brand color */
+  .brand--linkColor a {
+    color: var(--color-theme) !important;
+    fill: var(--color-theme) !important;
+  }
+
+  /* should be applied to containers where links
+     need to change to brand color on hover */
+  .brand--linkColorHover a:hover {
+    color: var(--color-theme) !important;
+    fill: var(--color-theme) !important;
+  }
+
+  /* should be applied to any single element that
+     needs to change color on hover */
+  .brand--hoverColor:hover {
+    color: var(--color-theme) !important;
+  }
+
+  .button.brand--background:hover { opacity: .65 !important; }
+
+  .brandHover:hover {
+    fill: var(--color-theme) !important;
+  }
+
+
+  @media (min-width: 47.9375em) { /* 768px */
+    .brand--min768--background {
+      background-color: var(--color-theme) !important;
+    }
+
+    .brand--min768--border {
+      border-color: var(--color-theme) !important;
+    }
+
+    .brand--min768--color {
+      color: var(--color-theme) !important;
+    }
+  }
+
+  @media (max-width: 47.9375em) { /* 768px */
+    .brand--max768--background {
+      background-color: var(--color-theme) !important;
+    }
+
+    .brand--max768--border {
+      border-color: var(--color-theme) !important;
+    }
+
+    .brand--max768--color {
+      color: var(--color-theme) !important;
+    }
+  }
+</style>
+</div><div class="transition-group"><div class="page-lesson-wrap"><div class="visually-hidden-always" tabindex="-1"><div>User Experience</div><div>Top of page</div></div><button class="visually-hidden btn-skip-to-lesson brand--ui" type="button"><span class="btn-skip-to-lesson__wrap">SKIP TO LESSON<span aria-hidden="true"><svg class="btn-skip-to-lesson__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.0002 3.33334C10.4604 3.33334 10.8335 3.70644 10.8335 4.16668V15.8333C10.8335 16.2936 10.4604 16.6667 10.0002 16.6667C9.53992 16.6667 9.16683 16.2936 9.16683 15.8333V4.16668C9.16683 3.70644 9.53992 3.33334 10.0002 3.33334Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3.57757 9.41075C3.90301 9.08532 4.43065 9.08532 4.75609 9.41075L10.0002 14.6548L15.2442 9.41075C15.5697 9.08532 16.0973 9.08532 16.4228 9.41075C16.7482 9.73619 16.7482 10.2638 16.4228 10.5893L10.5894 16.4226C10.264 16.748 9.73634 16.748 9.41091 16.4226L3.57757 10.5893C3.25214 10.2638 3.25214 9.73619 3.57757 9.41075Z" fill="currentColor"></path></svg></span></span></button><div class="page-lesson"><div class="lesson" data-ba="learn.course.lesson" data-lesson="true"><div class="lesson__content"><div class="page-view page-view--visible"><div class="course-navigation__sidebar course-navigation__sidebar--nav-open course-navigation__sidebar--course-nav-type-sidebar"><div><div class="course-navigation__lessonNav course-navigation__lessonNav--type-full"><nav aria-label="Navigation menu"><div class="nav-control__wrapper"><div class="nav-control__menu" style="margin-top: 61px;"><button class="nav-control__button" aria-controls="nav-content-sidebar" aria-expanded="true" aria-label="Close navigation menu" type="button"><svg aria-hidden="true" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" class="page-menu-toggle__icon"><path d="M0 0H20V2H0V0Z M0 6H20V8H0V6Z M20 12H0V14H20V12Z"></path></svg></button></div></div><div><div class="nav-sidebar nav-sidebar--image-dark-overlay nav-sidebar--light"><div class="nav-sidebar__content" data-nav-scrollable="true" id="nav-content-sidebar"><div class="nav-sidebar-header-ghost" style="height: 234px;"></div><div class="nav-sidebar-header nav-sidebar-header--transition nav-sidebar__header" style="height: 234px; overflow: hidden;"><div class="nav-sidebar-header__inner"><div class="nav-sidebar-header__graphic nav-sidebar-header__graphic--image" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(&quot;assets/MhnKHwLQdTfxP8Xg.jpg&quot;);"></div><button aria-label="Open search menu" class="nav-sidebar-header__search-btn" type="button"><svg aria-hidden="true" class="nav-sidebar-header__search-icon" fill="none" focusable="false" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M5.325 9.01843C3.225 9.01843 1.5 7.37868 1.5 5.29172C1.5 3.20476 3.225 1.49048 5.325 1.49048C7.425 1.49048 9.15 3.20476 9.15 5.29172C9.15 7.37868 7.425 9.01843 5.325 9.01843ZM9.525 8.42236C10.2 7.52795 10.575 6.48447 10.575 5.29193C10.575 2.38509 8.25 0 5.325 0C2.4 0 0 2.38509 0 5.29193C0 8.19876 2.4 10.5839 5.325 10.5839C6.525 10.5839 7.65 10.2112 8.475 9.54037L10.725 11.7764C10.875 11.9255 11.1 12 11.25 12C11.4 12 11.625 11.9255 11.775 11.7764C12.075 11.4783 12.075 11.0311 11.775 10.7329L9.525 8.42236Z" fill="currentColor" fill-rule="evenodd"></path></svg></button><div class="nav-sidebar-header__search-area nav-sidebar-header__search-area--hidden"><form autocomplete="off" class="nav-sidebar-search nav-sidebar-search--disabled"><svg aria-hidden="true" class="nav-sidebar-search__icon" fill="none" focusable="false" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M5.325 9.01843C3.225 9.01843 1.5 7.37868 1.5 5.29172C1.5 3.20476 3.225 1.49048 5.325 1.49048C7.425 1.49048 9.15 3.20476 9.15 5.29172C9.15 7.37868 7.425 9.01843 5.325 9.01843ZM9.525 8.42236C10.2 7.52795 10.575 6.48447 10.575 5.29193C10.575 2.38509 8.25 0 5.325 0C2.4 0 0 2.38509 0 5.29193C0 8.19876 2.4 10.5839 5.325 10.5839C6.525 10.5839 7.65 10.2112 8.475 9.54037L10.725 11.7764C10.875 11.9255 11.1 12 11.25 12C11.4 12 11.625 11.9255 11.775 11.7764C12.075 11.4783 12.075 11.0311 11.775 10.7329L9.525 8.42236Z" fill="currentColor" fill-rule="evenodd"></path></svg><input aria-label="Search" class="nav-sidebar-search__input" disabled="" name="search" placeholder="search" type="search" value=""><button aria-label="Close search menu" class="nav-sidebar-search__close" type="reset"><svg aria-hidden="true" class="nav-sidebar-search__close-icon" fill="none" focusable="false" height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M9.78572 9.78572C9.5 10.0714 9.07143 10.0714 8.78571 9.78572L5 6.00001L1.21429 9.78572C0.928571 10.0714 0.500001 10.0714 0.214285 9.78572C-0.0714284 9.49999 -0.0714284 9.07144 0.214285 8.78571L4 5L0.214285 1.21429C-0.0714284 0.928564 -0.0714284 0.500007 0.214285 0.214279C0.357143 0.0714143 0.500001 0 0.714286 0C0.928571 0 1.07143 0.0714143 1.21429 0.214279L5 3.99999L8.78571 0.214279C8.92857 0.0714143 9.14286 0 9.28572 0C9.42857 0 9.64286 0.0714143 9.78572 0.214279C10.0714 0.500007 10.0714 0.928564 9.78572 1.21429L6 5L9.78572 8.78571C10.0714 9.07144 10.0714 9.49999 9.78572 9.78572Z" fill="currentColor" fill-rule="evenodd"></path></svg></button></form></div><div class="nav-sidebar-header__content"><a class="nav-sidebar-header__title" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/index.html?enhanced_signature=B_iRyK6ZqnyVuT9r5JhYybM0ZDE3_XOMA75jVnSree0&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20NDY2OTFiYzMtMWVlMS00MDc4LTk1ZGEtNTFhNTcxYjY4Y2FhOmRkYTNjZWU0MGYyZTgzNThlMjRjYjNlNmI5MWUyMzk3&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=e6b07960-869b-4818-8fe6-d9123311edc4&amp;activity_id=http%3A%2F%2FqqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise&amp;Accept-Language=en&amp;course_id=12814&amp;content_token=e6b07960-869b-4818-8fe6-d9123311edc4&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782e37ef94b&amp;crct=b57366adcf5fbe2d81946e935f9555330d1ebc996f4e2c2300b6c7f5c4b52d4a6398381dbfb3f6f9dd4ea4231f91a9a361517b7776043524f066062db6dc200b&amp;course_code=TCAI-DIG-100-IELABS-0100-EN-US&amp;course_id=12814&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=1736e84256cb4518d0eb9952f424d3c47e2655b79cdff70715447fa51cb84c48#/">Instructor Enablement: AWS Builder Labs</a><div class="nav-sidebar-header__progress"><div aria-hidden="true" class="nav-sidebar-header__progress-track" role="img"><div class="nav-sidebar-header__progress-runner" style="width: 60%;"></div></div><div class="nav-sidebar-header__progress-text">60% COMPLETE</div></div></div></div></div><div class="nav-sidebar__body"><section aria-label="Table of contents" class="nav-sidebar__outline" id="nav-sidebar-outline"><ol class="nav-sidebar__outline-list" role="list"><li class="nav-sidebar__outline-item nav-sidebar__outline-section" role="listitem"><button aria-controls="sidebar-sublist-0" aria-expanded="true" class="nav-sidebar__outline-section-toggle" type="button"><span class="nav-sidebar__outline-section-toggle-text">Course Overview for instructors</span><svg aria-hidden="true" class="nav-sidebar__outline-section-toggle-icon" fill="none" focusable="false" height="5" viewBox="0 0 10 5" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M5.56569 4.75592L8.76601 1.42259C9.27003 0.897618 8.91306 0 8.20027 0L1.79963 0C1.08683 0 0.729863 0.897618 1.23389 1.42259L4.43421 4.75592C4.74666 5.08136 5.25324 5.08136 5.56569 4.75592Z" fill="currentColor"></path></svg></button><ol class="nav-sidebar__outline-section-list" id="sidebar-sublist-0" role="list" style="max-height: 52px;"><li class="nav-sidebar__outline-list-item nav-sidebar__outline-list-item--last" role="listitem"><div class="nav-sidebar__outline-section-item nav-sidebar__outline-section-item--complete"><a class="nav-sidebar__outline-section-item__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/index.html?enhanced_signature=B_iRyK6ZqnyVuT9r5JhYybM0ZDE3_XOMA75jVnSree0&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20NDY2OTFiYzMtMWVlMS00MDc4LTk1ZGEtNTFhNTcxYjY4Y2FhOmRkYTNjZWU0MGYyZTgzNThlMjRjYjNlNmI5MWUyMzk3&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=e6b07960-869b-4818-8fe6-d9123311edc4&amp;activity_id=http%3A%2F%2FqqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise&amp;Accept-Language=en&amp;course_id=12814&amp;content_token=e6b07960-869b-4818-8fe6-d9123311edc4&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782e37ef94b&amp;crct=b57366adcf5fbe2d81946e935f9555330d1ebc996f4e2c2300b6c7f5c4b52d4a6398381dbfb3f6f9dd4ea4231f91a9a361517b7776043524f066062db6dc200b&amp;course_code=TCAI-DIG-100-IELABS-0100-EN-US&amp;course_id=12814&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=1736e84256cb4518d0eb9952f424d3c47e2655b79cdff70715447fa51cb84c48#/lessons/m8Q6re2Tt7uQp-nQ89vf2aP9OfxOkdOm"><svg aria-hidden="true" class="nav-sidebar__outline-section-item-link-icon" fill="none" focusable="false" height="12" viewBox="0 0 18 12" width="18" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M0.666992 1.00002C0.666992 0.539783 1.04009 0.166687 1.50033 0.166687H14.0003C14.4606 0.166687 14.8337 0.539783 14.8337 1.00002C14.8337 1.46026 14.4606 1.83335 14.0003 1.83335H1.50033C1.04009 1.83335 0.666992 1.46026 0.666992 1.00002ZM0.666992 6.00002C0.666992 5.53978 1.04009 5.16669 1.50033 5.16669H16.5003C16.9606 5.16669 17.3337 5.53978 17.3337 6.00002C17.3337 6.46026 16.9606 6.83335 16.5003 6.83335H1.50033C1.04009 6.83335 0.666992 6.46026 0.666992 6.00002ZM0.666992 11C0.666992 10.5398 1.04009 10.1667 1.50033 10.1667H10.667C11.1272 10.1667 11.5003 10.5398 11.5003 11C11.5003 11.4603 11.1272 11.8334 10.667 11.8334H1.50033C1.04009 11.8334 0.666992 11.4603 0.666992 11Z" fill="currentColor" fill-rule="evenodd"></path></svg>Course Overview</a></div><span class="lesson-progress lesson-progress--sidebar"><button aria-label="Completed. Click to reset" class="lesson-progress__action" type="button"><span class="lesson-progress__graphic lesson-progress__graphic--sidebar"><svg aria-hidden="true" class="progress-circle progress-circle--sidebar" fill="none" focusable="false" role="img" viewBox="0 0 16 16" xmlns="https://www.w3.org/2000/svg"><circle class="progress-circle__track" cx="8" cy="8" fill="transparent" r="7" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><circle class="progress-circle__runner progress-circle__runner--done progress-circle__runner--passed" cx="8" cy="8" fill="transparent" r="7" stroke-dasharray="43.982297150257104" stroke-dashoffset="0" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><path class="progress-circle__pass progress-circle__pass--done progress-circle__pass--visible" d="M11.3227 6.65905C11.6133 6.37599 11.6347 5.89413 11.3705 5.58277C11.1063 5.27141 10.6566 5.24847 10.366 5.53152L6.93323 8.87512L5.6338 7.60944C5.3432 7.32639 4.89345 7.34933 4.62927 7.66069C4.36509 7.97205 4.38651 8.45391 4.67711 8.73697L6.45488 10.4686C6.72611 10.7328 7.14034 10.7328 7.41157 10.4686L11.3227 6.65905Z"></path><path class="progress-circle__fail progress-circle__fail--done" clip-rule="evenodd" d="M9.46967 10.5303C9.76256 10.8232 10.2374 10.8232 10.5303 10.5303C10.8232 10.2374 10.8232 9.76256 10.5303 9.46967L9.06066 8L10.5303 6.53033C10.8232 6.23744 10.8232 5.76256 10.5303 5.46967C10.2374 5.17678 9.76256 5.17678 9.46967 5.46967L8 6.93934L6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L6.93934 8L5.46967 9.46967C5.17678 9.76256 5.17678 10.2374 5.46967 10.5303C5.76256 10.8232 6.23744 10.8232 6.53033 10.5303L8 9.06066L9.46967 10.5303Z" fill-rule="evenodd"></path></svg></span></button></span></li></ol></li><li class="nav-sidebar__outline-item nav-sidebar__outline-section" role="listitem"><button aria-controls="sidebar-sublist-1" aria-expanded="true" class="nav-sidebar__outline-section-toggle" type="button"><span class="nav-sidebar__outline-section-toggle-text">Using AWS Builder Labs</span><svg aria-hidden="true" class="nav-sidebar__outline-section-toggle-icon" fill="none" focusable="false" height="5" viewBox="0 0 10 5" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M5.56569 4.75592L8.76601 1.42259C9.27003 0.897618 8.91306 0 8.20027 0L1.79963 0C1.08683 0 0.729863 0.897618 1.23389 1.42259L4.43421 4.75592C4.74666 5.08136 5.25324 5.08136 5.56569 4.75592Z" fill="currentColor"></path></svg></button><ol class="nav-sidebar__outline-section-list" id="sidebar-sublist-1" role="list" style="max-height: 380px;"><li class="nav-sidebar__outline-list-item" role="listitem"><div class="nav-sidebar__outline-section-item nav-sidebar__outline-section-item--complete"><a class="nav-sidebar__outline-section-item__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/index.html?enhanced_signature=B_iRyK6ZqnyVuT9r5JhYybM0ZDE3_XOMA75jVnSree0&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20NDY2OTFiYzMtMWVlMS00MDc4LTk1ZGEtNTFhNTcxYjY4Y2FhOmRkYTNjZWU0MGYyZTgzNThlMjRjYjNlNmI5MWUyMzk3&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=e6b07960-869b-4818-8fe6-d9123311edc4&amp;activity_id=http%3A%2F%2FqqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise&amp;Accept-Language=en&amp;course_id=12814&amp;content_token=e6b07960-869b-4818-8fe6-d9123311edc4&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782e37ef94b&amp;crct=b57366adcf5fbe2d81946e935f9555330d1ebc996f4e2c2300b6c7f5c4b52d4a6398381dbfb3f6f9dd4ea4231f91a9a361517b7776043524f066062db6dc200b&amp;course_code=TCAI-DIG-100-IELABS-0100-EN-US&amp;course_id=12814&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=1736e84256cb4518d0eb9952f424d3c47e2655b79cdff70715447fa51cb84c48#/lessons/SnSJc-rGiFygHuUOcRREYL6CaM01ikpA"><svg aria-hidden="true" class="nav-sidebar__outline-section-item-link-icon" fill="none" focusable="false" height="12" viewBox="0 0 18 12" width="18" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M0.666992 1.00002C0.666992 0.539783 1.04009 0.166687 1.50033 0.166687H14.0003C14.4606 0.166687 14.8337 0.539783 14.8337 1.00002C14.8337 1.46026 14.4606 1.83335 14.0003 1.83335H1.50033C1.04009 1.83335 0.666992 1.46026 0.666992 1.00002ZM0.666992 6.00002C0.666992 5.53978 1.04009 5.16669 1.50033 5.16669H16.5003C16.9606 5.16669 17.3337 5.53978 17.3337 6.00002C17.3337 6.46026 16.9606 6.83335 16.5003 6.83335H1.50033C1.04009 6.83335 0.666992 6.46026 0.666992 6.00002ZM0.666992 11C0.666992 10.5398 1.04009 10.1667 1.50033 10.1667H10.667C11.1272 10.1667 11.5003 10.5398 11.5003 11C11.5003 11.4603 11.1272 11.8334 10.667 11.8334H1.50033C1.04009 11.8334 0.666992 11.4603 0.666992 11Z" fill="currentColor" fill-rule="evenodd"></path></svg>Introduction</a></div><span class="lesson-progress lesson-progress--sidebar"><button aria-label="Completed. Click to reset" class="lesson-progress__action" type="button"><span class="lesson-progress__graphic lesson-progress__graphic--sidebar"><svg aria-hidden="true" class="progress-circle progress-circle--sidebar" fill="none" focusable="false" role="img" viewBox="0 0 16 16" xmlns="https://www.w3.org/2000/svg"><circle class="progress-circle__track" cx="8" cy="8" fill="transparent" r="7" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><circle class="progress-circle__runner progress-circle__runner--done progress-circle__runner--passed" cx="8" cy="8" fill="transparent" r="7" stroke-dasharray="43.982297150257104" stroke-dashoffset="0" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><path class="progress-circle__pass progress-circle__pass--done progress-circle__pass--visible" d="M11.3227 6.65905C11.6133 6.37599 11.6347 5.89413 11.3705 5.58277C11.1063 5.27141 10.6566 5.24847 10.366 5.53152L6.93323 8.87512L5.6338 7.60944C5.3432 7.32639 4.89345 7.34933 4.62927 7.66069C4.36509 7.97205 4.38651 8.45391 4.67711 8.73697L6.45488 10.4686C6.72611 10.7328 7.14034 10.7328 7.41157 10.4686L11.3227 6.65905Z"></path><path class="progress-circle__fail progress-circle__fail--done" clip-rule="evenodd" d="M9.46967 10.5303C9.76256 10.8232 10.2374 10.8232 10.5303 10.5303C10.8232 10.2374 10.8232 9.76256 10.5303 9.46967L9.06066 8L10.5303 6.53033C10.8232 6.23744 10.8232 5.76256 10.5303 5.46967C10.2374 5.17678 9.76256 5.17678 9.46967 5.46967L8 6.93934L6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L6.93934 8L5.46967 9.46967C5.17678 9.76256 5.17678 10.2374 5.46967 10.5303C5.76256 10.8232 6.23744 10.8232 6.53033 10.5303L8 9.06066L9.46967 10.5303Z" fill-rule="evenodd"></path></svg></span></button></span></li><li class="nav-sidebar__outline-list-item" role="listitem"><div class="nav-sidebar__outline-section-item nav-sidebar__outline-section-item--complete"><a class="nav-sidebar__outline-section-item__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/index.html?enhanced_signature=B_iRyK6ZqnyVuT9r5JhYybM0ZDE3_XOMA75jVnSree0&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20NDY2OTFiYzMtMWVlMS00MDc4LTk1ZGEtNTFhNTcxYjY4Y2FhOmRkYTNjZWU0MGYyZTgzNThlMjRjYjNlNmI5MWUyMzk3&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=e6b07960-869b-4818-8fe6-d9123311edc4&amp;activity_id=http%3A%2F%2FqqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise&amp;Accept-Language=en&amp;course_id=12814&amp;content_token=e6b07960-869b-4818-8fe6-d9123311edc4&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782e37ef94b&amp;crct=b57366adcf5fbe2d81946e935f9555330d1ebc996f4e2c2300b6c7f5c4b52d4a6398381dbfb3f6f9dd4ea4231f91a9a361517b7776043524f066062db6dc200b&amp;course_code=TCAI-DIG-100-IELABS-0100-EN-US&amp;course_id=12814&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=1736e84256cb4518d0eb9952f424d3c47e2655b79cdff70715447fa51cb84c48#/lessons/IMNBWbu8RkUdpPF-AvlOTv9-1WCE5Ga_"><svg aria-hidden="true" class="nav-sidebar__outline-section-item-link-icon" fill="none" focusable="false" height="12" viewBox="0 0 18 12" width="18" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M0.666992 1.00002C0.666992 0.539783 1.04009 0.166687 1.50033 0.166687H14.0003C14.4606 0.166687 14.8337 0.539783 14.8337 1.00002C14.8337 1.46026 14.4606 1.83335 14.0003 1.83335H1.50033C1.04009 1.83335 0.666992 1.46026 0.666992 1.00002ZM0.666992 6.00002C0.666992 5.53978 1.04009 5.16669 1.50033 5.16669H16.5003C16.9606 5.16669 17.3337 5.53978 17.3337 6.00002C17.3337 6.46026 16.9606 6.83335 16.5003 6.83335H1.50033C1.04009 6.83335 0.666992 6.46026 0.666992 6.00002ZM0.666992 11C0.666992 10.5398 1.04009 10.1667 1.50033 10.1667H10.667C11.1272 10.1667 11.5003 10.5398 11.5003 11C11.5003 11.4603 11.1272 11.8334 10.667 11.8334H1.50033C1.04009 11.8334 0.666992 11.4603 0.666992 11Z" fill="currentColor" fill-rule="evenodd"></path></svg>Setting up the class</a></div><span class="lesson-progress lesson-progress--sidebar"><button aria-label="Completed. Click to reset" class="lesson-progress__action" type="button"><span class="lesson-progress__graphic lesson-progress__graphic--sidebar"><svg aria-hidden="true" class="progress-circle progress-circle--sidebar" fill="none" focusable="false" role="img" viewBox="0 0 16 16" xmlns="https://www.w3.org/2000/svg"><circle class="progress-circle__track" cx="8" cy="8" fill="transparent" r="7" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><circle class="progress-circle__runner progress-circle__runner--done progress-circle__runner--passed" cx="8" cy="8" fill="transparent" r="7" stroke-dasharray="43.982297150257104" stroke-dashoffset="0" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><path class="progress-circle__pass progress-circle__pass--done progress-circle__pass--visible" d="M11.3227 6.65905C11.6133 6.37599 11.6347 5.89413 11.3705 5.58277C11.1063 5.27141 10.6566 5.24847 10.366 5.53152L6.93323 8.87512L5.6338 7.60944C5.3432 7.32639 4.89345 7.34933 4.62927 7.66069C4.36509 7.97205 4.38651 8.45391 4.67711 8.73697L6.45488 10.4686C6.72611 10.7328 7.14034 10.7328 7.41157 10.4686L11.3227 6.65905Z"></path><path class="progress-circle__fail progress-circle__fail--done" clip-rule="evenodd" d="M9.46967 10.5303C9.76256 10.8232 10.2374 10.8232 10.5303 10.5303C10.8232 10.2374 10.8232 9.76256 10.5303 9.46967L9.06066 8L10.5303 6.53033C10.8232 6.23744 10.8232 5.76256 10.5303 5.46967C10.2374 5.17678 9.76256 5.17678 9.46967 5.46967L8 6.93934L6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L6.93934 8L5.46967 9.46967C5.17678 9.76256 5.17678 10.2374 5.46967 10.5303C5.76256 10.8232 6.23744 10.8232 6.53033 10.5303L8 9.06066L9.46967 10.5303Z" fill-rule="evenodd"></path></svg></span></button></span></li><li class="nav-sidebar__outline-list-item" role="listitem"><div class="nav-sidebar__outline-section-item nav-sidebar__outline-section-item--complete"><a class="nav-sidebar__outline-section-item__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/index.html?enhanced_signature=B_iRyK6ZqnyVuT9r5JhYybM0ZDE3_XOMA75jVnSree0&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20NDY2OTFiYzMtMWVlMS00MDc4LTk1ZGEtNTFhNTcxYjY4Y2FhOmRkYTNjZWU0MGYyZTgzNThlMjRjYjNlNmI5MWUyMzk3&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=e6b07960-869b-4818-8fe6-d9123311edc4&amp;activity_id=http%3A%2F%2FqqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise&amp;Accept-Language=en&amp;course_id=12814&amp;content_token=e6b07960-869b-4818-8fe6-d9123311edc4&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782e37ef94b&amp;crct=b57366adcf5fbe2d81946e935f9555330d1ebc996f4e2c2300b6c7f5c4b52d4a6398381dbfb3f6f9dd4ea4231f91a9a361517b7776043524f066062db6dc200b&amp;course_code=TCAI-DIG-100-IELABS-0100-EN-US&amp;course_id=12814&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=1736e84256cb4518d0eb9952f424d3c47e2655b79cdff70715447fa51cb84c48#/lessons/bdeTvID8s26ZQ5o8DAqF_0mMcAzg78pd"><svg aria-hidden="true" class="nav-sidebar__outline-section-item-link-icon" fill="none" focusable="false" height="12" viewBox="0 0 18 12" width="18" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M0.666992 1.00002C0.666992 0.539783 1.04009 0.166687 1.50033 0.166687H14.0003C14.4606 0.166687 14.8337 0.539783 14.8337 1.00002C14.8337 1.46026 14.4606 1.83335 14.0003 1.83335H1.50033C1.04009 1.83335 0.666992 1.46026 0.666992 1.00002ZM0.666992 6.00002C0.666992 5.53978 1.04009 5.16669 1.50033 5.16669H16.5003C16.9606 5.16669 17.3337 5.53978 17.3337 6.00002C17.3337 6.46026 16.9606 6.83335 16.5003 6.83335H1.50033C1.04009 6.83335 0.666992 6.46026 0.666992 6.00002ZM0.666992 11C0.666992 10.5398 1.04009 10.1667 1.50033 10.1667H10.667C11.1272 10.1667 11.5003 10.5398 11.5003 11C11.5003 11.4603 11.1272 11.8334 10.667 11.8334H1.50033C1.04009 11.8334 0.666992 11.4603 0.666992 11Z" fill="currentColor" fill-rule="evenodd"></path></svg>Moderating the class</a></div><span class="lesson-progress lesson-progress--sidebar"><button aria-label="Completed. Click to reset" class="lesson-progress__action" type="button"><span class="lesson-progress__graphic lesson-progress__graphic--sidebar"><svg aria-hidden="true" class="progress-circle progress-circle--sidebar" fill="none" focusable="false" role="img" viewBox="0 0 16 16" xmlns="https://www.w3.org/2000/svg"><circle class="progress-circle__track" cx="8" cy="8" fill="transparent" r="7" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><circle class="progress-circle__runner progress-circle__runner--done progress-circle__runner--passed" cx="8" cy="8" fill="transparent" r="7" stroke-dasharray="43.982297150257104" stroke-dashoffset="0" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><path class="progress-circle__pass progress-circle__pass--done progress-circle__pass--visible" d="M11.3227 6.65905C11.6133 6.37599 11.6347 5.89413 11.3705 5.58277C11.1063 5.27141 10.6566 5.24847 10.366 5.53152L6.93323 8.87512L5.6338 7.60944C5.3432 7.32639 4.89345 7.34933 4.62927 7.66069C4.36509 7.97205 4.38651 8.45391 4.67711 8.73697L6.45488 10.4686C6.72611 10.7328 7.14034 10.7328 7.41157 10.4686L11.3227 6.65905Z"></path><path class="progress-circle__fail progress-circle__fail--done" clip-rule="evenodd" d="M9.46967 10.5303C9.76256 10.8232 10.2374 10.8232 10.5303 10.5303C10.8232 10.2374 10.8232 9.76256 10.5303 9.46967L9.06066 8L10.5303 6.53033C10.8232 6.23744 10.8232 5.76256 10.5303 5.46967C10.2374 5.17678 9.76256 5.17678 9.46967 5.46967L8 6.93934L6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L6.93934 8L5.46967 9.46967C5.17678 9.76256 5.17678 10.2374 5.46967 10.5303C5.76256 10.8232 6.23744 10.8232 6.53033 10.5303L8 9.06066L9.46967 10.5303Z" fill-rule="evenodd"></path></svg></span></button></span></li><li class="nav-sidebar__outline-list-item" role="listitem"><div class="nav-sidebar__outline-section-item nav-sidebar__outline-section-item--complete"><a class="nav-sidebar__outline-section-item__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/index.html?enhanced_signature=B_iRyK6ZqnyVuT9r5JhYybM0ZDE3_XOMA75jVnSree0&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20NDY2OTFiYzMtMWVlMS00MDc4LTk1ZGEtNTFhNTcxYjY4Y2FhOmRkYTNjZWU0MGYyZTgzNThlMjRjYjNlNmI5MWUyMzk3&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=e6b07960-869b-4818-8fe6-d9123311edc4&amp;activity_id=http%3A%2F%2FqqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise&amp;Accept-Language=en&amp;course_id=12814&amp;content_token=e6b07960-869b-4818-8fe6-d9123311edc4&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782e37ef94b&amp;crct=b57366adcf5fbe2d81946e935f9555330d1ebc996f4e2c2300b6c7f5c4b52d4a6398381dbfb3f6f9dd4ea4231f91a9a361517b7776043524f066062db6dc200b&amp;course_code=TCAI-DIG-100-IELABS-0100-EN-US&amp;course_id=12814&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=1736e84256cb4518d0eb9952f424d3c47e2655b79cdff70715447fa51cb84c48#/lessons/wtU8HvInB1_lcbeANsGLNDq4s18W2JPO"><svg aria-hidden="true" class="nav-sidebar__outline-section-item-link-icon" fill="none" focusable="false" height="12" viewBox="0 0 18 12" width="18" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M0.666992 1.00002C0.666992 0.539783 1.04009 0.166687 1.50033 0.166687H14.0003C14.4606 0.166687 14.8337 0.539783 14.8337 1.00002C14.8337 1.46026 14.4606 1.83335 14.0003 1.83335H1.50033C1.04009 1.83335 0.666992 1.46026 0.666992 1.00002ZM0.666992 6.00002C0.666992 5.53978 1.04009 5.16669 1.50033 5.16669H16.5003C16.9606 5.16669 17.3337 5.53978 17.3337 6.00002C17.3337 6.46026 16.9606 6.83335 16.5003 6.83335H1.50033C1.04009 6.83335 0.666992 6.46026 0.666992 6.00002ZM0.666992 11C0.666992 10.5398 1.04009 10.1667 1.50033 10.1667H10.667C11.1272 10.1667 11.5003 10.5398 11.5003 11C11.5003 11.4603 11.1272 11.8334 10.667 11.8334H1.50033C1.04009 11.8334 0.666992 11.4603 0.666992 11Z" fill="currentColor" fill-rule="evenodd"></path></svg>Wrapping up the class</a></div><span class="lesson-progress lesson-progress--sidebar"><button aria-label="Completed. Click to reset" class="lesson-progress__action" type="button"><span class="lesson-progress__graphic lesson-progress__graphic--sidebar"><svg aria-hidden="true" class="progress-circle progress-circle--sidebar" fill="none" focusable="false" role="img" viewBox="0 0 16 16" xmlns="https://www.w3.org/2000/svg"><circle class="progress-circle__track" cx="8" cy="8" fill="transparent" r="7" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><circle class="progress-circle__runner progress-circle__runner--done progress-circle__runner--passed" cx="8" cy="8" fill="transparent" r="7" stroke-dasharray="43.982297150257104" stroke-dashoffset="0" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><path class="progress-circle__pass progress-circle__pass--done progress-circle__pass--visible" d="M11.3227 6.65905C11.6133 6.37599 11.6347 5.89413 11.3705 5.58277C11.1063 5.27141 10.6566 5.24847 10.366 5.53152L6.93323 8.87512L5.6338 7.60944C5.3432 7.32639 4.89345 7.34933 4.62927 7.66069C4.36509 7.97205 4.38651 8.45391 4.67711 8.73697L6.45488 10.4686C6.72611 10.7328 7.14034 10.7328 7.41157 10.4686L11.3227 6.65905Z"></path><path class="progress-circle__fail progress-circle__fail--done" clip-rule="evenodd" d="M9.46967 10.5303C9.76256 10.8232 10.2374 10.8232 10.5303 10.5303C10.8232 10.2374 10.8232 9.76256 10.5303 9.46967L9.06066 8L10.5303 6.53033C10.8232 6.23744 10.8232 5.76256 10.5303 5.46967C10.2374 5.17678 9.76256 5.17678 9.46967 5.46967L8 6.93934L6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L6.93934 8L5.46967 9.46967C5.17678 9.76256 5.17678 10.2374 5.46967 10.5303C5.76256 10.8232 6.23744 10.8232 6.53033 10.5303L8 9.06066L9.46967 10.5303Z" fill-rule="evenodd"></path></svg></span></button></span></li><li class="nav-sidebar__outline-list-item" role="listitem"><div class="nav-sidebar__outline-section-item nav-sidebar__outline-section-item--active nav-sidebar__outline-section-item--complete"><a class="nav-sidebar__outline-section-item__link nav-sidebar__outline-section-item__link--active active" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/index.html?enhanced_signature=B_iRyK6ZqnyVuT9r5JhYybM0ZDE3_XOMA75jVnSree0&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20NDY2OTFiYzMtMWVlMS00MDc4LTk1ZGEtNTFhNTcxYjY4Y2FhOmRkYTNjZWU0MGYyZTgzNThlMjRjYjNlNmI5MWUyMzk3&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=e6b07960-869b-4818-8fe6-d9123311edc4&amp;activity_id=http%3A%2F%2FqqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise&amp;Accept-Language=en&amp;course_id=12814&amp;content_token=e6b07960-869b-4818-8fe6-d9123311edc4&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782e37ef94b&amp;crct=b57366adcf5fbe2d81946e935f9555330d1ebc996f4e2c2300b6c7f5c4b52d4a6398381dbfb3f6f9dd4ea4231f91a9a361517b7776043524f066062db6dc200b&amp;course_code=TCAI-DIG-100-IELABS-0100-EN-US&amp;course_id=12814&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=1736e84256cb4518d0eb9952f424d3c47e2655b79cdff70715447fa51cb84c48#/lessons/9BkZ6iygChRdkNMfctsIrSU_XQzo2TuS" aria-current="page"><svg aria-hidden="true" class="nav-sidebar__outline-section-item-link-icon" fill="none" focusable="false" height="12" viewBox="0 0 18 12" width="18" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M0.666992 1.00002C0.666992 0.539783 1.04009 0.166687 1.50033 0.166687H14.0003C14.4606 0.166687 14.8337 0.539783 14.8337 1.00002C14.8337 1.46026 14.4606 1.83335 14.0003 1.83335H1.50033C1.04009 1.83335 0.666992 1.46026 0.666992 1.00002ZM0.666992 6.00002C0.666992 5.53978 1.04009 5.16669 1.50033 5.16669H16.5003C16.9606 5.16669 17.3337 5.53978 17.3337 6.00002C17.3337 6.46026 16.9606 6.83335 16.5003 6.83335H1.50033C1.04009 6.83335 0.666992 6.46026 0.666992 6.00002ZM0.666992 11C0.666992 10.5398 1.04009 10.1667 1.50033 10.1667H10.667C11.1272 10.1667 11.5003 10.5398 11.5003 11C11.5003 11.4603 11.1272 11.8334 10.667 11.8334H1.50033C1.04009 11.8334 0.666992 11.4603 0.666992 11Z" fill="currentColor" fill-rule="evenodd"></path></svg>User Experience</a></div><span class="lesson-progress lesson-progress--sidebar"><button aria-label="Completed. Click to reset" class="lesson-progress__action" type="button"><span class="lesson-progress__graphic lesson-progress__graphic--sidebar"><svg aria-hidden="true" class="progress-circle progress-circle--current progress-circle--sidebar" fill="none" focusable="false" role="img" viewBox="0 0 16 16" xmlns="https://www.w3.org/2000/svg"><circle class="progress-circle__track" cx="8" cy="8" fill="transparent" r="7" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><circle class="progress-circle__runner progress-circle__runner--done progress-circle__runner--passed" cx="8" cy="8" fill="transparent" r="7" stroke-dasharray="43.982297150257104" stroke-dashoffset="0" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><path class="progress-circle__pass progress-circle__pass--done progress-circle__pass--visible" d="M11.3227 6.65905C11.6133 6.37599 11.6347 5.89413 11.3705 5.58277C11.1063 5.27141 10.6566 5.24847 10.366 5.53152L6.93323 8.87512L5.6338 7.60944C5.3432 7.32639 4.89345 7.34933 4.62927 7.66069C4.36509 7.97205 4.38651 8.45391 4.67711 8.73697L6.45488 10.4686C6.72611 10.7328 7.14034 10.7328 7.41157 10.4686L11.3227 6.65905Z"></path><path class="progress-circle__fail progress-circle__fail--done" clip-rule="evenodd" d="M9.46967 10.5303C9.76256 10.8232 10.2374 10.8232 10.5303 10.5303C10.8232 10.2374 10.8232 9.76256 10.5303 9.46967L9.06066 8L10.5303 6.53033C10.8232 6.23744 10.8232 5.76256 10.5303 5.46967C10.2374 5.17678 9.76256 5.17678 9.46967 5.46967L8 6.93934L6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L6.93934 8L5.46967 9.46967C5.17678 9.76256 5.17678 10.2374 5.46967 10.5303C5.76256 10.8232 6.23744 10.8232 6.53033 10.5303L8 9.06066L9.46967 10.5303Z" fill-rule="evenodd"></path></svg></span></button></span></li><li class="nav-sidebar__outline-list-item" role="listitem"><div class="nav-sidebar__outline-section-item"><a class="nav-sidebar__outline-section-item__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/index.html?enhanced_signature=B_iRyK6ZqnyVuT9r5JhYybM0ZDE3_XOMA75jVnSree0&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20NDY2OTFiYzMtMWVlMS00MDc4LTk1ZGEtNTFhNTcxYjY4Y2FhOmRkYTNjZWU0MGYyZTgzNThlMjRjYjNlNmI5MWUyMzk3&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=e6b07960-869b-4818-8fe6-d9123311edc4&amp;activity_id=http%3A%2F%2FqqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise&amp;Accept-Language=en&amp;course_id=12814&amp;content_token=e6b07960-869b-4818-8fe6-d9123311edc4&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782e37ef94b&amp;crct=b57366adcf5fbe2d81946e935f9555330d1ebc996f4e2c2300b6c7f5c4b52d4a6398381dbfb3f6f9dd4ea4231f91a9a361517b7776043524f066062db6dc200b&amp;course_code=TCAI-DIG-100-IELABS-0100-EN-US&amp;course_id=12814&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=1736e84256cb4518d0eb9952f424d3c47e2655b79cdff70715447fa51cb84c48#/lessons/EZe8Nn6UWwoqIIoznD9fPLAmFiBzk5Q-"><svg aria-hidden="true" class="nav-sidebar__outline-section-item-link-icon" fill="none" focusable="false" height="12" viewBox="0 0 18 12" width="18" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M0.666992 1.00002C0.666992 0.539783 1.04009 0.166687 1.50033 0.166687H14.0003C14.4606 0.166687 14.8337 0.539783 14.8337 1.00002C14.8337 1.46026 14.4606 1.83335 14.0003 1.83335H1.50033C1.04009 1.83335 0.666992 1.46026 0.666992 1.00002ZM0.666992 6.00002C0.666992 5.53978 1.04009 5.16669 1.50033 5.16669H16.5003C16.9606 5.16669 17.3337 5.53978 17.3337 6.00002C17.3337 6.46026 16.9606 6.83335 16.5003 6.83335H1.50033C1.04009 6.83335 0.666992 6.46026 0.666992 6.00002ZM0.666992 11C0.666992 10.5398 1.04009 10.1667 1.50033 10.1667H10.667C11.1272 10.1667 11.5003 10.5398 11.5003 11C11.5003 11.4603 11.1272 11.8334 10.667 11.8334H1.50033C1.04009 11.8334 0.666992 11.4603 0.666992 11Z" fill="currentColor" fill-rule="evenodd"></path></svg>Updated process for Freelance AAIs</a></div><span class="lesson-progress lesson-progress--sidebar"><button aria-label="Unstarted. Click to complete" class="lesson-progress__action" type="button"><span class="lesson-progress__graphic lesson-progress__graphic--sidebar"><svg aria-hidden="true" class="progress-circle progress-circle--sidebar" fill="none" focusable="false" role="img" viewBox="0 0 16 16" xmlns="https://www.w3.org/2000/svg"><circle class="progress-circle__track" cx="8" cy="8" fill="transparent" r="7" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><circle class="progress-circle__runner progress-circle__runner--unstarted" cx="8" cy="8" fill="transparent" r="7" stroke-dasharray="43.982297150257104" stroke-dashoffset="43.9822971502571" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><path class="progress-circle__pass" d="M11.3227 6.65905C11.6133 6.37599 11.6347 5.89413 11.3705 5.58277C11.1063 5.27141 10.6566 5.24847 10.366 5.53152L6.93323 8.87512L5.6338 7.60944C5.3432 7.32639 4.89345 7.34933 4.62927 7.66069C4.36509 7.97205 4.38651 8.45391 4.67711 8.73697L6.45488 10.4686C6.72611 10.7328 7.14034 10.7328 7.41157 10.4686L11.3227 6.65905Z"></path><path class="progress-circle__fail" clip-rule="evenodd" d="M9.46967 10.5303C9.76256 10.8232 10.2374 10.8232 10.5303 10.5303C10.8232 10.2374 10.8232 9.76256 10.5303 9.46967L9.06066 8L10.5303 6.53033C10.8232 6.23744 10.8232 5.76256 10.5303 5.46967C10.2374 5.17678 9.76256 5.17678 9.46967 5.46967L8 6.93934L6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L6.93934 8L5.46967 9.46967C5.17678 9.76256 5.17678 10.2374 5.46967 10.5303C5.76256 10.8232 6.23744 10.8232 6.53033 10.5303L8 9.06066L9.46967 10.5303Z" fill-rule="evenodd"></path></svg></span></button></span></li><li class="nav-sidebar__outline-list-item nav-sidebar__outline-list-item--last" role="listitem"><div class="nav-sidebar__outline-section-item"><a class="nav-sidebar__outline-section-item__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/index.html?enhanced_signature=B_iRyK6ZqnyVuT9r5JhYybM0ZDE3_XOMA75jVnSree0&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20NDY2OTFiYzMtMWVlMS00MDc4LTk1ZGEtNTFhNTcxYjY4Y2FhOmRkYTNjZWU0MGYyZTgzNThlMjRjYjNlNmI5MWUyMzk3&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=e6b07960-869b-4818-8fe6-d9123311edc4&amp;activity_id=http%3A%2F%2FqqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise&amp;Accept-Language=en&amp;course_id=12814&amp;content_token=e6b07960-869b-4818-8fe6-d9123311edc4&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782e37ef94b&amp;crct=b57366adcf5fbe2d81946e935f9555330d1ebc996f4e2c2300b6c7f5c4b52d4a6398381dbfb3f6f9dd4ea4231f91a9a361517b7776043524f066062db6dc200b&amp;course_code=TCAI-DIG-100-IELABS-0100-EN-US&amp;course_id=12814&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=1736e84256cb4518d0eb9952f424d3c47e2655b79cdff70715447fa51cb84c48#/lessons/JhzXADRH86BGBMLkL5yxoIMxjhTopHk8"><svg aria-hidden="true" class="nav-sidebar__outline-section-item-link-icon" fill="none" focusable="false" height="12" viewBox="0 0 18 12" width="18" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M0.666992 1.00002C0.666992 0.539783 1.04009 0.166687 1.50033 0.166687H14.0003C14.4606 0.166687 14.8337 0.539783 14.8337 1.00002C14.8337 1.46026 14.4606 1.83335 14.0003 1.83335H1.50033C1.04009 1.83335 0.666992 1.46026 0.666992 1.00002ZM0.666992 6.00002C0.666992 5.53978 1.04009 5.16669 1.50033 5.16669H16.5003C16.9606 5.16669 17.3337 5.53978 17.3337 6.00002C17.3337 6.46026 16.9606 6.83335 16.5003 6.83335H1.50033C1.04009 6.83335 0.666992 6.46026 0.666992 6.00002ZM0.666992 11C0.666992 10.5398 1.04009 10.1667 1.50033 10.1667H10.667C11.1272 10.1667 11.5003 10.5398 11.5003 11C11.5003 11.4603 11.1272 11.8334 10.667 11.8334H1.50033C1.04009 11.8334 0.666992 11.4603 0.666992 11Z" fill="currentColor" fill-rule="evenodd"></path></svg>FAQs &amp; Resources</a></div><span class="lesson-progress lesson-progress--sidebar"><button aria-label="Unstarted. Click to complete" class="lesson-progress__action" type="button"><span class="lesson-progress__graphic lesson-progress__graphic--sidebar"><svg aria-hidden="true" class="progress-circle progress-circle--sidebar" fill="none" focusable="false" role="img" viewBox="0 0 16 16" xmlns="https://www.w3.org/2000/svg"><circle class="progress-circle__track" cx="8" cy="8" fill="transparent" r="7" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><circle class="progress-circle__runner progress-circle__runner--unstarted" cx="8" cy="8" fill="transparent" r="7" stroke-dasharray="43.982297150257104" stroke-dashoffset="43.9822971502571" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><path class="progress-circle__pass" d="M11.3227 6.65905C11.6133 6.37599 11.6347 5.89413 11.3705 5.58277C11.1063 5.27141 10.6566 5.24847 10.366 5.53152L6.93323 8.87512L5.6338 7.60944C5.3432 7.32639 4.89345 7.34933 4.62927 7.66069C4.36509 7.97205 4.38651 8.45391 4.67711 8.73697L6.45488 10.4686C6.72611 10.7328 7.14034 10.7328 7.41157 10.4686L11.3227 6.65905Z"></path><path class="progress-circle__fail" clip-rule="evenodd" d="M9.46967 10.5303C9.76256 10.8232 10.2374 10.8232 10.5303 10.5303C10.8232 10.2374 10.8232 9.76256 10.5303 9.46967L9.06066 8L10.5303 6.53033C10.8232 6.23744 10.8232 5.76256 10.5303 5.46967C10.2374 5.17678 9.76256 5.17678 9.46967 5.46967L8 6.93934L6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L6.93934 8L5.46967 9.46967C5.17678 9.76256 5.17678 10.2374 5.46967 10.5303C5.76256 10.8232 6.23744 10.8232 6.53033 10.5303L8 9.06066L9.46967 10.5303Z" fill-rule="evenodd"></path></svg></span></button></span></li></ol></li><li class="nav-sidebar__outline-item nav-sidebar__outline-section" role="listitem"><button aria-controls="sidebar-sublist-2" aria-expanded="true" class="nav-sidebar__outline-section-toggle" type="button"><span class="nav-sidebar__outline-section-toggle-text">Instructor Assessment and Wrap-Up</span><svg aria-hidden="true" class="nav-sidebar__outline-section-toggle-icon" fill="none" focusable="false" height="5" viewBox="0 0 10 5" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M5.56569 4.75592L8.76601 1.42259C9.27003 0.897618 8.91306 0 8.20027 0L1.79963 0C1.08683 0 0.729863 0.897618 1.23389 1.42259L4.43421 4.75592C4.74666 5.08136 5.25324 5.08136 5.56569 4.75592Z" fill="currentColor"></path></svg></button><ol class="nav-sidebar__outline-section-list" id="sidebar-sublist-2" role="list" style="max-height: 104px;"><li class="nav-sidebar__outline-list-item" role="listitem"><div class="nav-sidebar__outline-section-item"><a class="nav-sidebar__outline-section-item__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/index.html?enhanced_signature=B_iRyK6ZqnyVuT9r5JhYybM0ZDE3_XOMA75jVnSree0&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20NDY2OTFiYzMtMWVlMS00MDc4LTk1ZGEtNTFhNTcxYjY4Y2FhOmRkYTNjZWU0MGYyZTgzNThlMjRjYjNlNmI5MWUyMzk3&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=e6b07960-869b-4818-8fe6-d9123311edc4&amp;activity_id=http%3A%2F%2FqqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise&amp;Accept-Language=en&amp;course_id=12814&amp;content_token=e6b07960-869b-4818-8fe6-d9123311edc4&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782e37ef94b&amp;crct=b57366adcf5fbe2d81946e935f9555330d1ebc996f4e2c2300b6c7f5c4b52d4a6398381dbfb3f6f9dd4ea4231f91a9a361517b7776043524f066062db6dc200b&amp;course_code=TCAI-DIG-100-IELABS-0100-EN-US&amp;course_id=12814&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=1736e84256cb4518d0eb9952f424d3c47e2655b79cdff70715447fa51cb84c48#/lessons/S8mDpmHNv_zZrKnILsjZSNhzSLdhCVMb"><svg aria-hidden="true" class="nav-sidebar__outline-section-item-link-icon" fill="none" focusable="false" height="21" viewBox="0 0 20 21" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M9.94535 6.125C9.1938 6.125 8.52385 6.6729 8.30039 7.48015C8.17194 7.9442 7.70954 8.21104 7.26759 8.07617C6.82564 7.94129 6.5715 7.45577 6.69996 6.99172C7.11282 5.50025 8.3916 4.375 9.94535 4.375C11.8499 4.375 13.3335 6.05606 13.3335 8.05C13.3335 9.7417 12.2656 11.2082 10.7787 11.6139V12.25C10.7787 12.7332 10.4056 13.125 9.94535 13.125C9.48511 13.125 9.11201 12.7332 9.11201 12.25V10.85C9.11201 10.3668 9.48511 9.975 9.94535 9.975C10.8628 9.975 11.6668 9.14886 11.6668 8.05C11.6668 6.95114 10.8628 6.125 9.94535 6.125Z" fill="currentColor"></path><path d="M10.0002 14C9.53992 14 9.16683 14.3918 9.16683 14.875C9.16683 15.3582 9.53992 15.75 10.0002 15.75H10.0085C10.4687 15.75 10.8418 15.3582 10.8418 14.875C10.8418 14.3918 10.4687 14 10.0085 14H10.0002Z" fill="currentColor"></path><path clip-rule="evenodd" d="M0.833496 3.55556C0.833496 2.01519 2.09493 0.875 3.51868 0.875H16.4816C17.9054 0.875 19.1668 2.01519 19.1668 3.55556V17.4444C19.1668 18.9848 17.9054 20.125 16.4816 20.125H3.51868C2.09493 20.125 0.833496 18.9848 0.833496 17.4444V3.55556ZM3.51868 2.625C2.89693 2.625 2.50016 3.10156 2.50016 3.55556V17.4444C2.50016 17.8984 2.89693 18.375 3.51868 18.375H16.4816C17.1034 18.375 17.5002 17.8984 17.5002 17.4444V3.55556C17.5002 3.10156 17.1034 2.625 16.4816 2.625H3.51868Z" fill="currentColor" fill-rule="evenodd"></path></svg>Final Instructor Assessment<span class="lesson-progress lesson-progress--sidebar"><span class="lesson-progress__graphic lesson-progress__graphic--sidebar"><svg aria-label="Unstarted" class="progress-circle progress-circle--sidebar" fill="none" focusable="false" role="img" viewBox="0 0 16 16" xmlns="https://www.w3.org/2000/svg"><circle class="progress-circle__track" cx="8" cy="8" fill="transparent" r="7" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><circle class="progress-circle__runner progress-circle__runner--unstarted" cx="8" cy="8" fill="transparent" r="7" stroke-dasharray="43.982297150257104" stroke-dashoffset="43.9822971502571" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><path class="progress-circle__pass" d="M11.3227 6.65905C11.6133 6.37599 11.6347 5.89413 11.3705 5.58277C11.1063 5.27141 10.6566 5.24847 10.366 5.53152L6.93323 8.87512L5.6338 7.60944C5.3432 7.32639 4.89345 7.34933 4.62927 7.66069C4.36509 7.97205 4.38651 8.45391 4.67711 8.73697L6.45488 10.4686C6.72611 10.7328 7.14034 10.7328 7.41157 10.4686L11.3227 6.65905Z"></path><path class="progress-circle__fail" clip-rule="evenodd" d="M9.46967 10.5303C9.76256 10.8232 10.2374 10.8232 10.5303 10.5303C10.8232 10.2374 10.8232 9.76256 10.5303 9.46967L9.06066 8L10.5303 6.53033C10.8232 6.23744 10.8232 5.76256 10.5303 5.46967C10.2374 5.17678 9.76256 5.17678 9.46967 5.46967L8 6.93934L6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L6.93934 8L5.46967 9.46967C5.17678 9.76256 5.17678 10.2374 5.46967 10.5303C5.76256 10.8232 6.23744 10.8232 6.53033 10.5303L8 9.06066L9.46967 10.5303Z" fill-rule="evenodd"></path></svg></span></span></a></div></li><li class="nav-sidebar__outline-list-item nav-sidebar__outline-list-item--last" role="listitem"><div class="nav-sidebar__outline-section-item nav-sidebar__outline-section-item--restricted"><div aria-disabled="true" class="nav-sidebar__outline-section-item__link nav-sidebar__outline-section-item__link--restricted" role="link" tabindex="0"><svg aria-hidden="true" class="nav-sidebar__outline-section-item-link-icon" fill="none" focusable="false" height="12" viewBox="0 0 18 12" width="18" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M0.666992 1.00002C0.666992 0.539783 1.04009 0.166687 1.50033 0.166687H14.0003C14.4606 0.166687 14.8337 0.539783 14.8337 1.00002C14.8337 1.46026 14.4606 1.83335 14.0003 1.83335H1.50033C1.04009 1.83335 0.666992 1.46026 0.666992 1.00002ZM0.666992 6.00002C0.666992 5.53978 1.04009 5.16669 1.50033 5.16669H16.5003C16.9606 5.16669 17.3337 5.53978 17.3337 6.00002C17.3337 6.46026 16.9606 6.83335 16.5003 6.83335H1.50033C1.04009 6.83335 0.666992 6.46026 0.666992 6.00002ZM0.666992 11C0.666992 10.5398 1.04009 10.1667 1.50033 10.1667H10.667C11.1272 10.1667 11.5003 10.5398 11.5003 11C11.5003 11.4603 11.1272 11.8334 10.667 11.8334H1.50033C1.04009 11.8334 0.666992 11.4603 0.666992 11Z" fill="currentColor" fill-rule="evenodd"></path></svg>Instructor Wrap-Up<span class="lesson-progress lesson-progress--inactive lesson-progress--sidebar"><span class="lesson-progress__graphic lesson-progress__graphic--sidebar"><svg aria-label="Unstarted" class="progress-circle progress-circle--sidebar" fill="none" focusable="false" role="img" viewBox="0 0 16 16" xmlns="https://www.w3.org/2000/svg"><circle class="progress-circle__track" cx="8" cy="8" fill="transparent" r="7" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><circle class="progress-circle__runner progress-circle__runner--unstarted" cx="8" cy="8" fill="transparent" r="7" stroke-dasharray="43.982297150257104" stroke-dashoffset="43.9822971502571" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><path class="progress-circle__pass" d="M11.3227 6.65905C11.6133 6.37599 11.6347 5.89413 11.3705 5.58277C11.1063 5.27141 10.6566 5.24847 10.366 5.53152L6.93323 8.87512L5.6338 7.60944C5.3432 7.32639 4.89345 7.34933 4.62927 7.66069C4.36509 7.97205 4.38651 8.45391 4.67711 8.73697L6.45488 10.4686C6.72611 10.7328 7.14034 10.7328 7.41157 10.4686L11.3227 6.65905Z"></path><path class="progress-circle__fail" clip-rule="evenodd" d="M9.46967 10.5303C9.76256 10.8232 10.2374 10.8232 10.5303 10.5303C10.8232 10.2374 10.8232 9.76256 10.5303 9.46967L9.06066 8L10.5303 6.53033C10.8232 6.23744 10.8232 5.76256 10.5303 5.46967C10.2374 5.17678 9.76256 5.17678 9.46967 5.46967L8 6.93934L6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L6.93934 8L5.46967 9.46967C5.17678 9.76256 5.17678 10.2374 5.46967 10.5303C5.76256 10.8232 6.23744 10.8232 6.53033 10.5303L8 9.06066L9.46967 10.5303Z" fill-rule="evenodd"></path></svg></span></span><div class="visually-hidden-always">This lesson is currently unavailable</div><div class="visually-hidden-always">Must pass quiz before continuing: "Final Instructor Assessment"</div></div></div></li></ol></li></ol></section><div class="nav-sidebar-results"></div></div></div></div></div></nav><div><div class="lessonNavigation__wrapper lessonNavigation__wrapper--full"><div class="page-wrap" id="page-wrap"><div class="navButtonsFull"><div class="navButtonsFull__navPrev navButtonsFull__navPrev--visible"><div class="lesson-nav lesson-nav--previous lesson-nav--full lesson-nav--light" data-previous-lesson="true"><div class="lesson-nav-link lesson-nav-link--complete"><a class="lesson-nav-link__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" data-direction="previous" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/index.html?enhanced_signature=B_iRyK6ZqnyVuT9r5JhYybM0ZDE3_XOMA75jVnSree0&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20NDY2OTFiYzMtMWVlMS00MDc4LTk1ZGEtNTFhNTcxYjY4Y2FhOmRkYTNjZWU0MGYyZTgzNThlMjRjYjNlNmI5MWUyMzk3&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=e6b07960-869b-4818-8fe6-d9123311edc4&amp;activity_id=http%3A%2F%2FqqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise&amp;Accept-Language=en&amp;course_id=12814&amp;content_token=e6b07960-869b-4818-8fe6-d9123311edc4&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782e37ef94b&amp;crct=b57366adcf5fbe2d81946e935f9555330d1ebc996f4e2c2300b6c7f5c4b52d4a6398381dbfb3f6f9dd4ea4231f91a9a361517b7776043524f066062db6dc200b&amp;course_code=TCAI-DIG-100-IELABS-0100-EN-US&amp;course_id=12814&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=1736e84256cb4518d0eb9952f424d3c47e2655b79cdff70715447fa51cb84c48#/lessons/wtU8HvInB1_lcbeANsGLNDq4s18W2JPO"><svg aria-hidden="true" class="lesson-nav__link-icon" fill="none" focusable="false" viewBox="0 0 15 16" xmlns="http://www.w3.org/2000/svg"><path d="M2 8L7.65685 2.34315L13.3137 8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span class="lesson-nav__link-text brand--ui">Lesson 5 - Wrapping up the class</span></a></div></div></div><div><div data-lesson-id="9BkZ6iygChRdkNMfctsIrSU_XQzo2TuS" class="page page-transition-complete"><div class="page" data-type="blocks" data-page="true"><div class="page__wrapper page__wrapper--white"><main aria-describedby="lesson-main-region-desc" class="lesson-main" tabindex="-1"><span id="lesson-main-region-desc" class="visually-hidden-always">Lesson content</span><div aria-hidden="false" class="lesson-header-wrap lesson-header-wrap--light"><section class="page__header"><div class="page__header-limit"><div class="page__header-container"><div class="lesson-header__row"><div class="lesson-header__main"><div class="lesson-header"><div class="lesson-header__top-wrap"><div class="lesson-header__content"><div class="lesson-header__counter"></div><h1 class="lesson-header__title"><div class=" brand--linkColor"><div class="fr-view">User Experience</div></div></h1><div class="lesson-header__author"></div></div></div></div></div></div></div></div></section><div><div class="progress-wrap"><div class="progress"><div class="progress__container"><div class="progress__indicator brand--background" style="transform: translate3d(100%, 0px, 0px);"></div></div></div></div></div></div><div class="page__content"><section class="blocks-lesson" data-ba="lessonPreview.container"><div class="noOutline" data-ba-index="0" data-ba="lessonEdit.block" data-block-id="cky3d5m5h002x266imvzsg2oh"><div><div class="block-text block-text--onecol-custom-width block-text--onecol-custom-width-text-med block-text--heading-custom-text-padding-sm bg--legacy-background block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div class="block-text__container" data-ba="blocks.blockText"><div class="block-text__row"><div class="block-text__col brand--head"><h2><div class=" brand--linkColor"><div class="fr-view"><p><strong><span style="color:rgb(49, 53, 55);">User Experience</span><br></strong></p></div></div></h2></div></div><div class="block-text__row"><div class="block-text__col brand--body brand--linkColor"><div class="fr-view"><p>In the following videos, you will see AWS Builder Labs from the student perspective.</p></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="1" data-ba="lessonEdit.block" data-block-id="cl9ft1agj00022a6k90vc7552"><div><div class="block-text block-text--heading-custom-width block-text--heading-custom-width-text-med bg--legacy-background block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 0rem; padding-top: 3rem;"><span></span><div class="block-text__container" data-ba="blocks.blockText"><div class="block-text__row"><div class="block-text__col brand--head"><h3><div class=" brand--linkColor"><div class="fr-view"><p><strong>Student Login<br></strong></p></div></div></h3></div></div><div class="block-text__row"></div></div></div></div></div><div class="noOutline" data-ba-index="2" data-ba="lessonEdit.block" data-block-id="ckn4uh7qw002w3g6fyegzhfln"><div><div class="block-video bg--legacy-background block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div><div class="animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><div class="block-video__item block-video__item--small" data-ba="blocks.blockVideo"><figure><div><div aria-hidden="false" aria-label="Video player" class="figure-container" role="region"><div class="video-a11y video-wrapper video-wrapper--visible"><div class="videoContainer" style="width: 0.888835px; height: 0.499969px;"><div id="vjs_video_5106" crossorigin="anonymous" poster="assets/Builder%20Labs_Student%20Login_20221019.png" class="video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-workinghover vjs-v8 vjs-user-active" tabindex="-1" lang="en" translate="no"><video class="vjs-tech" poster="assets/Builder%20Labs_Student%20Login_20221019.png" crossorigin="anonymous" id="vjs_video_5106_html5_api" tabindex="-1" role="application" preload="none" src="assets/Builder%20Labs_Student%20Login_20221019.mp4?v=1"><source src="assets/Builder%20Labs_Student%20Login_20221019.mp4?v=1"></video><div class="vjs-poster" aria-disabled="false"><picture class="vjs-poster" tabindex="-1"><img loading="lazy" crossorigin="anonymous" alt="" src="./Builder Labs_Student Login_20221019.png"></picture></div><div class="vjs-title-bar vjs-hidden"><div class="vjs-title-bar-title" id="vjs-title-bar-title-5129"></div><div class="vjs-title-bar-description" id="vjs-title-bar-description-5130"></div></div><div class="vjs-text-track-display" translate="yes" aria-live="off" aria-atomic="true"><div style="position: absolute; inset: 0px; margin: 1.5%;"></div></div><div class="vjs-loading-spinner" dir="ltr"><span class="vjs-control-text">Video Player is loading.</span></div><button class="vjs-big-play-button" type="button" title="Play Video" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text">Play Video</span></button><div class="vjs-control-bar" dir="ltr"><button class="vjs-play-control vjs-control vjs-button" type="button" title="Play" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Play</span></button><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="0.00" aria-valuemin="0" aria-valuemax="100" aria-label="Progress Bar" aria-hidden="false" aria-valuetext="0:00 of -:-"><div class="vjs-load-progress"><span class="vjs-control-text"><span>Loaded</span>: <span class="vjs-control-text-loaded-percentage">0%</span></span></div><div class="vjs-mouse-display"><div class="vjs-time-tooltip" aria-hidden="true"></div></div><div class="vjs-play-progress vjs-slider-bar" aria-hidden="true" style="width: 0%;"><div class="vjs-time-tooltip" aria-hidden="true" style="right: 0px;">0:00</div></div></div></div><div class="vjs-remaining-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Remaining Time&nbsp;</span><span aria-hidden="true">-</span><span class="vjs-remaining-time-display" role="presentation">-:-</span></div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><div class="vjs-playback-rate-value" id="vjs-playback-rate-value-label-vjs_video_5106_component_5245" aria-hidden="true">1x</div><button class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Playback Rate" aria-haspopup="true" aria-expanded="false" aria-describedby="vjs-playback-rate-value-label-vjs_video_5106_component_5245" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Playback Rate 1x</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">2x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.25x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">1x</span><span class="vjs-control-text" aria-live="polite">, selected</span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.25x</span><span class="vjs-control-text" aria-live="polite"></span></li></ul></div></div><div class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Captions" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Captions</span></button><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">captions off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li></ul></div></div><button class="vjs-picture-in-picture-control vjs-control vjs-button vjs-disabled" type="button" title="Picture-in-Picture" aria-disabled="true" disabled="disabled" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Picture-in-Picture</span></button><button class="vjs-fullscreen-control vjs-control vjs-button" type="button" title="Fullscreen" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Fullscreen</span></button><div class="vjs-volume-panel vjs-control vjs-volume-panel-horizontal"><button class="vjs-mute-control vjs-control vjs-button vjs-vol-3" type="button" title="Mute" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Mute</span></button><div class="vjs-volume-control vjs-control vjs-volume-horizontal"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Volume Level" aria-live="polite" aria-hidden="false" aria-valuetext="100%"><div class="vjs-mouse-display"><div class="vjs-volume-tooltip" aria-hidden="true"></div></div><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="vjs_video_5106_component_5507_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="vjs_video_5106_component_5507_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div></div></div></div></div></div><figcaption class="block-video__wrapper"><div class="block-video__caption block-video__caption--visible brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p>The video duration is 2 minutes, 48 seconds.</p></div></div></figcaption></figure></div></div></div></div></div></div><div class="noOutline" data-ba-index="3" data-ba="lessonEdit.block" data-block-id="cl9ft1nqf000e2a6k78ufp5k3"><div><div class="block-text block-text--heading-custom-width block-text--heading-custom-width-text-med bg--legacy-background block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 0rem; padding-top: 3rem;"><span></span><div class="block-text__container" data-ba="blocks.blockText"><div class="block-text__row"><div class="block-text__col brand--head"><h3><div class=" brand--linkColor"><div class="fr-view"><p><strong>Student Perspective in AWS Builder Labs<br></strong></p></div></div></h3></div></div><div class="block-text__row"></div></div></div></div></div><div class="noOutline" data-ba-index="4" data-ba="lessonEdit.block" data-block-id="cl9ft1il3000a2a6kgjjkos3u"><div><div class="block-video bg--legacy-background block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div><div class="animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><div class="block-video__item block-video__item--small" data-ba="blocks.blockVideo"><figure><div><div aria-hidden="false" aria-label="Video player" class="figure-container" role="region"><div class="video-a11y video-wrapper video-wrapper--visible"><div class="videoContainer" style="width: 0.888835px; height: 0.499969px;"><div id="vjs_video_5529" crossorigin="anonymous" poster="assets/Builder%20Labs_Student%20Perspective_20221019.png" class="video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-workinghover vjs-v8 vjs-user-active" tabindex="-1" lang="en" translate="no"><video class="vjs-tech" poster="assets/Builder%20Labs_Student%20Perspective_20221019.png" crossorigin="anonymous" id="vjs_video_5529_html5_api" tabindex="-1" role="application" preload="none" src="assets/Builder%20Labs_Student%20Perspective_20221019.mp4?v=1"><source src="assets/Builder%20Labs_Student%20Perspective_20221019.mp4?v=1"></video><div class="vjs-poster" aria-disabled="false"><picture class="vjs-poster" tabindex="-1"><img loading="lazy" crossorigin="anonymous" alt="" src="./Builder Labs_Student Perspective_20221019.png"></picture></div><div class="vjs-title-bar vjs-hidden"><div class="vjs-title-bar-title" id="vjs-title-bar-title-5552"></div><div class="vjs-title-bar-description" id="vjs-title-bar-description-5553"></div></div><div class="vjs-text-track-display" translate="yes" aria-live="off" aria-atomic="true"><div style="position: absolute; inset: 0px; margin: 1.5%;"></div></div><div class="vjs-loading-spinner" dir="ltr"><span class="vjs-control-text">Video Player is loading.</span></div><button class="vjs-big-play-button" type="button" title="Play Video" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text">Play Video</span></button><div class="vjs-control-bar" dir="ltr"><button class="vjs-play-control vjs-control vjs-button" type="button" title="Play" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Play</span></button><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="0.00" aria-valuemin="0" aria-valuemax="100" aria-label="Progress Bar" aria-hidden="false" aria-valuetext="0:00 of -:-"><div class="vjs-load-progress"><span class="vjs-control-text"><span>Loaded</span>: <span class="vjs-control-text-loaded-percentage">0%</span></span></div><div class="vjs-mouse-display"><div class="vjs-time-tooltip" aria-hidden="true"></div></div><div class="vjs-play-progress vjs-slider-bar" aria-hidden="true" style="width: 0%;"><div class="vjs-time-tooltip" aria-hidden="true" style="right: 0px;">0:00</div></div></div></div><div class="vjs-remaining-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Remaining Time&nbsp;</span><span aria-hidden="true">-</span><span class="vjs-remaining-time-display" role="presentation">-:-</span></div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><div class="vjs-playback-rate-value" id="vjs-playback-rate-value-label-vjs_video_5529_component_5668" aria-hidden="true">1x</div><button class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Playback Rate" aria-haspopup="true" aria-expanded="false" aria-describedby="vjs-playback-rate-value-label-vjs_video_5529_component_5668" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Playback Rate 1x</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">2x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.25x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">1x</span><span class="vjs-control-text" aria-live="polite">, selected</span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.25x</span><span class="vjs-control-text" aria-live="polite"></span></li></ul></div></div><div class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Captions" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Captions</span></button><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">captions off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li></ul></div></div><button class="vjs-picture-in-picture-control vjs-control vjs-button vjs-disabled" type="button" title="Picture-in-Picture" aria-disabled="true" disabled="disabled" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Picture-in-Picture</span></button><button class="vjs-fullscreen-control vjs-control vjs-button" type="button" title="Fullscreen" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Fullscreen</span></button><div class="vjs-volume-panel vjs-control vjs-volume-panel-horizontal"><button class="vjs-mute-control vjs-control vjs-button vjs-vol-3" type="button" title="Mute" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Mute</span></button><div class="vjs-volume-control vjs-control vjs-volume-horizontal"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Volume Level" aria-live="polite" aria-hidden="false" aria-valuetext="100%"><div class="vjs-mouse-display"><div class="vjs-volume-tooltip" aria-hidden="true"></div></div><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="vjs_video_5529_component_5930_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="vjs_video_5529_component_5930_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div></div></div></div></div></div><figcaption class="block-video__wrapper"><div class="block-video__caption block-video__caption--visible brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p>The video duration is 7 minutes, 34 seconds.</p></div></div></figcaption></figure></div></div></div></div></div></div><div class="noOutline" data-ba-index="5" data-ba="lessonEdit.block" data-block-id="cl2hq1wd70027266jbkv16kif"><div><div data-ba="blocks.blockDivider" class="block-divider bg--legacy-background block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div aria-hidden="true" class="block-divider__wrap"></div></div></div></div><div class="noOutline" data-ba-index="6" data-ba="lessonEdit.block" data-block-id="cl3lu5hle002t266cnzyo32cj"><div><div class="block-text block-text--heading-custom-width block-text--heading-custom-width-text-med bg--legacy-background block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 0rem; padding-top: 3rem;"><span></span><div class="block-text__container" data-ba="blocks.blockText"><div class="block-text__row"><div class="block-text__col brand--head"><h2><div class=" brand--linkColor"><div class="fr-view"><p><strong>What class resources are now available to students in AWS Builder Labs?<br></strong></p></div></div></h2></div></div><div class="block-text__row"></div></div></div></div></div><div class="noOutline" data-ba-index="7" data-ba="lessonEdit.block" data-block-id="cl3lu5j8y002u266c1gjyys5c"><div><div aria-label="Flashcard grid" data-ba="blocks.blockFlashcards" role="group" class="block-flashcards blocks-flashcard--column bg--legacy-background block-wrapper bg bg--card-white bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div><div class="block-flashcards__animation animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><ol class="block-flashcards__wrapper" role="list"><li aria-hidden="false" class="flashcard flashcard--small" role="listitem"><div aria-hidden="false" class="flashcard-side flashcard-side--front  block-card bg--range-light block-card--white" tabindex="-1" role="group"><span class="visually-hidden-always">Front of card</span><div class="flashcard-side__content flashcard-side__content--small flashcard-side__content--front"><div class="flashcard-side__description flashcard-side__description--short brand--head"><div class=" brand--linkColor"><div class="fr-view"><p>AWS Management Console</p></div></div></div><div class="flashcard-side-flip"><button aria-label="Click to flip" class="flashcard-side-flip__btn flashcard-side-flip__btn--prefers-keyboard" tabindex="0" type="button"><svg aria-hidden="true" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 17" class="flashcard-side-flip__icon"><path d="M19.347 8.275l1.88 1.714a.727.727 0 0 0 .98-1.074l-3.225-2.941a.727.727 0 0 0-1.027.047l-2.94 3.224a.727.727 0 0 0 1.075.98l1.802-1.976a6.545 6.545 0 0 1-11.56 4.288.727.727 0 1 0-1.114.935 8 8 0 0 0 14.129-5.197zm-16.039.162l-1.79-1.633a.727.727 0 1 0-.98 1.074l3.223 2.94c.297.272.757.25 1.028-.046l2.94-3.224a.727.727 0 0 0-1.075-.98L4.768 8.636a6.545 6.545 0 0 1 11.555-4.482.727.727 0 1 0 1.114-.936A8 8 0 0 0 3.308 8.437z" fill-rule="nonzero"></path></svg></button><div aria-hidden="true" class="flashcard-side-flip__tooltip">Click to flip</div></div></div></div><div aria-hidden="true" class="flashcard-side flashcard-side--back  block-card bg--range-light block-card--white" tabindex="-1" role="group" style="--color-background: #fafafa;"><span class="visually-hidden-always">Back of card</span><div class="flashcard-side__content flashcard-side__content--small flashcard-side__content--long-overflow flashcard-side__content--long-overflow-bottom"><div class="flashcard-side__description flashcard-side__description--long-overflow brand--head"><div class=" brand--linkColor" aria-hidden="true"><div class="fr-view"><p>Once the lab is set to active by the instructor, students can start the lab and then open the AWS Management Console window in their lab environment to complete the lab tasks.</p></div></div><div class="flashcard-side__description-bottom"></div></div><div class="flashcard-side-flip"><button aria-label="Click to flip" class="flashcard-side-flip__btn flashcard-side-flip__btn--prefers-keyboard" tabindex="-1" type="button"><svg aria-hidden="true" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 17" class="flashcard-side-flip__icon"><path d="M19.347 8.275l1.88 1.714a.727.727 0 0 0 .98-1.074l-3.225-2.941a.727.727 0 0 0-1.027.047l-2.94 3.224a.727.727 0 0 0 1.075.98l1.802-1.976a6.545 6.545 0 0 1-11.56 4.288.727.727 0 1 0-1.114.935 8 8 0 0 0 14.129-5.197zm-16.039.162l-1.79-1.633a.727.727 0 1 0-.98 1.074l3.223 2.94c.297.272.757.25 1.028-.046l2.94-3.224a.727.727 0 0 0-1.075-.98L4.768 8.636a6.545 6.545 0 0 1 11.555-4.482.727.727 0 1 0 1.114-.936A8 8 0 0 0 3.308 8.437z" fill-rule="nonzero"></path></svg></button><div aria-hidden="true" class="flashcard-side-flip__tooltip">Click to flip</div></div></div></div></li><li aria-hidden="false" class="flashcard flashcard--small" role="listitem"><div aria-hidden="false" class="flashcard-side flashcard-side--front  block-card bg--range-light block-card--white" tabindex="-1" role="group"><span class="visually-hidden-always">Front of card</span><div class="flashcard-side__content flashcard-side__content--small flashcard-side__content--front"><div class="flashcard-side__description flashcard-side__description--short brand--head"><div class=" brand--linkColor"><div class="fr-view"><p>Student &amp; Lab Guide</p></div></div></div><div class="flashcard-side-flip"><button aria-label="Click to flip" class="flashcard-side-flip__btn flashcard-side-flip__btn--prefers-keyboard" tabindex="0" type="button"><svg aria-hidden="true" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 17" class="flashcard-side-flip__icon"><path d="M19.347 8.275l1.88 1.714a.727.727 0 0 0 .98-1.074l-3.225-2.941a.727.727 0 0 0-1.027.047l-2.94 3.224a.727.727 0 0 0 1.075.98l1.802-1.976a6.545 6.545 0 0 1-11.56 4.288.727.727 0 1 0-1.114.935 8 8 0 0 0 14.129-5.197zm-16.039.162l-1.79-1.633a.727.727 0 1 0-.98 1.074l3.223 2.94c.297.272.757.25 1.028-.046l2.94-3.224a.727.727 0 0 0-1.075-.98L4.768 8.636a6.545 6.545 0 0 1 11.555-4.482.727.727 0 1 0 1.114-.936A8 8 0 0 0 3.308 8.437z" fill-rule="nonzero"></path></svg></button><div aria-hidden="true" class="flashcard-side-flip__tooltip">Click to flip</div></div></div></div><div aria-hidden="true" class="flashcard-side flashcard-side--back  block-card bg--range-light block-card--white" tabindex="-1" role="group" style="--color-background: #fafafa;"><span class="visually-hidden-always">Back of card</span><div class="flashcard-side__content flashcard-side__content--small flashcard-side__content--long-overflow flashcard-side__content--long-overflow-bottom"><div class="flashcard-side__description flashcard-side__description--long-overflow brand--head"><div class=" brand--linkColor" aria-hidden="true"><div class="fr-view"><p>Students can now access their student and lab guides in eVantage Bookshelf (VitalSource) by selecting the buttons for each on their AWS Builder Labs landing page. They will be redirected to the VitalSource log in page where they can enter their credentials. They can also skip log in and view the guides, but this is not recommended since it doesn't associate the student with their license key which means they will not be able to access guides after the class ends. Always encourage students to log in to their eVantage Bookshelf (VitalSource) account to access the guides.</p><p><br></p><p>(Important note: If students log into VitalSource, guides are automatically added to their browser based bookshelf with a 2 year expiry. Ask students to click on the ‘download’ option during class to retain persistent access to the guide on their local machine.)</p></div></div><div class="flashcard-side__description-bottom"></div></div><div class="flashcard-side-flip" style="right: 15px;"><button aria-label="Click to flip" class="flashcard-side-flip__btn flashcard-side-flip__btn--prefers-keyboard" tabindex="-1" type="button"><svg aria-hidden="true" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 17" class="flashcard-side-flip__icon"><path d="M19.347 8.275l1.88 1.714a.727.727 0 0 0 .98-1.074l-3.225-2.941a.727.727 0 0 0-1.027.047l-2.94 3.224a.727.727 0 0 0 1.075.98l1.802-1.976a6.545 6.545 0 0 1-11.56 4.288.727.727 0 1 0-1.114.935 8 8 0 0 0 14.129-5.197zm-16.039.162l-1.79-1.633a.727.727 0 1 0-.98 1.074l3.223 2.94c.297.272.757.25 1.028-.046l2.94-3.224a.727.727 0 0 0-1.075-.98L4.768 8.636a6.545 6.545 0 0 1 11.555-4.482.727.727 0 1 0 1.114-.936A8 8 0 0 0 3.308 8.437z" fill-rule="nonzero"></path></svg></button><div aria-hidden="true" class="flashcard-side-flip__tooltip">Click to flip</div></div></div></div></li><li aria-hidden="false" class="flashcard flashcard--small" role="listitem"><div aria-hidden="false" class="flashcard-side flashcard-side--front  block-card bg--range-light block-card--white" tabindex="-1" role="group"><span class="visually-hidden-always">Front of card</span><div class="flashcard-side__content flashcard-side__content--small flashcard-side__content--front"><div class="flashcard-side__description flashcard-side__description--short brand--head"><div class=" brand--linkColor"><div class="fr-view"><p>Virtual Classroom Link</p></div></div></div><div class="flashcard-side-flip"><button aria-label="Click to flip" class="flashcard-side-flip__btn flashcard-side-flip__btn--prefers-keyboard" tabindex="0" type="button"><svg aria-hidden="true" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 17" class="flashcard-side-flip__icon"><path d="M19.347 8.275l1.88 1.714a.727.727 0 0 0 .98-1.074l-3.225-2.941a.727.727 0 0 0-1.027.047l-2.94 3.224a.727.727 0 0 0 1.075.98l1.802-1.976a6.545 6.545 0 0 1-11.56 4.288.727.727 0 1 0-1.114.935 8 8 0 0 0 14.129-5.197zm-16.039.162l-1.79-1.633a.727.727 0 1 0-.98 1.074l3.223 2.94c.297.272.757.25 1.028-.046l2.94-3.224a.727.727 0 0 0-1.075-.98L4.768 8.636a6.545 6.545 0 0 1 11.555-4.482.727.727 0 1 0 1.114-.936A8 8 0 0 0 3.308 8.437z" fill-rule="nonzero"></path></svg></button><div aria-hidden="true" class="flashcard-side-flip__tooltip">Click to flip</div></div></div></div><div aria-hidden="true" class="flashcard-side flashcard-side--back  block-card bg--range-light block-card--white" tabindex="-1" role="group" style="--color-background: #fafafa;"><span class="visually-hidden-always">Back of card</span><div class="flashcard-side__content flashcard-side__content--small flashcard-side__content--long-overflow flashcard-side__content--long-overflow-bottom"><div class="flashcard-side__description flashcard-side__description--long-overflow brand--head"><div class=" brand--linkColor" aria-hidden="true"><div class="fr-view"><p>Students will have the link to their virtual classroom (Webex, GoToMeeting, Zoom, etc.) available from the AWS Builder Labs landing page if it was added into the class location field during the class setup by the instructor. Alternately, some instructors are choosing to add the <a href="http://aws.training.com/" rel="noopener noreferrer" target="_blank" aria-hidden="true" tabindex="-1">www.aws.training<span class="visually-hidden-always">(opens in a new tab)</span></a> class URL to the class location field so that students can access their transcript and survey easily at the end of class. If using the latter option, the virtual classroom (Webex, GoToMeeting, Zoom, etc.) URL will also be listed on the AWS Training site for students to access.</p></div></div><div class="flashcard-side__description-bottom"></div></div><div class="flashcard-side-flip" style="right: 15px;"><button aria-label="Click to flip" class="flashcard-side-flip__btn flashcard-side-flip__btn--prefers-keyboard" tabindex="-1" type="button"><svg aria-hidden="true" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 17" class="flashcard-side-flip__icon"><path d="M19.347 8.275l1.88 1.714a.727.727 0 0 0 .98-1.074l-3.225-2.941a.727.727 0 0 0-1.027.047l-2.94 3.224a.727.727 0 0 0 1.075.98l1.802-1.976a6.545 6.545 0 0 1-11.56 4.288.727.727 0 1 0-1.114.935 8 8 0 0 0 14.129-5.197zm-16.039.162l-1.79-1.633a.727.727 0 1 0-.98 1.074l3.223 2.94c.297.272.757.25 1.028-.046l2.94-3.224a.727.727 0 0 0-1.075-.98L4.768 8.636a6.545 6.545 0 0 1 11.555-4.482.727.727 0 1 0 1.114-.936A8 8 0 0 0 3.308 8.437z" fill-rule="nonzero"></path></svg></button><div aria-hidden="true" class="flashcard-side-flip__tooltip">Click to flip</div></div></div></div></li></ol></div></div></div></div></div><div class="noOutline" data-ba-index="8" data-ba="lessonEdit.block" data-block-id="cl3lu3zz402ch1ucu7bgmdg1b"><div><div data-ba="blocks.blockStatement" class="block-statement block-statement--note block-statement--note-custom-width-med bg--legacy-background block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 0rem; padding-top: 3rem;"><span></span><div class="block-statement__wrap"><div class="block-statement__container"><div class="block-statement__row"><div><div class="animated fadeInGrow" style="animation-duration: 0.5s; opacity: 1; animation-delay: 0s;"><div class="block-statement__col"><div class="block-statement__divider-top-container"><div class="block-statement__divider-top"></div></div><div class="block-statement__note-card block-card block-card--transparent bg--range-light" style="--color-background: #e6f3f5;"><div class="block-statement__note-icon block-statement__note-icon--legacy"><span><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="circle-info" class="svg-inline--fa fa-circle-info " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464zM296 336h-16V248C280 234.8 269.3 224 256 224H224C210.8 224 200 234.8 200 248S210.8 272 224 272h8v64h-16C202.8 336 192 346.8 192 360S202.8 384 216 384h80c13.25 0 24-10.75 24-24S309.3 336 296 336zM256 192c17.67 0 32-14.33 32-32c0-17.67-14.33-32-32-32S224 142.3 224 160C224 177.7 238.3 192 256 192z"></path></svg></span></div><div class="block-statement__quote brand--linkColor"><div class="fr-view"><p><strong>Note on students with pre-existing Qwiklabs Accounts:</strong></p><ul><li>All AWS commercial courses are available on AWS Builder Labs as of September 2022. As class templates are switched to AWS Builder Labs, notify students that their QwikLabs accounts are no longer needed. Replace existing Qwiklabs slides in your course decks with the following slides until all courses have been updated in Q1 2023.</li></ul></div></div></div><div class="block-statement__divider-bottom"></div></div></div></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="9" data-ba="lessonEdit.block" data-block-id="cl9fudb6i00032a6g7xot9ysd"><div><div class="bg--legacy-background block-wrapper bg bg--card-white bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div><div class="animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><div class="block-text--onecol"><div class="block-text__container"><div class="block-text__row"><div class="block-text__col"><a aria-labelledby="attachment-name-cl9fudb6i00032a6g7xot9ysd attachment-icon-cl9fudb6i00032a6g7xot9ysd" download="How to access course labs and guides.pptx" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/assets/How%20to%20access%20course%20labs%20and%20guides.pptx" rel="noopener noreferrer" target="_blank" class="block-attachment brandHover block-card bg--range-light block-card--white"><div class="block-attachment__main"><div class="block-attachment__icon" id="attachment-icon-cl9fudb6i00032a6g7xot9ysd"><svg aria-label="PowerPoint presentation" fill="none" focusable="false" height="50" role="img" viewBox="0 0 40 50" width="40" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M2 0C0.89543 0 0 0.89543 0 2V48C0 49.1046 0.895431 50 2 50H38C39.1046 50 40 49.1046 40 48V14L26 0H2Z" fill="#FBDACC" fill-rule="evenodd"></path><path clip-rule="evenodd" d="M26 0V14H40" fill="#F8BFA6" fill-rule="evenodd"></path><path d="M11.2115 28.3213V30.9998H9.35254V22.9863H12.1795C12.7442 22.9863 13.2282 23.0542 13.6315 23.1898C14.0385 23.3218 14.3722 23.5052 14.6325 23.7398C14.8965 23.9745 15.0909 24.2513 15.2155 24.5703C15.3402 24.8893 15.4025 25.234 15.4025 25.6043C15.4025 26.004 15.3384 26.3707 15.21 26.7043C15.0817 27.038 14.8855 27.324 14.6215 27.5623C14.3575 27.8007 14.022 27.9877 13.615 28.1233C13.2117 28.2553 12.7332 28.3213 12.1795 28.3213H11.2115ZM11.2115 26.9188H12.1795C12.6635 26.9188 13.0119 26.8033 13.2245 26.5723C13.4372 26.3413 13.5435 26.0187 13.5435 25.6043C13.5435 25.421 13.516 25.2542 13.461 25.1038C13.406 24.9535 13.3217 24.8252 13.208 24.7188C13.098 24.6088 12.9569 24.5245 12.7845 24.4658C12.6159 24.4072 12.4142 24.3778 12.1795 24.3778H11.2115V26.9188Z" fill="#7C2B0E"></path><path d="M19.2262 28.3213V30.9998H17.3672V22.9863H20.1942C20.7589 22.9863 21.2429 23.0542 21.6462 23.1898C22.0532 23.3218 22.3869 23.5052 22.6472 23.7398C22.9112 23.9745 23.1055 24.2513 23.2302 24.5703C23.3549 24.8893 23.4172 25.234 23.4172 25.6043C23.4172 26.004 23.353 26.3707 23.2247 26.7043C23.0964 27.038 22.9002 27.324 22.6362 27.5623C22.3722 27.8007 22.0367 27.9877 21.6297 28.1233C21.2264 28.2553 20.7479 28.3213 20.1942 28.3213H19.2262ZM19.2262 26.9188H20.1942C20.6782 26.9188 21.0265 26.8033 21.2392 26.5723C21.4519 26.3413 21.5582 26.0187 21.5582 25.6043C21.5582 25.421 21.5307 25.2542 21.4757 25.1038C21.4207 24.9535 21.3364 24.8252 21.2227 24.7188C21.1127 24.6088 20.9715 24.5245 20.7992 24.4658C20.6305 24.4072 20.4289 24.3778 20.1942 24.3778H19.2262V26.9188Z" fill="#7C2B0E"></path><path d="M31.2008 22.9863V24.4603H28.9458V30.9998H27.0868V24.4603H24.8318V22.9863H31.2008Z" fill="#7C2B0E"></path></svg></div><div class="block-attachment__info brand--head"><div class="block-attachment__title brand--linkColor" id="attachment-name-cl9fudb6i00032a6g7xot9ysd"><div class="fr-view">How to access course labs and guides.pptx</div></div><div class="block-attachment__size">4.1 MB</div></div></div><div class="block-attachment__rest"><svg viewBox="0 0 16 19" width="16" height="19" class="i i-download brandHover__target--fill" focusable="false"><title>Download</title><desc>Arrow down with horizontal line beneath it</desc><rect y="17" width="16" height="2" rx="1"></rect><path d="M4.464 8.293A1 1 0 1 0 3.05 9.707l4.24 4.24c.4.4 1.028.392 1.42 0l4.24-4.24a1 1 0 1 0-1.414-1.414L8 4.757 4.464 8.293zm0 0L8 4.757l3.536 3.536L8 11.828 4.464 8.293z"></path><path d="M7 0h2v12H7z"></path></svg></div></a></div></div></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="10" data-ba="lessonEdit.block" data-block-id="ck4n83o9i00373a5xehc0urnq"><div><div class="block-gallery block-gallery--carousel bg--legacy-background block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 0rem; padding-top: 0rem;"><span></span><div><div class="animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><div class="block-gallery__carousel-container" data-ba="blocks.blockGallery"><div class="block-gallery__slider-container" tabindex="0"><div class="slick-slider block-gallery__images slick-initialized"><div class="slick-list" style="height: 53px;"><div class="slick-track" style="width: 745px; opacity: 1; transform: translate3d(0px, 0px, 0px);"><div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 745px;"><div><div class="block-gallery__slide" tabindex="-1" style="width: 100%; display: inline-block;"><div class="block-gallery__container"><div class="block-gallery__row--slide-row"><div class="block-gallery__col"><div class="block-gallery__figure"><div class="block-gallery__image"><div class="img"><img alt="" class="img-img img-img--center" role="img" src="./bannercompliance_white.png"></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="slick-slider block-gallery__captions slick-initialized"><div class="slick-list" style="height: 44px;"><div class="slick-track" style="width: 828px; opacity: 1;"><div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 828px; position: relative; left: 0px; opacity: 1; transition: opacity 500ms ease 0s, visibility 500ms ease 0s;"><div><div class="block-gallery__slide" tabindex="-1" style="width: 100%; display: inline-block;"><div class="block-gallery__container"><div class="block-gallery__row--slide-row"><div class="block-gallery__col"><div class="block-gallery__caption brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p>© 2022, Amazon Web Services, Inc. or its affiliates. All rights reserved.</p></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></section></div></main></div></div></div></div><div class="lesson-nav lesson-nav--next lesson-nav--full lesson-nav--light" data-next-lesson="true"><div class="lesson-nav-link"><a class="lesson-nav-link__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" data-direction="next" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/750865_1708023428_o_1hmn1vpfu1400pfn1lenkfmqfjb_zip/index.html?enhanced_signature=B_iRyK6ZqnyVuT9r5JhYybM0ZDE3_XOMA75jVnSree0&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20NDY2OTFiYzMtMWVlMS00MDc4LTk1ZGEtNTFhNTcxYjY4Y2FhOmRkYTNjZWU0MGYyZTgzNThlMjRjYjNlNmI5MWUyMzk3&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=e6b07960-869b-4818-8fe6-d9123311edc4&amp;activity_id=http%3A%2F%2FqqmudA_Zi1a1VX52FVP7WHUn9yinPxOU_rise&amp;Accept-Language=en&amp;course_id=12814&amp;content_token=e6b07960-869b-4818-8fe6-d9123311edc4&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782e37ef94b&amp;crct=b57366adcf5fbe2d81946e935f9555330d1ebc996f4e2c2300b6c7f5c4b52d4a6398381dbfb3f6f9dd4ea4231f91a9a361517b7776043524f066062db6dc200b&amp;course_code=TCAI-DIG-100-IELABS-0100-EN-US&amp;course_id=12814&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=1736e84256cb4518d0eb9952f424d3c47e2655b79cdff70715447fa51cb84c48#/lessons/EZe8Nn6UWwoqIIoznD9fPLAmFiBzk5Q-"><span class="lesson-nav__link-text brand--ui">Lesson 7 - Updated process for Freelance AAIs</span><svg aria-hidden="true" class="lesson-nav__link-icon" fill="none" focusable="false" viewBox="0 0 15 16" xmlns="http://www.w3.org/2000/svg"><path d="M2 8L7.65685 13.6569L13.3137 8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div></div><div id="portal" style=""><div aria-hidden="true" style="left: 0px; pointer-events: none; position: absolute; top: 0px; z-index: 2147483647;"><div style="pointer-events: all;"><div class="lesson-progress__tooltip lesson-progress__tooltip--sidebar"><div class="lesson-progress__tooltip__inner lesson-progress__tooltip__inner--light">Completed. Click to reset</div></div></div></div><div aria-hidden="true" style="left: 0px; pointer-events: none; position: absolute; top: 0px; z-index: 2147483647;"><div style="pointer-events: all;"><div class="lesson-progress__tooltip lesson-progress__tooltip--sidebar"><div class="lesson-progress__tooltip__inner lesson-progress__tooltip__inner--light">Completed. Click to reset</div></div></div></div><div aria-hidden="true" style="left: 0px; pointer-events: none; position: absolute; top: 0px; z-index: 2147483647;"><div style="pointer-events: all;"><div class="lesson-progress__tooltip lesson-progress__tooltip--sidebar"><div class="lesson-progress__tooltip__inner lesson-progress__tooltip__inner--light">Completed. Click to reset</div></div></div></div><div aria-hidden="true" style="left: 0px; pointer-events: none; position: absolute; top: 0px; z-index: 2147483647;"><div style="pointer-events: all;"><div class="lesson-progress__tooltip lesson-progress__tooltip--sidebar"><div class="lesson-progress__tooltip__inner lesson-progress__tooltip__inner--light">Completed. Click to reset</div></div></div></div><div aria-hidden="true" style="left: 0px; pointer-events: none; position: absolute; top: 0px; z-index: 2147483647;"><div style="pointer-events: all;"><div class="lesson-progress__tooltip lesson-progress__tooltip--sidebar"><div class="lesson-progress__tooltip__inner lesson-progress__tooltip__inner--light">Completed. Click to reset</div></div></div></div><div aria-hidden="true" style="left: 0px; pointer-events: none; position: absolute; top: 0px; z-index: 2147483647;"><div style="pointer-events: all;"><div class="lesson-progress__tooltip lesson-progress__tooltip--sidebar"><div class="lesson-progress__tooltip__inner lesson-progress__tooltip__inner--light">Completed. Click to reset</div></div></div></div><div aria-hidden="true" style="left: 0px; pointer-events: none; position: absolute; top: 0px; z-index: 2147483647;"><div style="pointer-events: all;"><div class="lesson-progress__tooltip lesson-progress__tooltip--sidebar"><div class="lesson-progress__tooltip__inner lesson-progress__tooltip__inner--light">Unstarted. Click to complete</div></div></div></div><div aria-hidden="true" style="left: 0px; pointer-events: none; position: absolute; top: 0px; z-index: 2147483647;"><div style="pointer-events: all;"><div class="lesson-progress__tooltip lesson-progress__tooltip--sidebar"><div class="lesson-progress__tooltip__inner lesson-progress__tooltip__inner--light">Unstarted. Click to complete</div></div></div></div><div aria-hidden="true" style="left: 0px; pointer-events: none; position: absolute; top: 0px; z-index: 2147483647;"><div style="pointer-events: all;"><div class="lesson-progress__tooltip lesson-progress__tooltip--sidebar"><div class="lesson-progress__tooltip__inner lesson-progress__tooltip__inner--light">Unstarted</div></div></div></div><div aria-hidden="true" style="left: 0px; pointer-events: none; position: absolute; top: 0px; z-index: 2147483647;"><div style="pointer-events: all;"><div class="nav-sidebar__outline-section-item-tooltip"><div class="nav-sidebar__outline-section-item-tooltip__inner nav-sidebar__outline-section-item-tooltip__inner--light">Must pass quiz before continuing: "Final Instructor Assessment"</div></div></div></div><div class="lesson-progress-wrapper lesson--open"><div class="progress-wrap"><div class="progress"><div class="progress__container"><div class="progress__indicator brand--background" style="transform: translate3d(100%, 0px, 0px);"></div></div></div></div></div></div></div></div>
+    <script>
+  (function(root) {
+    window.i18n = {"available":["und"],"default":"und"};
+    window.partnerContent = [];
+
+    var quizId = "S8mDpmHNv_zZrKnILsjZSNhzSLdhCVMb";
+    var storylineId = null;
+    var completionPercentage = 100;
+
+    var LMSProxy = lms();
+
+    var assign = LMSProxy.utils.assign;
+    var debounce = LMSProxy.utils.debounce;
+
+    var cache = null;
+
+    LMSProxy.InitCompletion(isComplete);
+
+    function compress(data) {
+      try {
+        return JSON.stringify({
+          v: 2,
+          d: lzwCompress.pack(JSON.stringify(data)),
+          cpv: "1nYmzvDH"
+        });
+      } catch(e) {
+        return '';
+      }
+    }
+
+    function decompress(stringData) {
+      try {
+        const data = JSON.parse(stringData);
+
+        return data.d
+          ? JSON.parse(lzwCompress.unpack(data.d))
+          : data;
+      } catch(e) {
+        return {};
+      }
+    }
+
+    function identity(value) {
+      return value;
+    }
+
+    var sendChunkData = debounce(function() {
+      LMSProxy.SetDataChunk(compress(cache));
+    }, 1000);
+
+    function isPassed() {
+      return !!getLMSData().passed;
+    }
+
+    function isComplete() {
+      var progress;
+
+      if(quizId === null) {
+        progress = getLMSData().totalProgress;
+        return (progress !== undefined && progress >= completionPercentage);
+      }
+
+      return getLMSData().passed !== undefined;
+    }
+
+    function getLMSData() {
+      var data = null;
+
+      if(!cache) {
+        data = LMSProxy.GetDataChunk();
+
+        var result = data
+          ? decompress(data)
+          : {};
+
+        cache = result;
+      }
+
+      return cache;
+    }
+
+    function concatLMSData(data) {
+      assign(cache, data);
+      sendChunkData();
+    }
+
+    function completeOut(passed) {
+      if(passed) {
+        LMSProxy.SetPassed();
+      } else {
+        LMSProxy.SetFailed();
+      }
+    }
+
+    function bookmark(id) {
+      var url = '#/lessons/' + id;
+
+      LMSProxy.SetBookmark(url, '');
+    }
+
+    function reportScore(score) {
+      var highScore = Math.max(getLMSData().score || 0, score);
+
+      if(highScore === score) {
+        concatLMSData({ score: highScore });
+        LMSProxy.SetScore(highScore, 100, 0);
+      }
+    }
+
+    function finish(totalProgress) {
+      if (
+        quizId === null &&
+        storylineId === null &&
+        !isComplete() &&
+        completionPercentage !== undefined
+      ) {
+        if(totalProgress >= completionPercentage) {
+          concatLMSData({ totalProgress: totalProgress });
+          completeOut(true);
+        }
+      }
+    }
+
+    function finishQuiz(passed, score, id) {
+      if (id == quizId) {
+        var prevScore = getLMSData().score
+        reportScore(score);
+
+        if(prevScore == null || prevScore < score) {
+          concatLMSData({ passed: passed });
+          completeOut(passed);
+        }
+      }
+    }
+
+    function finishStoryline(id, passed, isQuiz, score) {
+      if (id == storylineId) {
+        if(isQuiz) {
+          reportScore(score);
+        }
+
+        completeOut(passed);
+      }
+    }
+
+    function getProgress(initialProgress) {
+      var decodeCourseProgress =
+        root.Rise.decodeCourseProgress;
+
+      var progress = assign({}, {
+        progress: { lessons: {} }
+      }, getLMSData()).progress;
+
+      if(initialProgress) {
+        return decodeCourseProgress(initialProgress, progress);
+      }
+
+      return progress;
+    }
+
+    function isExport() {
+      return true;
+    }
+
+    function setLessonProgress(lessonProgress) {
+      var encodeLessonProgress =
+        root.Rise.encodeLessonProgress;
+
+      var currentProgress = getProgress();
+
+      var lessons = assign(
+        {},
+        currentProgress.lessons,
+        encodeLessonProgress(lessonProgress)
+      );
+
+      var progress = assign({}, currentProgress, { lessons: lessons });
+
+      concatLMSData({ progress: progress });
+    }
+
+    function setCourseProgress(courseProgress, lessonPayload) {
+      var encodeCourseProgress =
+        root.Rise.encodeCourseProgress;
+
+      var currentProgress = getProgress();
+      var lessonId = lessonPayload.id;
+
+      var progress = assign(
+        {},
+        currentProgress,
+        encodeCourseProgress(courseProgress)
+      );
+
+      concatLMSData({ progress: progress });
+
+      LMSProxy.FinishLesson(courseProgress.percentComplete, lessonId);
+    }
+
+    function resolvePath(path) {
+      return ('assets/').concat(path);
+    }
+
+    function resolveFontPath(font) {
+      return ('lib/fonts/').concat(font.key.split('/').reverse()[0]);
+    }
+
+    function exit() {
+      LMSProxy.ConcedeControl();
+    }
+
+    function reportAnswer(data) {
+      return LMSProxy.ReportAnswer(data);
+    }
+
+    function fetchAvailableLocales() {
+      return window.i18n
+    }
+
+    root.Rise = {
+      completeLessons: identity,
+      decodeCourseProgress: identity,
+      encodeCourseProgress: identity,
+      encodeLessonProgress: identity,
+    }
+
+    root.Runtime = {
+      bookmark: bookmark,
+      exit: exit,
+      fetch: window.__fetchCourse,
+      fetchAvailableLocales: fetchAvailableLocales,
+      finish: finish,
+      finishQuiz: finishQuiz,
+      finishStoryline: finishStoryline,
+      getProgress: getProgress,
+      isExport: isExport,
+      reportAnswer: reportAnswer,
+      resolvePath: resolvePath,
+      resolveFontPath: resolveFontPath,
+      setLessonProgress: setLessonProgress,
+      setCourseProgress: setCourseProgress
+    };
+  }(window));
+</script>
+
+    
+  
+
+<script src="./9696b894.js.download"></script><script src="./entry.js.download"></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

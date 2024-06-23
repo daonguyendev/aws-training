@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<!-- saved from url=(1158)https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/7aaae3ad957e914d45b63f145fb13f71a8a8cf06/index.html?enhanced_signature=vO4xZyOpCR0RIPNsGR3kgdnfAQv6krZlOBJ3UkAnU9Y&endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&auth=Basic%20YjRmNWM2NmUtOTYwNS00Njg3LWE2Y2UtM2M2OGJhY2NkMzk0OmJlZjViZWQ0NzE4MzQ3MjNlN2JjZThmYjllZmRhMDI2&actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&registration=651b50be-d2ac-4b2b-8d10-61c7c319fa20&activity_id=http%3A%2F%2F-M0rS-%2D4jSVhvOMyo1bx8YEpa3VSgMKP_rise&Accept-Language=en&course_id=18443&content_token=651b50be-d2ac-4b2b-8d10-61c7c319fa20&session_context=lms&host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&path=/v1/xApi/&rs=66782d9a9f9f3&crct=1850f6843c9032de51b23d4f84835d4cfecac114a13d8cefae6d9fe03ee57a6086ca96ae9af0c49f23f4983bc7557e65943d019b4dd8c79cd728c2657b49f13f&course_code=TCAA-DIG-100-BASBLG-0100-EN-US&course_id=18443&username=10f075a5-e390-4aab-8711-e5d2ae4c106b&user_id=5359856&hash=56b106fa43220bd2cdf90cf93584a47eb80bbc625569781a13dc2a1da6efc5e2#/lessons/wmA3kR4XA0HtaWVANo0pMZ_KW_dy4sU1 -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><style type="text/css">.styles_image__32Tdo{display:inline-block}</style><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid:not(.vjs-audio-only-mode) {
+        padding-top: 56.25%
+      }
+    </style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>AWS Skill Builder User Guide - AWS Skill Builder Learner Guide</title>
+
+    <link type="text/css" rel="stylesheet" href="./icomoon.css">
+    <script type="text/javascript" src="./player-0.0.11.min.js.download"></script>
+    <script type="text/javascript" src="./lzwcompress.js.download"></script>
+
+    <!-- Resize Hack -->
+    <script type="text/javascript">
+      window.resizeTo(screen.width, screen.height);
+    </script>
+    
+    <script type="text/javascript" src="./tc-config.js.download"></script>
+    <script type="text/javascript" src="./tincan.js.download"></script>
+    <script type="text/javascript" src="./lms.js.download"></script>
+    
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script id="__ENTRY__" type="application/json">
+      {".js":["rise/cac37931.js"]}
+    </script>
+
+    <script id="__REMOTE_ENTRIES__" type="application/json">
+      {"mondrian":{".js":["mondrian/entry.js"]}}
+    </script>
+
+    <script>
+      (function() {
+        const jsonp = {}
+
+        function loadModule(manifest) {
+          const p = []
+
+          if (manifest['.css'] != null) {
+            for (var idx = 0; idx < manifest['.css'].length; idx++) {
+              p.push(new Promise((resolve, reject) => {
+                var link = document.createElement('link')
+                link.onload = resolve
+                link.onerror = reject
+                link.rel = 'stylesheet'
+                link.href = 'lib/' + manifest['.css'][idx]
+                document.body.appendChild(link)
+              }))
+            }
+          }
+
+          if (manifest['.js'] != null) {
+            for (var idx = 0; idx < manifest['.js'].length; idx++) {
+              p.push(new Promise((resolve, reject) => {
+                var script = document.createElement('script')
+                script.onload = resolve
+                script.onerror = reject
+                script.src = 'lib/' + manifest['.js'][idx]
+                document.body.appendChild(script)
+              }))
+            }
+          }
+
+          return Promise.all(p)
+        }
+
+        function deserialize(str) {
+          const buffer = Uint8Array.from(atob(str), c => c.charCodeAt(0))
+          const json = new TextDecoder().decode(buffer)
+          const result = JSON.parse(json)
+          return result
+        }
+
+        function __loadEntry() {
+          return loadModule(JSON.parse(document.getElementById('__ENTRY__').textContent))
+        }
+
+        function __loadRemoteEntry(name) {
+          const manifest = JSON.parse(document.getElementById('__REMOTE_ENTRIES__').textContent)
+          if (manifest[name] == null) throw new Error(`Missing manifest for remote entry "${name}".`)
+          return loadModule(manifest[name])
+        }
+        
+        async function __loadJsonp(id, path) {
+          try {
+            return await new Promise((resolve, reject) => {
+              try {
+                jsonp[id] = resolve
+                const script = document.createElement('script')
+                script.onerror = reject
+                script.src = `./${path}`
+                document.head.appendChild(script)
+              } catch (err) {
+                reject(err)
+              }
+            })
+          } finally {
+            delete jsonp[id]
+          }
+        }
+
+        function __resolveJsonp(id, data) {
+          const resolve = jsonp[id]
+          if (typeof resolve !== 'function') {
+            throw new Error(`Could not load JSONP "${id}"`)
+          }
+          resolve(data)
+        }
+
+        async function __fetchCourse(name) {
+          name = name == null ? window.i18n.default : name
+          if (!window.i18n.available.includes(name)) {
+            console.warn(`Could not load locale "${name}"`)
+            name = window.i18n.available[0]
+          }
+          const encoded = await __loadJsonp(`course:${name}`, `locales/${name}.js`)
+          const courseData = deserialize(encoded)
+          return courseData
+        }
+
+        window.__loadEntry = __loadEntry
+        window.__loadRemoteEntry = __loadRemoteEntry
+        window.__loadJsonp = __loadJsonp
+        window.__resolveJsonp = __resolveJsonp
+        window.__fetchCourse = __fetchCourse
+      })()
+    </script>
+  <link rel="stylesheet" type="text/css" href="./11732e6a.css"><link rel="stylesheet" type="text/css" href="./4cef5863.css"><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><script src="./und.js.download"></script><style id="focus-ring-style">:focus{outline: none}</style></head>
+  <body data-new-gr-c-s-check-loaded="14.1184.0" data-gr-ext-installed="">
+    <div id="app"><div class="visually-hidden-always" role="log" aria-live="polite" aria-atomic="true" aria-relevant="additions text"></div><div class="visually-hidden-always" role="log" aria-live="polite" aria-atomic="true" aria-relevant="additions text"></div><div class="visually-hidden-always" role="log" aria-live="assertive" aria-atomic="true" aria-relevant="additions text"></div><div class="visually-hidden-always" role="log" aria-live="assertive" aria-atomic="true" aria-relevant="additions text"></div><div id="innerApp" class="theme classic" data-ba="learn.course"><div><style>
+  :root {
+    --color-theme-contrast-complementary-rgb: 0,0,0;
+    --color-theme-contrast-complementary: #000;
+    --color-theme-contrast-rgb: 255,255,255;
+    --color-theme-contrast: #fff;
+    --color-theme-rgb: 0,49,129;
+    --color-theme-tint: #e6eaf2;
+    --color-theme-transparent: #0031811A;
+    --color-theme: #003181;
+    --font-family-body: Amazon Ember Display;
+    --font-family-head: Amazon Ember Display;
+    --font-family-ui: Lato;
+
+    --mon-theme-font-body: var(--font-family-body);
+    --mon-theme-font-heading: var(--font-family-head);
+  }
+
+  .brand--head, .brand--head *   {
+    font-family: var(--font-family-head) !important;
+  }
+
+  .brand--body, .brand--body *   {
+    font-family: var(--font-family-body) !important;
+  }
+
+  .brand--lhead, .brand--lhead * {
+    font-family: var(--font-family-head) !important;
+  }
+
+  .brand--lbody, .brand--lbody * {
+    font-family: var(--font-family-body) !important;
+  }
+
+  .brand--ui, .brand--ui * {
+    font-family: var(--font-family-ui) !important;
+  }
+
+  .brand--beforeHead:before {
+    font-family: var(--font-family-ui) !important;
+  }
+
+  .brand--afterHead:after {
+    font-family: var(--font-family-ui) !important;
+  }
+
+  .brand--background {
+    background-color: var(--color-theme) !important;
+  }
+
+  .brand--background-all * {
+    background-color: var(--color-theme) !important;
+  }
+
+  .brand--border {
+    border-color: var(--color-theme) !important;
+
+    @media (forced-colors: active) {
+      border-color: transparent !important;
+    }
+  }
+
+  .brand--color {
+    color: var(--color-theme) !important;
+  }
+
+  .brand--color-all * {
+    color: var(--color-theme) !important;
+  }
+
+  .brand--shadow {
+    box-shadow: 0 0 0 0.2rem var(--color-theme) !important;
+  }
+
+  .brand--shadow-all * {
+    box-shadow: 0 0 0 0.2rem var(--color-theme) !important;
+  }
+
+  .brand--fill {
+    fill: var(--color-theme) !important;
+  }
+
+  .brand--stroke {
+    stroke: var(--color-theme) !important;
+  }
+
+  .brand--beforeBackground:before {
+    background-color: var(--color-theme) !important;
+  }
+
+  .brand--beforeBorder:before {
+    border-color: var(--color-theme) !important;
+  }
+
+  .brand--beforeColor:before {
+    color: var(--color-theme) !important;
+  }
+
+  .brand--afterBackground:after {
+    background-color: var(--color-theme) !important;
+  }
+
+  .brand--afterBorder:after {
+    border-color: var(--color-theme) !important;
+  }
+
+  .brand--afterColor:after {
+    color: var(--color-theme) !important;
+  }
+
+  /* should be applied to containers where links
+     need to appear in brand color */
+  .brand--linkColor a {
+    color: var(--color-theme) !important;
+    fill: var(--color-theme) !important;
+  }
+
+  /* should be applied to containers where links
+     need to change to brand color on hover */
+  .brand--linkColorHover a:hover {
+    color: var(--color-theme) !important;
+    fill: var(--color-theme) !important;
+  }
+
+  /* should be applied to any single element that
+     needs to change color on hover */
+  .brand--hoverColor:hover {
+    color: var(--color-theme) !important;
+  }
+
+  .button.brand--background:hover { opacity: .65 !important; }
+
+  .brandHover:hover {
+    fill: var(--color-theme) !important;
+  }
+
+
+  @media (min-width: 47.9375em) { /* 768px */
+    .brand--min768--background {
+      background-color: var(--color-theme) !important;
+    }
+
+    .brand--min768--border {
+      border-color: var(--color-theme) !important;
+    }
+
+    .brand--min768--color {
+      color: var(--color-theme) !important;
+    }
+  }
+
+  @media (max-width: 47.9375em) { /* 768px */
+    .brand--max768--background {
+      background-color: var(--color-theme) !important;
+    }
+
+    .brand--max768--border {
+      border-color: var(--color-theme) !important;
+    }
+
+    .brand--max768--color {
+      color: var(--color-theme) !important;
+    }
+  }
+</style>
+</div><div class="transition-group"><div class="page-lesson-wrap"><div class="visually-hidden-always" tabindex="-1"><div>AWS Skill Builder User Guide</div><div>Top of page</div></div><button class="visually-hidden btn-skip-to-lesson brand--ui" type="button"><span class="btn-skip-to-lesson__wrap">SKIP TO LESSON<span aria-hidden="true"><svg class="btn-skip-to-lesson__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" focusable="false" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.0002 3.33334C10.4604 3.33334 10.8335 3.70644 10.8335 4.16668V15.8333C10.8335 16.2936 10.4604 16.6667 10.0002 16.6667C9.53992 16.6667 9.16683 16.2936 9.16683 15.8333V4.16668C9.16683 3.70644 9.53992 3.33334 10.0002 3.33334Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3.57757 9.41075C3.90301 9.08532 4.43065 9.08532 4.75609 9.41075L10.0002 14.6548L15.2442 9.41075C15.5697 9.08532 16.0973 9.08532 16.4228 9.41075C16.7482 9.73619 16.7482 10.2638 16.4228 10.5893L10.5894 16.4226C10.264 16.748 9.73634 16.748 9.41091 16.4226L3.57757 10.5893C3.25214 10.2638 3.25214 9.73619 3.57757 9.41075Z" fill="currentColor"></path></svg></span></span></button><div class="page-lesson"><div class="lesson" data-ba="learn.course.lesson" data-lesson="true"><div class="lesson__content"><div class="page-view page-view--visible"><div class="course-navigation__sidebar course-navigation__sidebar--nav-open course-navigation__sidebar--course-nav-type-sidebar"><div><div class="course-navigation__lessonNav course-navigation__lessonNav--type-full"><nav aria-label="Navigation menu"><div class="nav-control__wrapper"><div class="nav-control__menu" style="margin-top: 0px;"><button class="nav-control__button" aria-controls="nav-content-sidebar" aria-expanded="true" aria-label="Close navigation menu" type="button"><svg aria-hidden="true" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" class="page-menu-toggle__icon"><path d="M0 0H20V2H0V0Z M0 6H20V8H0V6Z M20 12H0V14H20V12Z"></path></svg></button></div></div><div><div class="nav-sidebar nav-sidebar--accent nav-sidebar--light-contrast nav-sidebar--light"><div class="nav-sidebar__content" data-nav-scrollable="true" id="nav-content-sidebar"><div class="nav-sidebar-header-ghost" style="height: 201px;"></div><div class="nav-sidebar-header nav-sidebar-header--transition nav-sidebar__header" style="height: 201px; overflow: hidden;"><div class="nav-sidebar-header__inner"><div class="nav-sidebar-header__graphic"></div><button aria-label="Open search menu" class="nav-sidebar-header__search-btn" type="button"><svg aria-hidden="true" class="nav-sidebar-header__search-icon" fill="none" focusable="false" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M5.325 9.01843C3.225 9.01843 1.5 7.37868 1.5 5.29172C1.5 3.20476 3.225 1.49048 5.325 1.49048C7.425 1.49048 9.15 3.20476 9.15 5.29172C9.15 7.37868 7.425 9.01843 5.325 9.01843ZM9.525 8.42236C10.2 7.52795 10.575 6.48447 10.575 5.29193C10.575 2.38509 8.25 0 5.325 0C2.4 0 0 2.38509 0 5.29193C0 8.19876 2.4 10.5839 5.325 10.5839C6.525 10.5839 7.65 10.2112 8.475 9.54037L10.725 11.7764C10.875 11.9255 11.1 12 11.25 12C11.4 12 11.625 11.9255 11.775 11.7764C12.075 11.4783 12.075 11.0311 11.775 10.7329L9.525 8.42236Z" fill="currentColor" fill-rule="evenodd"></path></svg></button><div class="nav-sidebar-header__search-area nav-sidebar-header__search-area--hidden"><form autocomplete="off" class="nav-sidebar-search nav-sidebar-search--disabled"><svg aria-hidden="true" class="nav-sidebar-search__icon" fill="none" focusable="false" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M5.325 9.01843C3.225 9.01843 1.5 7.37868 1.5 5.29172C1.5 3.20476 3.225 1.49048 5.325 1.49048C7.425 1.49048 9.15 3.20476 9.15 5.29172C9.15 7.37868 7.425 9.01843 5.325 9.01843ZM9.525 8.42236C10.2 7.52795 10.575 6.48447 10.575 5.29193C10.575 2.38509 8.25 0 5.325 0C2.4 0 0 2.38509 0 5.29193C0 8.19876 2.4 10.5839 5.325 10.5839C6.525 10.5839 7.65 10.2112 8.475 9.54037L10.725 11.7764C10.875 11.9255 11.1 12 11.25 12C11.4 12 11.625 11.9255 11.775 11.7764C12.075 11.4783 12.075 11.0311 11.775 10.7329L9.525 8.42236Z" fill="currentColor" fill-rule="evenodd"></path></svg><input aria-label="Search" class="nav-sidebar-search__input" disabled="" name="search" placeholder="search" type="search" value=""><button aria-label="Close search menu" class="nav-sidebar-search__close" type="reset"><svg aria-hidden="true" class="nav-sidebar-search__close-icon" fill="none" focusable="false" height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M9.78572 9.78572C9.5 10.0714 9.07143 10.0714 8.78571 9.78572L5 6.00001L1.21429 9.78572C0.928571 10.0714 0.500001 10.0714 0.214285 9.78572C-0.0714284 9.49999 -0.0714284 9.07144 0.214285 8.78571L4 5L0.214285 1.21429C-0.0714284 0.928564 -0.0714284 0.500007 0.214285 0.214279C0.357143 0.0714143 0.500001 0 0.714286 0C0.928571 0 1.07143 0.0714143 1.21429 0.214279L5 3.99999L8.78571 0.214279C8.92857 0.0714143 9.14286 0 9.28572 0C9.42857 0 9.64286 0.0714143 9.78572 0.214279C10.0714 0.500007 10.0714 0.928564 9.78572 1.21429L6 5L9.78572 8.78571C10.0714 9.07144 10.0714 9.49999 9.78572 9.78572Z" fill="currentColor" fill-rule="evenodd"></path></svg></button></form></div><div class="nav-sidebar-header__content"><a class="nav-sidebar-header__title" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/7aaae3ad957e914d45b63f145fb13f71a8a8cf06/index.html?enhanced_signature=vO4xZyOpCR0RIPNsGR3kgdnfAQv6krZlOBJ3UkAnU9Y&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20YjRmNWM2NmUtOTYwNS00Njg3LWE2Y2UtM2M2OGJhY2NkMzk0OmJlZjViZWQ0NzE4MzQ3MjNlN2JjZThmYjllZmRhMDI2&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=651b50be-d2ac-4b2b-8d10-61c7c319fa20&amp;activity_id=http%3A%2F%2F-M0rS--4jSVhvOMyo1bx8YEpa3VSgMKP_rise&amp;Accept-Language=en&amp;course_id=18443&amp;content_token=651b50be-d2ac-4b2b-8d10-61c7c319fa20&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782d9a9f9f3&amp;crct=1850f6843c9032de51b23d4f84835d4cfecac114a13d8cefae6d9fe03ee57a6086ca96ae9af0c49f23f4983bc7557e65943d019b4dd8c79cd728c2657b49f13f&amp;course_code=TCAA-DIG-100-BASBLG-0100-EN-US&amp;course_id=18443&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=56b106fa43220bd2cdf90cf93584a47eb80bbc625569781a13dc2a1da6efc5e2#/">AWS Skill Builder Learner Guide</a><div class="nav-sidebar-header__progress"><div aria-hidden="true" class="nav-sidebar-header__progress-track" role="img"><div class="nav-sidebar-header__progress-runner" style="width: 100%;"></div></div><div class="nav-sidebar-header__progress-text">100% COMPLETE</div></div></div></div></div><div class="nav-sidebar__body"><section aria-label="Table of contents" class="nav-sidebar__outline" id="nav-sidebar-outline"><ol class="nav-sidebar__outline-list" role="list"><li class="nav-sidebar__outline-list-item" role="listitem"><div class="nav-sidebar__outline-item nav-sidebar__outline-item--complete"><a class="nav-sidebar__outline-item__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/7aaae3ad957e914d45b63f145fb13f71a8a8cf06/index.html?enhanced_signature=vO4xZyOpCR0RIPNsGR3kgdnfAQv6krZlOBJ3UkAnU9Y&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20YjRmNWM2NmUtOTYwNS00Njg3LWE2Y2UtM2M2OGJhY2NkMzk0OmJlZjViZWQ0NzE4MzQ3MjNlN2JjZThmYjllZmRhMDI2&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=651b50be-d2ac-4b2b-8d10-61c7c319fa20&amp;activity_id=http%3A%2F%2F-M0rS--4jSVhvOMyo1bx8YEpa3VSgMKP_rise&amp;Accept-Language=en&amp;course_id=18443&amp;content_token=651b50be-d2ac-4b2b-8d10-61c7c319fa20&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782d9a9f9f3&amp;crct=1850f6843c9032de51b23d4f84835d4cfecac114a13d8cefae6d9fe03ee57a6086ca96ae9af0c49f23f4983bc7557e65943d019b4dd8c79cd728c2657b49f13f&amp;course_code=TCAA-DIG-100-BASBLG-0100-EN-US&amp;course_id=18443&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=56b106fa43220bd2cdf90cf93584a47eb80bbc625569781a13dc2a1da6efc5e2#/lessons/6Le0NYFDo9grXTkXBsJdwH49P7yme8f5"><svg aria-hidden="true" class="nav-sidebar__outline-item-link-icon" fill="none" focusable="false" height="12" viewBox="0 0 18 12" width="18" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M0.666992 1.00002C0.666992 0.539783 1.04009 0.166687 1.50033 0.166687H14.0003C14.4606 0.166687 14.8337 0.539783 14.8337 1.00002C14.8337 1.46026 14.4606 1.83335 14.0003 1.83335H1.50033C1.04009 1.83335 0.666992 1.46026 0.666992 1.00002ZM0.666992 6.00002C0.666992 5.53978 1.04009 5.16669 1.50033 5.16669H16.5003C16.9606 5.16669 17.3337 5.53978 17.3337 6.00002C17.3337 6.46026 16.9606 6.83335 16.5003 6.83335H1.50033C1.04009 6.83335 0.666992 6.46026 0.666992 6.00002ZM0.666992 11C0.666992 10.5398 1.04009 10.1667 1.50033 10.1667H10.667C11.1272 10.1667 11.5003 10.5398 11.5003 11C11.5003 11.4603 11.1272 11.8334 10.667 11.8334H1.50033C1.04009 11.8334 0.666992 11.4603 0.666992 11Z" fill="currentColor" fill-rule="evenodd"></path></svg>How to Use This Course<span class="lesson-progress lesson-progress--sidebar"><span class="lesson-progress__graphic lesson-progress__graphic--sidebar"><svg aria-label="Completed" class="progress-circle progress-circle--sidebar" fill="none" focusable="false" role="img" viewBox="0 0 16 16" xmlns="https://www.w3.org/2000/svg"><circle class="progress-circle__track" cx="8" cy="8" fill="transparent" r="7" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><circle class="progress-circle__runner progress-circle__runner--done progress-circle__runner--passed" cx="8" cy="8" fill="transparent" r="7" stroke-dasharray="43.982297150257104" stroke-dashoffset="0" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><path class="progress-circle__pass progress-circle__pass--done progress-circle__pass--visible" d="M11.3227 6.65905C11.6133 6.37599 11.6347 5.89413 11.3705 5.58277C11.1063 5.27141 10.6566 5.24847 10.366 5.53152L6.93323 8.87512L5.6338 7.60944C5.3432 7.32639 4.89345 7.34933 4.62927 7.66069C4.36509 7.97205 4.38651 8.45391 4.67711 8.73697L6.45488 10.4686C6.72611 10.7328 7.14034 10.7328 7.41157 10.4686L11.3227 6.65905Z"></path><path class="progress-circle__fail progress-circle__fail--done" clip-rule="evenodd" d="M9.46967 10.5303C9.76256 10.8232 10.2374 10.8232 10.5303 10.5303C10.8232 10.2374 10.8232 9.76256 10.5303 9.46967L9.06066 8L10.5303 6.53033C10.8232 6.23744 10.8232 5.76256 10.5303 5.46967C10.2374 5.17678 9.76256 5.17678 9.46967 5.46967L8 6.93934L6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L6.93934 8L5.46967 9.46967C5.17678 9.76256 5.17678 10.2374 5.46967 10.5303C5.76256 10.8232 6.23744 10.8232 6.53033 10.5303L8 9.06066L9.46967 10.5303Z" fill-rule="evenodd"></path></svg></span></span></a></div></li><li class="nav-sidebar__outline-list-item" role="listitem"><div class="nav-sidebar__outline-item nav-sidebar__outline-item--active nav-sidebar__outline-item--complete"><a class="nav-sidebar__outline-item__link nav-sidebar__outline-item__link--active active" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/7aaae3ad957e914d45b63f145fb13f71a8a8cf06/index.html?enhanced_signature=vO4xZyOpCR0RIPNsGR3kgdnfAQv6krZlOBJ3UkAnU9Y&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20YjRmNWM2NmUtOTYwNS00Njg3LWE2Y2UtM2M2OGJhY2NkMzk0OmJlZjViZWQ0NzE4MzQ3MjNlN2JjZThmYjllZmRhMDI2&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=651b50be-d2ac-4b2b-8d10-61c7c319fa20&amp;activity_id=http%3A%2F%2F-M0rS--4jSVhvOMyo1bx8YEpa3VSgMKP_rise&amp;Accept-Language=en&amp;course_id=18443&amp;content_token=651b50be-d2ac-4b2b-8d10-61c7c319fa20&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782d9a9f9f3&amp;crct=1850f6843c9032de51b23d4f84835d4cfecac114a13d8cefae6d9fe03ee57a6086ca96ae9af0c49f23f4983bc7557e65943d019b4dd8c79cd728c2657b49f13f&amp;course_code=TCAA-DIG-100-BASBLG-0100-EN-US&amp;course_id=18443&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=56b106fa43220bd2cdf90cf93584a47eb80bbc625569781a13dc2a1da6efc5e2#/lessons/wmA3kR4XA0HtaWVANo0pMZ_KW_dy4sU1" aria-current="page"><svg aria-hidden="true" class="nav-sidebar__outline-item-link-icon" fill="none" focusable="false" height="12" viewBox="0 0 18 12" width="18" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M0.666992 1.00002C0.666992 0.539783 1.04009 0.166687 1.50033 0.166687H14.0003C14.4606 0.166687 14.8337 0.539783 14.8337 1.00002C14.8337 1.46026 14.4606 1.83335 14.0003 1.83335H1.50033C1.04009 1.83335 0.666992 1.46026 0.666992 1.00002ZM0.666992 6.00002C0.666992 5.53978 1.04009 5.16669 1.50033 5.16669H16.5003C16.9606 5.16669 17.3337 5.53978 17.3337 6.00002C17.3337 6.46026 16.9606 6.83335 16.5003 6.83335H1.50033C1.04009 6.83335 0.666992 6.46026 0.666992 6.00002ZM0.666992 11C0.666992 10.5398 1.04009 10.1667 1.50033 10.1667H10.667C11.1272 10.1667 11.5003 10.5398 11.5003 11C11.5003 11.4603 11.1272 11.8334 10.667 11.8334H1.50033C1.04009 11.8334 0.666992 11.4603 0.666992 11Z" fill="currentColor" fill-rule="evenodd"></path></svg>AWS Skill Builder User Guide<span class="lesson-progress lesson-progress--sidebar"><span class="lesson-progress__graphic lesson-progress__graphic--sidebar"><svg aria-label="Completed" class="progress-circle progress-circle--current progress-circle--sidebar" fill="none" focusable="false" role="img" viewBox="0 0 16 16" xmlns="https://www.w3.org/2000/svg"><circle class="progress-circle__track" cx="8" cy="8" fill="transparent" r="7" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><circle class="progress-circle__runner progress-circle__runner--done progress-circle__runner--passed" cx="8" cy="8" fill="transparent" r="7" stroke-dasharray="43.982297150257104" stroke-dashoffset="0" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><path class="progress-circle__pass progress-circle__pass--done progress-circle__pass--visible" d="M11.3227 6.65905C11.6133 6.37599 11.6347 5.89413 11.3705 5.58277C11.1063 5.27141 10.6566 5.24847 10.366 5.53152L6.93323 8.87512L5.6338 7.60944C5.3432 7.32639 4.89345 7.34933 4.62927 7.66069C4.36509 7.97205 4.38651 8.45391 4.67711 8.73697L6.45488 10.4686C6.72611 10.7328 7.14034 10.7328 7.41157 10.4686L11.3227 6.65905Z"></path><path class="progress-circle__fail progress-circle__fail--done" clip-rule="evenodd" d="M9.46967 10.5303C9.76256 10.8232 10.2374 10.8232 10.5303 10.5303C10.8232 10.2374 10.8232 9.76256 10.5303 9.46967L9.06066 8L10.5303 6.53033C10.8232 6.23744 10.8232 5.76256 10.5303 5.46967C10.2374 5.17678 9.76256 5.17678 9.46967 5.46967L8 6.93934L6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L6.93934 8L5.46967 9.46967C5.17678 9.76256 5.17678 10.2374 5.46967 10.5303C5.76256 10.8232 6.23744 10.8232 6.53033 10.5303L8 9.06066L9.46967 10.5303Z" fill-rule="evenodd"></path></svg></span></span></a></div></li><li class="nav-sidebar__outline-list-item nav-sidebar__outline-list-item--last" role="listitem"><div class="nav-sidebar__outline-item nav-sidebar__outline-item--complete"><a class="nav-sidebar__outline-item__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/7aaae3ad957e914d45b63f145fb13f71a8a8cf06/index.html?enhanced_signature=vO4xZyOpCR0RIPNsGR3kgdnfAQv6krZlOBJ3UkAnU9Y&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20YjRmNWM2NmUtOTYwNS00Njg3LWE2Y2UtM2M2OGJhY2NkMzk0OmJlZjViZWQ0NzE4MzQ3MjNlN2JjZThmYjllZmRhMDI2&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=651b50be-d2ac-4b2b-8d10-61c7c319fa20&amp;activity_id=http%3A%2F%2F-M0rS--4jSVhvOMyo1bx8YEpa3VSgMKP_rise&amp;Accept-Language=en&amp;course_id=18443&amp;content_token=651b50be-d2ac-4b2b-8d10-61c7c319fa20&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782d9a9f9f3&amp;crct=1850f6843c9032de51b23d4f84835d4cfecac114a13d8cefae6d9fe03ee57a6086ca96ae9af0c49f23f4983bc7557e65943d019b4dd8c79cd728c2657b49f13f&amp;course_code=TCAA-DIG-100-BASBLG-0100-EN-US&amp;course_id=18443&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=56b106fa43220bd2cdf90cf93584a47eb80bbc625569781a13dc2a1da6efc5e2#/lessons/4aw5xtAX4vP4U2WNlDphbaz4cNi5u_hN"><svg aria-hidden="true" class="nav-sidebar__outline-item-link-icon" fill="none" focusable="false" height="12" viewBox="0 0 18 12" width="18" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M0.666992 1.00002C0.666992 0.539783 1.04009 0.166687 1.50033 0.166687H14.0003C14.4606 0.166687 14.8337 0.539783 14.8337 1.00002C14.8337 1.46026 14.4606 1.83335 14.0003 1.83335H1.50033C1.04009 1.83335 0.666992 1.46026 0.666992 1.00002ZM0.666992 6.00002C0.666992 5.53978 1.04009 5.16669 1.50033 5.16669H16.5003C16.9606 5.16669 17.3337 5.53978 17.3337 6.00002C17.3337 6.46026 16.9606 6.83335 16.5003 6.83335H1.50033C1.04009 6.83335 0.666992 6.46026 0.666992 6.00002ZM0.666992 11C0.666992 10.5398 1.04009 10.1667 1.50033 10.1667H10.667C11.1272 10.1667 11.5003 10.5398 11.5003 11C11.5003 11.4603 11.1272 11.8334 10.667 11.8334H1.50033C1.04009 11.8334 0.666992 11.4603 0.666992 11Z" fill="currentColor" fill-rule="evenodd"></path></svg>Contact Us<span class="lesson-progress lesson-progress--sidebar"><span class="lesson-progress__graphic lesson-progress__graphic--sidebar"><svg aria-label="Completed" class="progress-circle progress-circle--sidebar" fill="none" focusable="false" role="img" viewBox="0 0 16 16" xmlns="https://www.w3.org/2000/svg"><circle class="progress-circle__track" cx="8" cy="8" fill="transparent" r="7" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><circle class="progress-circle__runner progress-circle__runner--done progress-circle__runner--passed" cx="8" cy="8" fill="transparent" r="7" stroke-dasharray="43.982297150257104" stroke-dashoffset="0" stroke-width="2" transform="rotate(-89.9 8 8)"></circle><path class="progress-circle__pass progress-circle__pass--done progress-circle__pass--visible" d="M11.3227 6.65905C11.6133 6.37599 11.6347 5.89413 11.3705 5.58277C11.1063 5.27141 10.6566 5.24847 10.366 5.53152L6.93323 8.87512L5.6338 7.60944C5.3432 7.32639 4.89345 7.34933 4.62927 7.66069C4.36509 7.97205 4.38651 8.45391 4.67711 8.73697L6.45488 10.4686C6.72611 10.7328 7.14034 10.7328 7.41157 10.4686L11.3227 6.65905Z"></path><path class="progress-circle__fail progress-circle__fail--done" clip-rule="evenodd" d="M9.46967 10.5303C9.76256 10.8232 10.2374 10.8232 10.5303 10.5303C10.8232 10.2374 10.8232 9.76256 10.5303 9.46967L9.06066 8L10.5303 6.53033C10.8232 6.23744 10.8232 5.76256 10.5303 5.46967C10.2374 5.17678 9.76256 5.17678 9.46967 5.46967L8 6.93934L6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L6.93934 8L5.46967 9.46967C5.17678 9.76256 5.17678 10.2374 5.46967 10.5303C5.76256 10.8232 6.23744 10.8232 6.53033 10.5303L8 9.06066L9.46967 10.5303Z" fill-rule="evenodd"></path></svg></span></span></a></div></li></ol></section><div class="nav-sidebar-results"></div></div></div></div></div></nav><div><div class="lessonNavigation__wrapper lessonNavigation__wrapper--full"><div class="page-wrap" id="page-wrap"><div class="navButtonsFull"><div class="navButtonsFull__navPrev"><div class="lesson-nav lesson-nav--previous lesson-nav--full lesson-nav--light" data-previous-lesson="true"><div class="lesson-nav-link lesson-nav-link--complete"><a class="lesson-nav-link__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" data-direction="previous" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/7aaae3ad957e914d45b63f145fb13f71a8a8cf06/index.html?enhanced_signature=vO4xZyOpCR0RIPNsGR3kgdnfAQv6krZlOBJ3UkAnU9Y&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20YjRmNWM2NmUtOTYwNS00Njg3LWE2Y2UtM2M2OGJhY2NkMzk0OmJlZjViZWQ0NzE4MzQ3MjNlN2JjZThmYjllZmRhMDI2&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=651b50be-d2ac-4b2b-8d10-61c7c319fa20&amp;activity_id=http%3A%2F%2F-M0rS--4jSVhvOMyo1bx8YEpa3VSgMKP_rise&amp;Accept-Language=en&amp;course_id=18443&amp;content_token=651b50be-d2ac-4b2b-8d10-61c7c319fa20&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782d9a9f9f3&amp;crct=1850f6843c9032de51b23d4f84835d4cfecac114a13d8cefae6d9fe03ee57a6086ca96ae9af0c49f23f4983bc7557e65943d019b4dd8c79cd728c2657b49f13f&amp;course_code=TCAA-DIG-100-BASBLG-0100-EN-US&amp;course_id=18443&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=56b106fa43220bd2cdf90cf93584a47eb80bbc625569781a13dc2a1da6efc5e2#/lessons/6Le0NYFDo9grXTkXBsJdwH49P7yme8f5"><svg aria-hidden="true" class="lesson-nav__link-icon" fill="none" focusable="false" viewBox="0 0 15 16" xmlns="http://www.w3.org/2000/svg"><path d="M2 8L7.65685 2.34315L13.3137 8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span class="lesson-nav__link-text brand--ui">Lesson 1 - How to Use This Course</span></a></div></div></div><div><div data-lesson-id="wmA3kR4XA0HtaWVANo0pMZ_KW_dy4sU1" class="page page-transition-complete"><div class="page" data-type="blocks" data-page="true"><div class="page__wrapper page__wrapper--white"><main aria-describedby="lesson-main-region-desc" class="lesson-main" tabindex="-1"><span id="lesson-main-region-desc" class="visually-hidden-always">Lesson content</span><div aria-hidden="false" class="lesson-header-wrap lesson-header-wrap--light"><section class="page__header"><div class="page__header-limit"><div class="page__header-container"><div class="lesson-header__row"><div class="lesson-header__main"><div class="lesson-header"><div class="lesson-header__top-wrap"><div class="lesson-header__content"><div class="lesson-header__counter"><div class="lesson-header__count">Lesson 2 of 3</div></div><h1 class="lesson-header__title"><div class=" brand--linkColor"><div class="fr-view">AWS Skill Builder User Guide</div></div></h1><div class="lesson-header__author"></div></div></div></div></div></div></div></div></section><div><div class="progress-wrap"><div class="progress"><div class="progress__container"><div class="progress__indicator brand--background" style="transform: translate3d(100%, 0px, 0px);"></div></div></div></div></div></div><div class="page__content"><section class="blocks-lesson" data-ba="lessonPreview.container"><div class="noOutline" data-ba-index="0" data-ba="lessonEdit.block" data-block-id="clpr2dq6s003y3576jd1pyah4"><div><div data-ba="blocks.blockImage" class="block-image block-image--text-aside block-image--reverse block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div class="block-image__container"><div class="block-image__row"><div class="block-image__col"><div class="block-image__text brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p><strong><span style="font-size:20px;">Learning objectives</span></strong></p><p><span style="font-size:20px;">In this course, you will do the following:&nbsp;</span></p><ul><li><span style="font-size:20px;">Learn how to access and navigate the learner dashboard.</span></li><li><span style="font-size:20px;">Understand how to navigate the course catalog.</span></li><li><span style="font-size:20px;">Demonstrate where to find and enroll in learning plans.</span></li><li><span style="font-size:20px;">Know which content is offered as a part of a subscription.</span></li><li><span style="font-size:20px;">Learn helpful tips for using Skill Builder.</span></li></ul></div></div></div><div class="block-image__col"><div><div class="animated fadeInRight" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><div class="block-image__figure"><div class="block-image__image"><div class="img"><img alt="" class="img-img img-img--center" role="img" src="./t3IQSTFAajYmHXr4_9WCXr0Tf1X-mRJb5.svg"></div></div></div></div></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="1" data-ba="lessonEdit.block" data-block-id="clpr3b81600i83576bnqpglyf"><div><div data-ba="blocks.blockDivider" class="block-divider block-divider--numbered block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div aria-hidden="true" class="block-divider__wrap" data-number="1"></div><span class="visually-hidden">Numbered divider 1</span></div></div></div><div class="noOutline" data-ba-index="2" data-ba="lessonEdit.block" data-block-id="clpk0k9ik00033575dtfcsj41"><div><div class="block-text block-text--onecol block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div class="block-text__container" data-ba="blocks.blockText"><div class="block-text__row"><div class="block-text__col brand--head"><h3><div class=" brand--linkColor"><div class="fr-view"><p><strong>Learner dashboard</strong></p></div></div></h3></div></div><div class="block-text__row"><div class="block-text__col brand--body brand--linkColor"><div class="fr-view"><p><span style="font-size:20px;">First, you will explore the learner dashboard. To watch a demonstration on accessing and navigating the learner dashboard, choose the play button. A transcript follows the video. </span></p></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="3" data-ba="lessonEdit.block" data-block-id="clpk0kb8b000n3575ph76kg17"><div><div class="block-video block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div><div class="animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><div class="block-video__item block-video__item--medium" data-ba="blocks.blockVideo"><figure><div><div aria-hidden="false" aria-label="Video player" class="figure-container" role="region"><div class="video-a11y video-wrapper video-wrapper--visible"><div class="videoContainer" style="width: 1.51514px; height: 0.852264px;"><div id="vjs_video_3" crossorigin="anonymous" poster="assets/J0WBImG-_yNQ8mpn_transcoded-rx2APkdaJmzexrpe-SkillBuilder-Demo1-Dashboard-v2.0000000.jpg" class="video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-workinghover vjs-v8 vjs-user-active" tabindex="-1" lang="en" translate="no"><video class="vjs-tech" poster="assets/J0WBImG-_yNQ8mpn_transcoded-rx2APkdaJmzexrpe-SkillBuilder-Demo1-Dashboard-v2.0000000.jpg" crossorigin="anonymous" id="vjs_video_3_html5_api" tabindex="-1" role="application" preload="none" src="assets/e67ByTPkxJ2VIs0I_transcoded-rx2APkdaJmzexrpe-SkillBuilder-Demo1-Dashboard-v2.mp4?v=1"><source src="assets/e67ByTPkxJ2VIs0I_transcoded-rx2APkdaJmzexrpe-SkillBuilder-Demo1-Dashboard-v2.mp4?v=1"></video><div class="vjs-poster" aria-disabled="false"><picture class="vjs-poster" tabindex="-1"><img loading="lazy" crossorigin="anonymous" alt="" src="./J0WBImG-_yNQ8mpn_transcoded-rx2APkdaJmzexrpe-SkillBuilder-Demo1-Dashboard-v2.0000000.jpg"></picture></div><div class="vjs-title-bar vjs-hidden"><div class="vjs-title-bar-title" id="vjs-title-bar-title-27"></div><div class="vjs-title-bar-description" id="vjs-title-bar-description-28"></div></div><div class="vjs-text-track-display" translate="yes" aria-live="off" aria-atomic="true"><div style="position: absolute; inset: 0px; margin: 1.5%;"></div></div><div class="vjs-loading-spinner" dir="ltr"><span class="vjs-control-text">Video Player is loading.</span></div><button class="vjs-big-play-button" type="button" title="Play Video" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text">Play Video</span></button><div class="vjs-control-bar" dir="ltr"><button class="vjs-play-control vjs-control vjs-button" type="button" title="Play" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Play</span></button><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="0.00" aria-valuemin="0" aria-valuemax="100" aria-label="Progress Bar" aria-hidden="false" aria-valuetext="0:00 of -:-"><div class="vjs-load-progress"><span class="vjs-control-text"><span>Loaded</span>: <span class="vjs-control-text-loaded-percentage">0%</span></span></div><div class="vjs-mouse-display"><div class="vjs-time-tooltip" aria-hidden="true"></div></div><div class="vjs-play-progress vjs-slider-bar" aria-hidden="true" style="width: 0%;"><div class="vjs-time-tooltip" aria-hidden="true" style="right: 0px;">0:00</div></div></div></div><div class="vjs-remaining-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Remaining Time&nbsp;</span><span aria-hidden="true">-</span><span class="vjs-remaining-time-display" role="presentation">-:-</span></div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><div class="vjs-playback-rate-value" id="vjs-playback-rate-value-label-vjs_video_3_component_150" aria-hidden="true">1x</div><button class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Playback Rate" aria-haspopup="true" aria-expanded="false" aria-describedby="vjs-playback-rate-value-label-vjs_video_3_component_150" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Playback Rate 1x</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">2x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.25x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">1x</span><span class="vjs-control-text" aria-live="polite">, selected</span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.25x</span><span class="vjs-control-text" aria-live="polite"></span></li></ul></div></div><div class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><button class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Captions" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Captions</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">captions off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li><li class="vjs-menu-item vjs-captions-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">English</span><span class="vjs-control-text" aria-live="polite"></span></li></ul></div></div><button class="vjs-picture-in-picture-control vjs-control vjs-button vjs-disabled" type="button" title="Picture-in-Picture" aria-disabled="true" disabled="disabled" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Picture-in-Picture</span></button><button class="vjs-fullscreen-control vjs-control vjs-button" type="button" title="Fullscreen" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Fullscreen</span></button><div class="vjs-volume-panel vjs-control vjs-volume-panel-horizontal"><button class="vjs-mute-control vjs-control vjs-button vjs-vol-3" type="button" title="Mute" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Mute</span></button><div class="vjs-volume-control vjs-control vjs-volume-horizontal"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Volume Level" aria-live="polite" aria-hidden="false" aria-valuetext="100%"><div class="vjs-mouse-display"><div class="vjs-volume-tooltip" aria-hidden="true"></div></div><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="vjs_video_3_component_419_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="vjs_video_3_component_419_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div></div></div></div></div></div><figcaption class="block-video__wrapper"></figcaption></figure></div></div></div></div></div></div><div class="noOutline" data-ba-index="4" data-ba="lessonEdit.block" data-block-id="clq1a5nnz007t357628ka3gft"><div><div class="block-text block-text--onecol block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div class="block-text__container" data-ba="blocks.blockText"><div class="block-text__row"></div><div class="block-text__row"><div class="block-text__col brand--body brand--linkColor"><div class="fr-view"><p>To access a transcript of the video, choose the following transcript.&nbsp;</p></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="5" data-ba="lessonEdit.block" data-block-id="clpr2v6vi00a53576bd1ayros"><div><div data-ba="blocks.blockAccordion" class="blocks-accordion block-wrapper bg bg--card-white bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div><div class="animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><div class="blocks-accordion__container"><div class="blocks-accordion__row"><div class="blocks-accordion__col"><div class="blocks-accordion__wrapper"><section class="blocks-accordion__item block-card bg--range-light block-card--white"><div role="heading" aria-level="2"><button aria-controls="panel-clxrmrj4w0000357eetkhuawm" aria-expanded="true" class="blocks-accordion__header brand--border" type="button"><div class="blocks-accordion__title brand--head brand--linkColor brand--linkColor" id="title-clxrmrj4w0000357eetkhuawm"><div class="fr-view">Transcript</div></div><span aria-hidden="true" class="blocks-accordion__toggler">–</span></button></div><section aria-labelledby="title-clxrmrj4w0000357eetkhuawm" class="blocks-accordion__content blocks-accordion__content--will-enter brand--border blocks-accordion__content--visible" id="panel-clxrmrj4w0000357eetkhuawm"><div class="blocks-accordion__description brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p><span style="font-size:17px;">Welcome to this demonstration on using the learner dashboard in Skill Builder. In this demonstration, you will explore the different features of the learner dashboard.&nbsp;</span></p><p><span style="font-size:17px;"><br></span></p><p><span style="font-size:17px;">The Learner dashboard is your home base.</span></p><p><span style="font-size:17px;"><br></span></p><p><span style="font-size:17px;">On this page, you can view your courses under My courses.&nbsp;</span><span style="font-size:17px;"></span><span style="font-size:17px;">If you don’t see what you are looking for, you can choose View All to see a listing of all available courses.&nbsp;</span></p><p><span style="font-size:17px;"><br></span></p><p><span style="font-size:17px;">From the Learner dashboard, you can navigate to the Classroom Training portal and to your AWS Certification account. You can also navigate to our Ramp-Up Guides, which are sample curricula organized to help you prepare for a cloud role or to dive deep into a particular domain.</span></p><p><span style="font-size:17px;"><br></span></p><p><span style="font-size:17px;">Thank you for your participation.</span></p></div></div><div class="blocks-accordion__media blocks-accordion__image"><div class="media-group" data-ba="quizPreview.quizPreviewQuestions.mediaArea"></div></div></section></section></div></div></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="6" data-ba="lessonEdit.block" data-block-id="clpr3be9600ik3576s8xnystj"><div><div data-ba="blocks.blockDivider" class="block-divider block-divider--numbered block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div aria-hidden="true" class="block-divider__wrap" data-number="2"></div><span class="visually-hidden">Numbered divider 2</span></div></div></div><div class="noOutline" data-ba-index="7" data-ba="lessonEdit.block" data-block-id="clpk0kfkw00113575kk350nzw"><div><div class="block-text block-text--onecol block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div class="block-text__container" data-ba="blocks.blockText"><div class="block-text__row"><div class="block-text__col brand--head"><h3><div class=" brand--linkColor"><div class="fr-view"><p><strong>Course catalog</strong></p></div></div></h3></div></div><div class="block-text__row"><div class="block-text__col brand--body brand--linkColor"><div class="fr-view"><p><span style="font-size:20px;">Now, you can start exploring individual courses available in AWS Skill Builder. To watch a demonstration on how to navigate the course catalog, choose the play button. A transcript follows the video.</span></p></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="8" data-ba="lessonEdit.block" data-block-id="clpr2vyy500bj3576wni8qlbw"><div><div class="block-video block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div><div class="animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><div class="block-video__item block-video__item--medium" data-ba="blocks.blockVideo"><figure><div><div aria-hidden="false" aria-label="Video player" class="figure-container" role="region"><div class="video-a11y video-wrapper video-wrapper--visible"><div class="videoContainer" style="width: 1.51514px; height: 0.852264px;"><div id="vjs_video_442" crossorigin="anonymous" poster="assets/h3DhlbVPB7rZOow2_transcoded-aYyWnQQR2euBLBAn-SkillBuilder-Demo2-Catalog.0000000.jpg" class="video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-workinghover vjs-v8 vjs-user-active" tabindex="-1" lang="en" translate="no"><video class="vjs-tech" poster="assets/h3DhlbVPB7rZOow2_transcoded-aYyWnQQR2euBLBAn-SkillBuilder-Demo2-Catalog.0000000.jpg" crossorigin="anonymous" id="vjs_video_442_html5_api" tabindex="-1" role="application" preload="none" src="assets/SKhFkuNEzLgz5qin_transcoded-aYyWnQQR2euBLBAn-SkillBuilder-Demo2-Catalog.mp4?v=1"><source src="assets/SKhFkuNEzLgz5qin_transcoded-aYyWnQQR2euBLBAn-SkillBuilder-Demo2-Catalog.mp4?v=1"></video><div class="vjs-poster" aria-disabled="false"><picture class="vjs-poster" tabindex="-1"><img loading="lazy" crossorigin="anonymous" alt="" src="./h3DhlbVPB7rZOow2_transcoded-aYyWnQQR2euBLBAn-SkillBuilder-Demo2-Catalog.0000000.jpg"></picture></div><div class="vjs-title-bar vjs-hidden"><div class="vjs-title-bar-title" id="vjs-title-bar-title-465"></div><div class="vjs-title-bar-description" id="vjs-title-bar-description-466"></div></div><div class="vjs-text-track-display" translate="yes" aria-live="off" aria-atomic="true"><div style="position: absolute; inset: 0px; margin: 1.5%;"></div></div><div class="vjs-loading-spinner" dir="ltr"><span class="vjs-control-text">Video Player is loading.</span></div><button class="vjs-big-play-button" type="button" title="Play Video" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text">Play Video</span></button><div class="vjs-control-bar" dir="ltr"><button class="vjs-play-control vjs-control vjs-button" type="button" title="Play" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Play</span></button><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="0.00" aria-valuemin="0" aria-valuemax="100" aria-label="Progress Bar" aria-hidden="false" aria-valuetext="0:00 of -:-"><div class="vjs-load-progress"><span class="vjs-control-text"><span>Loaded</span>: <span class="vjs-control-text-loaded-percentage">0%</span></span></div><div class="vjs-mouse-display"><div class="vjs-time-tooltip" aria-hidden="true"></div></div><div class="vjs-play-progress vjs-slider-bar" aria-hidden="true" style="width: 0%;"><div class="vjs-time-tooltip" aria-hidden="true" style="right: 0px;">0:00</div></div></div></div><div class="vjs-remaining-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Remaining Time&nbsp;</span><span aria-hidden="true">-</span><span class="vjs-remaining-time-display" role="presentation">-:-</span></div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><div class="vjs-playback-rate-value" id="vjs-playback-rate-value-label-vjs_video_442_component_581" aria-hidden="true">1x</div><button class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Playback Rate" aria-haspopup="true" aria-expanded="false" aria-describedby="vjs-playback-rate-value-label-vjs_video_442_component_581" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Playback Rate 1x</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">2x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.25x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">1x</span><span class="vjs-control-text" aria-live="polite">, selected</span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.25x</span><span class="vjs-control-text" aria-live="polite"></span></li></ul></div></div><div class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><button class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Captions" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Captions</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">captions off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li><li class="vjs-menu-item vjs-captions-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">English</span><span class="vjs-control-text" aria-live="polite"></span></li></ul></div></div><button class="vjs-picture-in-picture-control vjs-control vjs-button vjs-disabled" type="button" title="Picture-in-Picture" aria-disabled="true" disabled="disabled" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Picture-in-Picture</span></button><button class="vjs-fullscreen-control vjs-control vjs-button" type="button" title="Fullscreen" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Fullscreen</span></button><div class="vjs-volume-panel vjs-control vjs-volume-panel-horizontal"><button class="vjs-mute-control vjs-control vjs-button vjs-vol-3" type="button" title="Mute" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Mute</span></button><div class="vjs-volume-control vjs-control vjs-volume-horizontal"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Volume Level" aria-live="polite" aria-hidden="false" aria-valuetext="100%"><div class="vjs-mouse-display"><div class="vjs-volume-tooltip" aria-hidden="true"></div></div><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="vjs_video_442_component_843_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="vjs_video_442_component_843_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div></div></div></div></div></div><figcaption class="block-video__wrapper"></figcaption></figure></div></div></div></div></div></div><div class="noOutline" data-ba-index="9" data-ba="lessonEdit.block" data-block-id="clq1acexg008d35769j97bz7i"><div><div class="block-text block-text--onecol block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div class="block-text__container" data-ba="blocks.blockText"><div class="block-text__row"></div><div class="block-text__row"><div class="block-text__col brand--body brand--linkColor"><div class="fr-view"><p>To access a transcript of the video, choose the following transcript.</p></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="10" data-ba="lessonEdit.block" data-block-id="clpr2w5je00cp357602rl0jc8"><div><div data-ba="blocks.blockAccordion" class="blocks-accordion block-wrapper bg bg--card-white bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div><div class="animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><div class="blocks-accordion__container"><div class="blocks-accordion__row"><div class="blocks-accordion__col"><div class="blocks-accordion__wrapper"><section class="blocks-accordion__item block-card bg--range-light block-card--white"><div role="heading" aria-level="2"><button aria-controls="panel-clxrmrj520001357eh85c1rvd" aria-expanded="true" class="blocks-accordion__header brand--border" type="button"><div class="blocks-accordion__title brand--head brand--linkColor brand--linkColor" id="title-clxrmrj520001357eh85c1rvd"><div class="fr-view">Transcript</div></div><span aria-hidden="true" class="blocks-accordion__toggler">–</span></button></div><section aria-labelledby="title-clxrmrj520001357eh85c1rvd" class="blocks-accordion__content blocks-accordion__content--will-enter brand--border blocks-accordion__content--visible" id="panel-clxrmrj520001357eh85c1rvd"><div class="blocks-accordion__description brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p><span style="font-size:17px;">Welcome to this demonstration on using the course catalog in Skill Builder. In this demonstration, you will explore the course catalog to find individual courses available in AWS Skill Builder.</span></p><p><br></p><p><span style="font-size:17px;">To navigate to the course catalog, choose the vertical ellipsis icon in the top left corner.</span></p><p><br></p><p><span style="font-size:17px;">&nbsp;This accesses the navigation pane. Now, choose Course catalog.</span></p><p><br></p><p><span style="font-size:17px;">You can scroll through the entire catalog. To narrow your options, choose Filters.</span></p><p><br></p><p><span style="font-size:17px;">With the filters panel, you can narrow your results.&nbsp;</span></p><p><br></p><p><span style="font-size:17px;">For example, use the Domain filter to find subject matter like compute, database, and machine learning.</span></p><p><br></p><p><span style="font-size:17px;">You can also filter by your language preference.&nbsp;</span></p><p><br></p><p><span style="font-size:17px;">You can filter by training category. Category options include digital courses, self-paced labs, game-based learning, and more. You will learn more about these categories in a moment.&nbsp;</span></p><p><br></p><p><span style="font-size:17px;">If you want to see the Learning Plans, filter for them under Type.</span></p><p><br></p><p><span style="font-size:17px;">And of course, you can search our catalog with keywords. Skill Builder looks for exact matches to your input, so we recommend using simple search parameters before using phrases.</span></p><p><br></p><p><span style="font-size:17px;">With your options narrowed, you can quickly scan the results and find which courses interest you most.</span></p><p><br></p><p><span style="font-size:17px;">Skill Builder offers digital courses that you can take at your own pace.</span></p><p><br></p><p><span style="font-size:17px;">Subscribers can take self-paced labs. These labs are practical exercises using the AWS Management Console that you can experience in an environment without the risk of disruptions or unanticipated expense.&nbsp;</span></p><p><br></p><p><span style="font-size:17px;">AWS Jam Journeys are open-ended challenges available to subscribers that test your skills and help you identify knowledge gaps across common AWS use cases.</span></p><p><br></p><p><span style="font-size:17px;">With Cloud Quest and Industry Quest, subscribers can apply their cloud skills in a game-based learning environment. Players use AWS services to build solutions to solve technical problems within a virtual city. With each completed assignment, players earn rewards to visually transform the landscape and customize their avatar. You can play Cloud Quest: Cloud Practitioner without a subscription.&nbsp;</span></p><p><br></p><p><span style="font-size:17px;">Exam Prep gives you confidence on test day. We have courses and question sets, and subscribers have access to official practice exams.</span></p><p><br></p><p><span style="font-size:17px;">When you find something that interests you, and you want to take a deeper look, choose it.&nbsp;</span></p><p><br></p><p><span style="font-size:17px;">This section contains the course description and more details. If you decide to take this course, you can choose enroll and save it for later or begin it immediately.</span></p><p><br></p><p><span style="font-size:17px;">When you enroll in a course, a course player will open. Make sure your pop-up blocker recognizes Skill Builder as a trusted site.</span></p><p><br></p><p><span style="font-size:17px;">After you complete the course, you can leave feedback in the Course Feedback Survey.</span></p><p><br></p><p><span style="font-size:17px;">Thank you for your participation.</span></p></div></div><div class="blocks-accordion__media blocks-accordion__image"><div class="media-group" data-ba="quizPreview.quizPreviewQuestions.mediaArea"></div></div></section></section></div></div></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="11" data-ba="lessonEdit.block" data-block-id="clpr3bjzb00iw35765h3gu3py"><div><div data-ba="blocks.blockDivider" class="block-divider block-divider--numbered block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div aria-hidden="true" class="block-divider__wrap" data-number="3"></div><span class="visually-hidden">Numbered divider 3</span></div></div></div><div class="noOutline" data-ba-index="12" data-ba="lessonEdit.block" data-block-id="clpr2y8yy00eg3576fsdbgk93"><div><div class="block-text block-text--onecol block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div class="block-text__container" data-ba="blocks.blockText"><div class="block-text__row"><div class="block-text__col brand--head"><h3><div class=" brand--linkColor"><div class="fr-view"><p><strong>Learning plans</strong></p></div></div></h3></div></div><div class="block-text__row"><div class="block-text__col brand--body brand--linkColor"><div class="fr-view"><p><span style="font-size:20px;">Next, you will dive into learning plans. Learning plans are a compiled list of courses, labs, and other trainings that AWS Training and Certification designed to build your knowledge in a specific domain or job role. To watch a demonstration on how to explore learning plans, choose the play button. A transcript follows the video.&nbsp;</span></p></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="13" data-ba="lessonEdit.block" data-block-id="clpr2xuf200dn3576o94xi6ex"><div><div class="block-video block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div><div class="animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><div class="block-video__item block-video__item--medium" data-ba="blocks.blockVideo"><figure><div><div aria-hidden="false" aria-label="Video player" class="figure-container" role="region"><div class="video-a11y video-wrapper video-wrapper--visible"><div class="videoContainer" style="width: 1.51514px; height: 0.852264px;"><div id="vjs_video_865" crossorigin="anonymous" poster="assets/CFUiSY7kQi41xH26_transcoded-3UN1TUARgS9VMCiT-SkillBuilder-Demo3-LPs.0000000.jpg" class="video-js vjs-default-skin vjs-paused vjs-controls-enabled vjs-workinghover vjs-v8 vjs-user-active" tabindex="-1" lang="en" translate="no"><video class="vjs-tech" poster="assets/CFUiSY7kQi41xH26_transcoded-3UN1TUARgS9VMCiT-SkillBuilder-Demo3-LPs.0000000.jpg" crossorigin="anonymous" id="vjs_video_865_html5_api" tabindex="-1" role="application" preload="none" src="assets/rl6uF5U-3i5dNgzf_transcoded-3UN1TUARgS9VMCiT-SkillBuilder-Demo3-LPs.mp4?v=1"><source src="assets/rl6uF5U-3i5dNgzf_transcoded-3UN1TUARgS9VMCiT-SkillBuilder-Demo3-LPs.mp4?v=1"></video><div class="vjs-poster" aria-disabled="false"><picture class="vjs-poster" tabindex="-1"><img loading="lazy" crossorigin="anonymous" alt="" src="./CFUiSY7kQi41xH26_transcoded-3UN1TUARgS9VMCiT-SkillBuilder-Demo3-LPs.0000000.jpg"></picture></div><div class="vjs-title-bar vjs-hidden"><div class="vjs-title-bar-title" id="vjs-title-bar-title-888"></div><div class="vjs-title-bar-description" id="vjs-title-bar-description-889"></div></div><div class="vjs-text-track-display" translate="yes" aria-live="off" aria-atomic="true"><div style="position: absolute; inset: 0px; margin: 1.5%;"></div></div><div class="vjs-loading-spinner" dir="ltr"><span class="vjs-control-text">Video Player is loading.</span></div><button class="vjs-big-play-button" type="button" title="Play Video" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text">Play Video</span></button><div class="vjs-control-bar" dir="ltr"><button class="vjs-play-control vjs-control vjs-button" type="button" title="Play" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Play</span></button><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="0.00" aria-valuemin="0" aria-valuemax="100" aria-label="Progress Bar" aria-hidden="false" aria-valuetext="0:00 of -:-"><div class="vjs-load-progress"><span class="vjs-control-text"><span>Loaded</span>: <span class="vjs-control-text-loaded-percentage">0%</span></span></div><div class="vjs-mouse-display"><div class="vjs-time-tooltip" aria-hidden="true"></div></div><div class="vjs-play-progress vjs-slider-bar" aria-hidden="true" style="width: 0%;"><div class="vjs-time-tooltip" aria-hidden="true" style="right: 0px;">0:00</div></div></div></div><div class="vjs-remaining-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Remaining Time&nbsp;</span><span aria-hidden="true">-</span><span class="vjs-remaining-time-display" role="presentation">-:-</span></div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><div class="vjs-playback-rate-value" id="vjs-playback-rate-value-label-vjs_video_865_component_1004" aria-hidden="true">1x</div><button class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Playback Rate" aria-haspopup="true" aria-expanded="false" aria-describedby="vjs-playback-rate-value-label-vjs_video_865_component_1004" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Playback Rate 1x</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">2x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.25x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">1x</span><span class="vjs-control-text" aria-live="polite">, selected</span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.25x</span><span class="vjs-control-text" aria-live="polite"></span></li></ul></div></div><div class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><button class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Captions" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Captions</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">captions off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li><li class="vjs-menu-item vjs-captions-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">English</span><span class="vjs-control-text" aria-live="polite"></span></li></ul></div></div><button class="vjs-picture-in-picture-control vjs-control vjs-button vjs-disabled" type="button" title="Picture-in-Picture" aria-disabled="true" disabled="disabled" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Picture-in-Picture</span></button><button class="vjs-fullscreen-control vjs-control vjs-button" type="button" title="Fullscreen" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Fullscreen</span></button><div class="vjs-volume-panel vjs-control vjs-volume-panel-horizontal"><button class="vjs-mute-control vjs-control vjs-button vjs-vol-3" type="button" title="Mute" aria-disabled="false" tabindex="0" aria-hidden="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Mute</span></button><div class="vjs-volume-control vjs-control vjs-volume-horizontal"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Volume Level" aria-live="polite" aria-hidden="false" aria-valuetext="100%"><div class="vjs-mouse-display"><div class="vjs-volume-tooltip" aria-hidden="true"></div></div><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="vjs_video_865_component_1266_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="vjs_video_865_component_1266_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div></div></div></div></div></div><figcaption class="block-video__wrapper"></figcaption></figure></div></div></div></div></div></div><div class="noOutline" data-ba-index="14" data-ba="lessonEdit.block" data-block-id="clq1apk66008x3576nfzuw5wd"><div><div class="block-text block-text--onecol block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div class="block-text__container" data-ba="blocks.blockText"><div class="block-text__row"></div><div class="block-text__row"><div class="block-text__col brand--body brand--linkColor"><div class="fr-view"><p>To access a transcript of the video, choose the following transcript.&nbsp;</p></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="15" data-ba="lessonEdit.block" data-block-id="clpr2yafj00et3576oxj4tatz"><div><div data-ba="blocks.blockAccordion" class="blocks-accordion block-wrapper bg bg--card-white bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div><div class="animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><div class="blocks-accordion__container"><div class="blocks-accordion__row"><div class="blocks-accordion__col"><div class="blocks-accordion__wrapper"><section class="blocks-accordion__item block-card bg--range-light block-card--white"><div role="heading" aria-level="2"><button aria-controls="panel-clxrmrj570002357emhsekek2" aria-expanded="true" class="blocks-accordion__header brand--border" type="button"><div class="blocks-accordion__title brand--head brand--linkColor brand--linkColor" id="title-clxrmrj570002357emhsekek2"><div class="fr-view">Transcript</div></div><span aria-hidden="true" class="blocks-accordion__toggler">–</span></button></div><section aria-labelledby="title-clxrmrj570002357emhsekek2" class="blocks-accordion__content blocks-accordion__content--will-enter brand--border blocks-accordion__content--visible" id="panel-clxrmrj570002357emhsekek2"><div class="blocks-accordion__description brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p><span style="font-size:17px;">Welcome to this demonstration on learning plans. In this demonstration, you will learn how to search learning plans in Skill Builder.</span></p><p><span style="font-size:17px;"><br></span></p><p><span style="font-size:17px;">The quickest way to navigate to learning plans is from the course catalog. For Filters, expand the type option and choose Learning Plan. We recommend choosing your preferred language as well. Do NOT filter by domain.</span></p><p><span style="font-size:17px;"><br></span></p><p><span style="font-size:17px;">Skill Builder provides dozens of learning plans. These are course collections that help learners achieve a learning goal within a particular domain or for a particular role.&nbsp;</span></p><p><span style="font-size:17px;"><br></span></p><p><span style="font-size:17px;">Some of our learning plans include an assessment that, if passed, will award the learner with a knowledge badge.&nbsp;</span></p><p><span style="font-size:17px;"><br></span></p><p><span style="font-size:17px;">These collections are called Knowledge Badge Readiness Paths. They include a knowledge assessment for the information provided in the learning plan. If you pass the assessment, you earn a digital credential that validates your skills and knowledge for specific AWS Cloud topics. If the learner doesn’t pass, the assessment tells the learners which materials from the learning plan they should review.</span></p><p><span style="font-size:17px;"><br></span></p><p><span style="font-size:17px;">There is no charge for earning and sharing a badge. Search <em>knowledge badge</em> to show these paths.</span></p><p><span style="font-size:17px;"><br></span></p><p><span style="font-size:17px;">When you select a learning plan, you will see a description of the plan.</span></p><p><span style="font-size:17px;"><br></span></p><p><span style="font-size:17px;">To see the list of courses the learning plan contains, choose the Learning Plan Structure tab. If you choose to enroll in this learning plan, Skill Builder will automatically enroll you in every course in that learning plan. The next time you visit the dashboard, you will see several courses to which you have been recently enrolled.</span></p><p><span style="font-size:17px;"><br></span></p><p><span style="font-size:17px;">After you enroll in a learning plan, it provides a dashboard that tracks your progress.</span></p><p><span style="font-size:17px;"><br></span></p><p><span style="font-size:17px;">Thank you for your participation.</span></p></div></div><div class="blocks-accordion__media blocks-accordion__image"><div class="media-group" data-ba="quizPreview.quizPreviewQuestions.mediaArea"></div></div></section></section></div></div></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="16" data-ba="lessonEdit.block" data-block-id="clpr3bs7800j8357662z1tkzj"><div><div data-ba="blocks.blockDivider" class="block-divider block-divider--numbered block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div aria-hidden="true" class="block-divider__wrap" data-number="4"></div><span class="visually-hidden">Numbered divider 4</span></div></div></div><div class="noOutline" data-ba-index="17" data-ba="lessonEdit.block" data-block-id="clpr2yd7f00f7357696r9rr7n"><div><div class="block-text block-text--onecol block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div class="block-text__container" data-ba="blocks.blockText"><div class="block-text__row"><div class="block-text__col brand--head"><h3><div class=" brand--linkColor"><div class="fr-view"><p><strong>Subscription content</strong></p></div></div></h3></div></div><div class="block-text__row"><div class="block-text__col brand--body brand--linkColor"><div class="fr-view"><p><span style="font-size:20px;">Although AWS Skill Builder offers a plethora of trainings at no charge, some content requires a paid subscription. Subscriptions can be purchased by individual learners or by teams.&nbsp;</span></p><p><span style="font-size:20px;">To learn more about which learning content is available at no charge and what is available with a subscription, choose each of the following two tabs.</span></p></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="18" data-ba="lessonEdit.block" data-block-id="clpr2zgdo00fr3576p0rf3tkn"><div><div data-ba="blocks.blockTabs" class="blocks-tabs block-wrapper bg bg--card-white bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div><div class="animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><div class="blocks-tabs__container"><div class="blocks-tabs__row"><div class="blocks-tabs__col"><div class="blocks-tabs__wrapper"><div class=" block-card bg--range-light block-card--white"><div class="blocks-tabs__header-wrap"><div class="blocks-tabs__header" role="tablist"><button aria-controls="tabpanel-clxrmrj5a0003357eomibq6ic-0" aria-selected="true" class="blocks-tabs__header-item brand--head brand--color blocks-tabs__header-item--active" id="tab-clxrmrj5a0003357eomibq6ic-0" role="tab" type="button"><div class=" brand--linkColor"><div class="fr-view">No charge</div></div></button><button aria-controls="tabpanel-clxrmrj5a0003357eomibq6ic-1" aria-selected="false" class="blocks-tabs__header-item brand--head blocks-tabs__header-item--after-active" id="tab-clxrmrj5a0003357eomibq6ic-1" role="tab" tabindex="-1" type="button"><div class=" brand--linkColor"><div class="fr-view">Subscription</div></div></button></div><div class="blocks-tabs__controls start end"><div aria-hidden="true" class="blocks-tabs__arrow blocks-tabs__arrow--prev brand--background hidden"><span class="blocks-tabs__arrow-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path></svg></span></div><div aria-hidden="true" class="blocks-tabs__arrow blocks-tabs__arrow--next brand--background hidden"><span class="blocks-tabs__arrow-icon blocks-tabs__arrow-icon--next"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path></svg></span></div></div></div><div class="blocks-tabs__content"><div aria-labelledby="tab-clxrmrj5a0003357eomibq6ic-0" class="blocks-tabs__content-item blocks-tabs__content-item--will-enter blocks-tabs__content-item--active" id="tabpanel-clxrmrj5a0003357eomibq6ic-0" role="tabpanel" tabindex="0"><div class="blocks-tabs__description brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p><span style="font-size:18px;">Most Skill Builder content is available at no charge, including courses, exam prep, practice questions, and Cloud Quest: Cloud Practitioner. Skill Builder provides the following without a subscription:</span></p><ul><li><span style="font-size:18px;">More than 600 on-demand courses and dozens of Learning Plans</span></li><li><span style="font-size:18px;">Standard Exam Prep courses</span></li><li><span style="font-size:18px;">AWS Certification official question sets</span></li><li><span style="font-size:18px;">AWS Cloud Quest: Cloud Practitioner</span></li><li><span style="font-size:18px;">AWS Card Clash</span></li></ul></div></div><div class="blocks-tabs__image"><div class="media-group" data-ba="quizPreview.quizPreviewQuestions.mediaArea"></div></div></div><div aria-labelledby="tab-clxrmrj5a0003357eomibq6ic-1" class="blocks-tabs__content-item" id="tabpanel-clxrmrj5a0003357eomibq6ic-1" role="tabpanel"><div class="blocks-tabs__description brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p><span style="font-size:18px;">However, a substantial amount of practical learning experiences are only for subscribers, including Builder Labs, Cloud Quest, or Industry Quest. With these experiences, you use the AWS Management Console and AWS Command Line Interface to practice real-life cloud tasks.&nbsp;</span></p><p><br></p><p><span style="font-size:18px;">A Skill Builder subscription includes the no-charge learning content, in addition to the following:</span></p><ul><li><span style="font-size:18px;">Unlimited access to more than 125 AWS Builder Labs</span></li><li><span style="font-size:18px;">Enhanced Exam Prep courses with practice materials</span></li><li><span style="font-size:18px;">AWS Cloud Question: Intermediate and advanced roles</span></li><li><span style="font-size:18px;">AWS Industry Quest (Financial Services, HealthCare, Auto &amp; Manufacturing)&nbsp;</span></li><li><span style="font-size:18px;">AWS Certification Official Practice exams</span></li><li><span style="font-size:18px;">AWS Jam Journey</span></li><li><span style="font-size:18px;">AWS Escape Room: Exam Prep for AWS Certified Cloud Practitioner (CLF-C02)&nbsp;</span></li></ul><p><span style="font-size:18px;">Learn AWS online with&nbsp;</span><a href="https://skillbuilder.aws/subscriptions" rel="noopener noreferrer" target="_blank"><span style="font-size:18px;">Skill Builder</span><span class="visually-hidden-always">(opens in a new tab)</span></a><span style="font-size:18px;">.<br></span></p></div></div><div class="blocks-tabs__image"><div class="media-group" data-ba="quizPreview.quizPreviewQuestions.mediaArea"></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="19" data-ba="lessonEdit.block" data-block-id="clpr31dk200gv35760ahuyg6r"><div><div data-ba="blocks.blockButton" class="blocks-button blocks-button--right blocks-button--rounded block-wrapper bg bg--range-light bg--type-light" style="padding-top: 3rem; padding-bottom: 3rem; --color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px;"><span></span><div><div class="animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><section class="blocks-button__container"><div class="blocks-button__description brand--linkColor"><div class="fr-view"><p><strong><strong><span style="font-size:18px;">Learn AWS online with Skill Builder</span></strong><span style="font-size:18px;"><br></span></strong><span style="font-size:18px;">To learn more about subscriptions, choose the following&nbsp;button.</span></p></div></div><a class="blocks-button__button" href="https://aws.amazon.com/training/digital" rel="noopener noreferrer" tabindex="0" target="_blank" aria-label="Go to website (opens in a new tab)">Go to website</a></section></div></div></div></div></div><div class="noOutline" data-ba-index="20" data-ba="lessonEdit.block" data-block-id="clpr3byeu00jk357629qvt7yc"><div><div data-ba="blocks.blockDivider" class="block-divider block-divider--numbered block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div aria-hidden="true" class="block-divider__wrap" data-number="5"></div><span class="visually-hidden">Numbered divider 5</span></div></div></div><div class="noOutline" data-ba-index="21" data-ba="lessonEdit.block" data-block-id="clpr30x9z00gb3576i4s8tv3i"><div><div class="block-text block-text--onecol block-wrapper bg bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div class="block-text__container" data-ba="blocks.blockText"><div class="block-text__row"><div class="block-text__col brand--head"><h3><div class=" brand--linkColor"><div class="fr-view"><p><strong>Helpful tips</strong></p></div></div></h3></div></div><div class="block-text__row"><div class="block-text__col brand--body brand--linkColor"><div class="fr-view"><p><span style="font-size:20px;">As you begin your AWS Skill Builder journey, here are some helpful tips!</span></p><p><span style="font-size:20px;">To learn more helpful tips for using Skill Builder, expand each of the following four categories.</span></p></div></div></div></div></div></div></div><div class="noOutline" data-ba-index="22" data-ba="lessonEdit.block" data-block-id="clpr352bi00hb3576ulp31b6v"><div><div data-ba="blocks.blockAccordion" class="blocks-accordion block-wrapper bg bg--card-white bg--range-light bg--type-light" style="--color-background: #ffffff; box-shadow: rgb(255, 255, 255) 0px 1px 0px; padding-bottom: 3rem; padding-top: 3rem;"><span></span><div><div class="animated fadeIn" style="animation-duration: 0.75s; opacity: 1; animation-delay: 0s;"><div class="blocks-accordion__container"><div class="blocks-accordion__row"><div class="blocks-accordion__col"><div class="blocks-accordion__wrapper"><section class="blocks-accordion__item block-card bg--range-light block-card--white"><div role="heading" aria-level="2"><button aria-controls="panel-clxrmrj5i0004357ejzg1dutx" aria-expanded="true" class="blocks-accordion__header" type="button"><div class="blocks-accordion__title brand--head brand--linkColor brand--linkColor" id="title-clxrmrj5i0004357ejzg1dutx"><div class="fr-view">Unenroll from courses</div></div><span aria-hidden="true" class="blocks-accordion__toggler">–</span></button></div><section aria-labelledby="title-clxrmrj5i0004357ejzg1dutx" class="blocks-accordion__content blocks-accordion__content--will-enter blocks-accordion__content--visible" id="panel-clxrmrj5i0004357ejzg1dutx"><div class="blocks-accordion__description brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p><span style="font-size:17px;">If you need to unenroll from an individual course, you can do so by choosing the Unenroll from the Course icon in the top-right corner. Note: If a you are enrolled in a course through a learning plan, you cannot unenroll. You can submit a case to <a href="https://support.aws.amazon.com/#/contacts/aws-training" rel="noopener noreferrer" target="_blank">AWS Support<span class="visually-hidden-always">(opens in a new tab)</span></a>. With this form, you can request that they unenroll you from the learning plan.</span></p></div></div><div class="blocks-accordion__media blocks-accordion__image"><div class="media-group" data-ba="quizPreview.quizPreviewQuestions.mediaArea"><div class="img"><img alt="Landing page of a course in Skill Builder with an orange box around the Unenroll from Course icon in the top right corner." class="img-img img-img--left img--zoom" role="img" src="./X9T9sQ0BEa-_C76e_w_oBqx_UiTk4vv0q.png"><button aria-label="Zoom image" class="img__btn visually-hidden" type="button"><svg aria-hidden="true" class="img__btn-symbol" focusable="false" role="img" viewBox="0 0 493 493" xmlns="http://www.w3.org/2000/svg"><path d="M72.1125 306.317L102.113 306.318L102.112 369.127L369.124 102.115L306.316 102.115L306.315 72.1142L420.31 72.1149L420.311 186.11L390.311 186.109L390.311 123.355L123.352 390.313L186.107 390.312L186.108 420.313L72.1125 420.313V306.317Z"></path></svg></button></div></div></div></section></section><section class="blocks-accordion__item block-card bg--range-light block-card--white"><div role="heading" aria-level="2"><button aria-controls="panel-clxrmrj5j0005357e0qw6okwz" aria-expanded="true" class="blocks-accordion__header" type="button"><div class="blocks-accordion__title brand--head brand--linkColor brand--linkColor" id="title-clxrmrj5j0005357e0qw6okwz"><div class="fr-view">Hide courses</div></div><span aria-hidden="true" class="blocks-accordion__toggler">–</span></button></div><section aria-labelledby="title-clxrmrj5j0005357e0qw6okwz" class="blocks-accordion__content blocks-accordion__content--will-enter blocks-accordion__content--visible" id="panel-clxrmrj5j0005357e0qw6okwz"><div class="blocks-accordion__description brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p><span style="font-size:17px;">Don’t want to unenroll, but want to clean up your My courses view? You can hide a course from the Learner dashboard or the My courses list by choosing the menu icon next to the course and selecting Hide.</span> </p></div></div><div class="blocks-accordion__media blocks-accordion__image"><div class="media-group" data-ba="quizPreview.quizPreviewQuestions.mediaArea"><div class="img"><img alt="My courses list in the Learner dashboard with orange boxes around the course menu icon and the Hide option from the dropdown." class="img-img img-img--left img--zoom" role="img" src="./nY4VzyOtAdxgUIS6_YUnDirSKGAF6d5AV.jpg"><button aria-label="Zoom image" class="img__btn visually-hidden" type="button"><svg aria-hidden="true" class="img__btn-symbol" focusable="false" role="img" viewBox="0 0 493 493" xmlns="http://www.w3.org/2000/svg"><path d="M72.1125 306.317L102.113 306.318L102.112 369.127L369.124 102.115L306.316 102.115L306.315 72.1142L420.31 72.1149L420.311 186.11L390.311 186.109L390.311 123.355L123.352 390.313L186.107 390.312L186.108 420.313L72.1125 420.313V306.317Z"></path></svg></button></div></div></div></section></section><section class="blocks-accordion__item block-card bg--range-light block-card--white"><div role="heading" aria-level="2"><button aria-controls="panel-clxrmrj5j0006357efvxpd0wb" aria-expanded="true" class="blocks-accordion__header" type="button"><div class="blocks-accordion__title brand--head brand--linkColor brand--linkColor" id="title-clxrmrj5j0006357efvxpd0wb"><div class="fr-view">Access hidden courses</div></div><span aria-hidden="true" class="blocks-accordion__toggler">–</span></button></div><section aria-labelledby="title-clxrmrj5j0006357efvxpd0wb" class="blocks-accordion__content blocks-accordion__content--will-enter blocks-accordion__content--visible" id="panel-clxrmrj5j0006357efvxpd0wb"><div class="blocks-accordion__description brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p><span style="font-size:17px;">You can access the hidden courses from My Courses. In Filters, expand Hidden items and choose Show hidden items only. You can also choose Also show hidden items to view the hidden courses with the rest of your courses.</span></p></div></div><div class="blocks-accordion__media blocks-accordion__image"><div class="media-group" data-ba="quizPreview.quizPreviewQuestions.mediaArea"><div class="img"><img alt="My courses page in the learner dashboard with orange boxes around the Show hidden items only option and the Hidden icon." class="img-img img-img--left img--zoom" role="img" src="./Pr6MZEwVhI7RemCR_itpfELEg4-WIfXwx.jpg"><button aria-label="Zoom image" class="img__btn visually-hidden" type="button"><svg aria-hidden="true" class="img__btn-symbol" focusable="false" role="img" viewBox="0 0 493 493" xmlns="http://www.w3.org/2000/svg"><path d="M72.1125 306.317L102.113 306.318L102.112 369.127L369.124 102.115L306.316 102.115L306.315 72.1142L420.31 72.1149L420.311 186.11L390.311 186.109L390.311 123.355L123.352 390.313L186.107 390.312L186.108 420.313L72.1125 420.313V306.317Z"></path></svg></button></div></div></div></section></section><section class="blocks-accordion__item block-card bg--range-light block-card--white"><div role="heading" aria-level="2"><button aria-controls="panel-clxrmrj5k0007357e7i9f86iv" aria-expanded="true" class="blocks-accordion__header" type="button"><div class="blocks-accordion__title brand--head brand--linkColor brand--linkColor" id="title-clxrmrj5k0007357e7i9f86iv"><div class="fr-view">My Account</div></div><span aria-hidden="true" class="blocks-accordion__toggler">–</span></button></div><section aria-labelledby="title-clxrmrj5k0007357e7i9f86iv" class="blocks-accordion__content blocks-accordion__content--will-enter blocks-accordion__content--visible" id="panel-clxrmrj5k0007357e7i9f86iv"><div class="blocks-accordion__description brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p>From the User Menu in the top left corner, you can access <strong>My Account</strong>. On the <strong>Profile</strong> section, you can add an avatar, update your name, and provide some high-level details on your role. If you navigate to <strong>Preferences</strong>, you can change your user interface language, date format, and time zone. If you navigate to <strong>Purchases and Subscriptions</strong>, you can follow links to log into your AWS Console account and manage your service charges and/or AWS Skill Builder subscription.</p></div></div><div class="blocks-accordion__media blocks-accordion__image"><div class="media-group" data-ba="quizPreview.quizPreviewQuestions.mediaArea"><div class="img"><img alt="My Account page in the learner dashboard. Preferences is selected showing language, date format, and time zone options." class="img-img img-img--left img--zoom" role="img" src="./8wiPypdgMLryD4kk_5sfjv3EHiJMXkJ8T.png"><button aria-label="Zoom image" class="img__btn visually-hidden" type="button"><svg aria-hidden="true" class="img__btn-symbol" focusable="false" role="img" viewBox="0 0 493 493" xmlns="http://www.w3.org/2000/svg"><path d="M72.1125 306.317L102.113 306.318L102.112 369.127L369.124 102.115L306.316 102.115L306.315 72.1142L420.31 72.1149L420.311 186.11L390.311 186.109L390.311 123.355L123.352 390.313L186.107 390.312L186.108 420.313L72.1125 420.313V306.317Z"></path></svg></button></div></div></div></section></section><section class="blocks-accordion__item block-card bg--range-light block-card--white"><div role="heading" aria-level="2"><button aria-controls="panel-clxrmrj5k0008357ebkxmiv5r" aria-expanded="true" class="blocks-accordion__header brand--border" type="button"><div class="blocks-accordion__title brand--head brand--linkColor brand--linkColor" id="title-clxrmrj5k0008357ebkxmiv5r"><div class="fr-view">Frequently asked questions</div></div><span aria-hidden="true" class="blocks-accordion__toggler">–</span></button></div><section aria-labelledby="title-clxrmrj5k0008357ebkxmiv5r" class="blocks-accordion__content blocks-accordion__content--will-enter brand--border blocks-accordion__content--visible" id="panel-clxrmrj5k0008357ebkxmiv5r"><div class="blocks-accordion__description brand--body brand--linkColor brand--linkColor"><div class="fr-view"><p><span style="font-size:17px;">Need help? You can access the frequently asked questions, or FAQs, and common issues by navigating to Support from the main Learner dashboard. FAQs cover topics like browser requirements, sign-in options, and other helpful information.</span></p></div></div><div class="blocks-accordion__media blocks-accordion__image"><div class="media-group" data-ba="quizPreview.quizPreviewQuestions.mediaArea"><div class="img"><img alt="Support page in the learner dashboard with an orange box around the Support FAQ for learners heading." class="img-img img-img--left img--zoom" role="img" src="./QHtKzdvA5awN5GJq_xGQA8Hv8w7LTCVOP.jpg"><button aria-label="Zoom image" class="img__btn visually-hidden" type="button"><svg aria-hidden="true" class="img__btn-symbol" focusable="false" role="img" viewBox="0 0 493 493" xmlns="http://www.w3.org/2000/svg"><path d="M72.1125 306.317L102.113 306.318L102.112 369.127L369.124 102.115L306.316 102.115L306.315 72.1142L420.31 72.1149L420.311 186.11L390.311 186.109L390.311 123.355L123.352 390.313L186.107 390.312L186.108 420.313L72.1125 420.313V306.317Z"></path></svg></button></div></div></div></section></section></div></div></div></div></div></div></div></div></div></section></div></main></div></div></div></div><div class="lesson-nav lesson-nav--next lesson-nav--full lesson-nav--light" data-next-lesson="true"><div class="lesson-nav-link lesson-nav-link--complete"><a class="lesson-nav-link__link" data-link="lesson-link-item" data-ba="learn.course.lesson.nextLessonLink" data-direction="next" href="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719162000/0EmpRP-UXn8BYTSdey2gLw/tincan/7aaae3ad957e914d45b63f145fb13f71a8a8cf06/index.html?enhanced_signature=vO4xZyOpCR0RIPNsGR3kgdnfAQv6krZlOBJ3UkAnU9Y&amp;endpoint=https%3A%2F%2Fexplore.skillbuilder.aws%2Flrs-api%2F&amp;auth=Basic%20YjRmNWM2NmUtOTYwNS00Njg3LWE2Y2UtM2M2OGJhY2NkMzk0OmJlZjViZWQ0NzE4MzQ3MjNlN2JjZThmYjllZmRhMDI2&amp;actor=%7B%22name%22%3A%22Dao+Nguyen%22%2C%22mbox%22%3A%22mailto%3Adao.nguyen%40codegym.vn%22%7D&amp;registration=651b50be-d2ac-4b2b-8d10-61c7c319fa20&amp;activity_id=http%3A%2F%2F-M0rS--4jSVhvOMyo1bx8YEpa3VSgMKP_rise&amp;Accept-Language=en&amp;course_id=18443&amp;content_token=651b50be-d2ac-4b2b-8d10-61c7c319fa20&amp;session_context=lms&amp;host=kfase3bzbc.execute-api.us-east-1.amazonaws.com&amp;path=/v1/xApi/&amp;rs=66782d9a9f9f3&amp;crct=1850f6843c9032de51b23d4f84835d4cfecac114a13d8cefae6d9fe03ee57a6086ca96ae9af0c49f23f4983bc7557e65943d019b4dd8c79cd728c2657b49f13f&amp;course_code=TCAA-DIG-100-BASBLG-0100-EN-US&amp;course_id=18443&amp;username=10f075a5-e390-4aab-8711-e5d2ae4c106b&amp;user_id=5359856&amp;hash=56b106fa43220bd2cdf90cf93584a47eb80bbc625569781a13dc2a1da6efc5e2#/lessons/4aw5xtAX4vP4U2WNlDphbaz4cNi5u_hN"><span class="lesson-nav__link-text brand--ui">Lesson 3 - Contact Us</span><svg aria-hidden="true" class="lesson-nav__link-icon" fill="none" focusable="false" viewBox="0 0 15 16" xmlns="http://www.w3.org/2000/svg"><path d="M2 8L7.65685 13.6569L13.3137 8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div></div><div id="portal" style=""><div aria-hidden="true" style="left: 0px; pointer-events: none; position: absolute; top: 0px; z-index: 2147483647;"><div style="pointer-events: all;"><div class="lesson-progress__tooltip lesson-progress__tooltip--sidebar"><div class="lesson-progress__tooltip__inner lesson-progress__tooltip__inner--light">Completed</div></div></div></div><div aria-hidden="true" style="left: 0px; pointer-events: none; position: absolute; top: 0px; z-index: 2147483647;"><div style="pointer-events: all;"><div class="lesson-progress__tooltip lesson-progress__tooltip--sidebar"><div class="lesson-progress__tooltip__inner lesson-progress__tooltip__inner--light">Completed</div></div></div></div><div aria-hidden="true" style="left: 0px; pointer-events: none; position: absolute; top: 0px; z-index: 2147483647;"><div style="pointer-events: all;"><div class="lesson-progress__tooltip lesson-progress__tooltip--sidebar"><div class="lesson-progress__tooltip__inner lesson-progress__tooltip__inner--light">Completed</div></div></div></div></div></div></div>
+    <script>
+  (function(root) {
+    window.i18n = {"available":["und"],"default":"und"};
+    window.partnerContent = [];
+
+    var quizId = null;
+    var storylineId = null;
+    var completionPercentage = 80;
+
+    var LMSProxy = lms();
+
+    var assign = LMSProxy.utils.assign;
+    var debounce = LMSProxy.utils.debounce;
+
+    var cache = null;
+
+    LMSProxy.InitCompletion(isComplete);
+
+    function compress(data) {
+      try {
+        return JSON.stringify({
+          v: 2,
+          d: lzwCompress.pack(JSON.stringify(data)),
+          cpv: "wvcgU_C9"
+        });
+      } catch(e) {
+        return '';
+      }
+    }
+
+    function decompress(stringData) {
+      try {
+        const data = JSON.parse(stringData);
+
+        return data.d
+          ? JSON.parse(lzwCompress.unpack(data.d))
+          : data;
+      } catch(e) {
+        return {};
+      }
+    }
+
+    function identity(value) {
+      return value;
+    }
+
+    var sendChunkData = debounce(function() {
+      LMSProxy.SetDataChunk(compress(cache));
+    }, 1000);
+
+    function isPassed() {
+      return !!getLMSData().passed;
+    }
+
+    function isComplete() {
+      var progress;
+
+      if(quizId === null) {
+        progress = getLMSData().totalProgress;
+        return (progress !== undefined && progress >= completionPercentage);
+      }
+
+      return getLMSData().passed !== undefined;
+    }
+
+    function getLMSData() {
+      var data = null;
+
+      if(!cache) {
+        data = LMSProxy.GetDataChunk();
+
+        var result = data
+          ? decompress(data)
+          : {};
+
+        cache = result;
+      }
+
+      return cache;
+    }
+
+    function concatLMSData(data) {
+      assign(cache, data);
+      sendChunkData();
+    }
+
+    function completeOut(passed) {
+      if(passed) {
+        LMSProxy.SetPassed();
+      } else {
+        LMSProxy.SetFailed();
+      }
+    }
+
+    function bookmark(id) {
+      var url = '#/lessons/' + id;
+
+      LMSProxy.SetBookmark(url, '');
+    }
+
+    function reportScore(score) {
+      var highScore = Math.max(getLMSData().score || 0, score);
+
+      if(highScore === score) {
+        concatLMSData({ score: highScore });
+        LMSProxy.SetScore(highScore, 100, 0);
+      }
+    }
+
+    function finish(totalProgress) {
+      if (
+        quizId === null &&
+        storylineId === null &&
+        !isComplete() &&
+        completionPercentage !== undefined
+      ) {
+        if(totalProgress >= completionPercentage) {
+          concatLMSData({ totalProgress: totalProgress });
+          completeOut(true);
+        }
+      }
+    }
+
+    function finishQuiz(passed, score, id) {
+      if (id == quizId) {
+        var prevScore = getLMSData().score
+        reportScore(score);
+
+        if(prevScore == null || prevScore < score) {
+          concatLMSData({ passed: passed });
+          completeOut(passed);
+        }
+      }
+    }
+
+    function finishStoryline(id, passed, isQuiz, score) {
+      if (id == storylineId) {
+        if(isQuiz) {
+          reportScore(score);
+        }
+
+        completeOut(passed);
+      }
+    }
+
+    function getProgress(initialProgress) {
+      var decodeCourseProgress =
+        root.Rise.decodeCourseProgress;
+
+      var progress = assign({}, {
+        progress: { lessons: {} }
+      }, getLMSData()).progress;
+
+      if(initialProgress) {
+        return decodeCourseProgress(initialProgress, progress);
+      }
+
+      return progress;
+    }
+
+    function isExport() {
+      return true;
+    }
+
+    function setLessonProgress(lessonProgress) {
+      var encodeLessonProgress =
+        root.Rise.encodeLessonProgress;
+
+      var currentProgress = getProgress();
+
+      var lessons = assign(
+        {},
+        currentProgress.lessons,
+        encodeLessonProgress(lessonProgress)
+      );
+
+      var progress = assign({}, currentProgress, { lessons: lessons });
+
+      concatLMSData({ progress: progress });
+    }
+
+    function setCourseProgress(courseProgress, lessonPayload) {
+      var encodeCourseProgress =
+        root.Rise.encodeCourseProgress;
+
+      var currentProgress = getProgress();
+      var lessonId = lessonPayload.id;
+
+      var progress = assign(
+        {},
+        currentProgress,
+        encodeCourseProgress(courseProgress)
+      );
+
+      concatLMSData({ progress: progress });
+
+      LMSProxy.FinishLesson(courseProgress.percentComplete, lessonId);
+    }
+
+    function resolvePath(path) {
+      return ('assets/').concat(path);
+    }
+
+    function resolveFontPath(font) {
+      return ('lib/fonts/').concat(font.key.split('/').reverse()[0]);
+    }
+
+    function exit() {
+      LMSProxy.ConcedeControl();
+    }
+
+    function reportAnswer(data) {
+      return LMSProxy.ReportAnswer(data);
+    }
+
+    function fetchAvailableLocales() {
+      return window.i18n
+    }
+
+    root.Rise = {
+      completeLessons: identity,
+      decodeCourseProgress: identity,
+      encodeCourseProgress: identity,
+      encodeLessonProgress: identity,
+    }
+
+    root.Runtime = {
+      bookmark: bookmark,
+      exit: exit,
+      fetch: window.__fetchCourse,
+      fetchAvailableLocales: fetchAvailableLocales,
+      finish: finish,
+      finishQuiz: finishQuiz,
+      finishStoryline: finishStoryline,
+      getProgress: getProgress,
+      isExport: isExport,
+      reportAnswer: reportAnswer,
+      resolvePath: resolvePath,
+      resolveFontPath: resolveFontPath,
+      setLessonProgress: setLessonProgress,
+      setCourseProgress: setCourseProgress
+    };
+  }(window));
+</script>
+
+    
+  
+
+<script src="./cac37931.js.download"></script><script src="./entry.js.download"></script><div class="lesson-progress-wrapper lesson-progress-wrapper--visible lesson--open"><div class="progress-wrap"><div class="progress"><div class="progress__container"><div class="progress__indicator brand--background" style="transform: translate3d(100%, 0px, 0px);"></div></div></div></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
