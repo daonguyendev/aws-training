@@ -1,0 +1,69 @@
+1. Service Introduction
+AWS Identity and Access Management enables you to securely control individual and group access to your AWS resources.
+Using IAM you can create and manage AWS users, groups, and user permissions for your AWS services.
+IAM provides fine grain control options and supports Federated Users or users outside of AWS, by integrating with your company's Microsoft Active Directory
+or a third party identity provider such as Facebook or Google and having the authenticated users assume IAM roles.
+
+
+2. Overview
+Let's go through a brief overview of the service and some of its use cases.
+Users have to be authenticated before they can access AWS services and resources.
+AWS services can be accessed via the AWS Management Console, AWS Command Line Interface, or through SDKs and APIs.
+You can create individual IAM users within your AWS account, that correspond to users in your organization.
+Each user can have its own credentials for authenticating to AWS.
+IAM groups can also be created within your AWS account. As the number of users managing your AWS enviroment increases,
+it is helpful to manage permissions for multiple IAM users using IAM groups which ensures that each member of the group
+will be provisioned with the same Permission Policy.
+After a user has been authenticated, they have to be authorized to access AWS services. By default, IAM users can't access
+anything in your account. You need to grant permissions to user by creating a policy, which is a document in JSON format
+that explicitly lists permissions.
+An IAM policy is a document that defines the effect, actions, resources, and optional conditions for what API calls and entity can invoke.
+Any actions or resources that are not explicitly allowed are denied by default.
+Let's take a look at the Sample Policy we have on the screen.
+The first line of the policy describes who or what is being authorized. This could be a user, a group, or another resource within AWS.
+The action values describe which tasks are allowed to be performed. In this case, we have two API calls to Amazon S3.
+Next, we have the condition for this authorization to be successful. Only calls from the IP address listed here will have the designated permissions.
+Finally, the policy describes the resources to which the authorized tasks are to be performed.
+
+Getting started with IAM is very straightforward. Let's say your company has several departments that will be managing AWS services.
+The first step is to create an IAM group for each department. Using groups is highly recommended and the most efficient way to manage your users.
+The next step is to create a policy and assign it to the group. Any users added to this group will inherit those permissions.
+The final step is to create IAM users for each person in each department and add them to their respective groups.
+It is also important to mention that every AWS account has root level credentials with full access to everything in the account.
+
+We recommend that you not use the root level credentials for anything other than initial setup of the account and creation of an IAM user account
+with administrative permissions attached via policy.
+IAM policies may also be assigned to an IAM Role. An IAM Role is similar to a user in that it is an AWS identity with permissions that determine 
+what the identity can add cannot do in AWS.
+A role does not have any long-term defined credentials, password or access keys associated with it at all.
+Instead, if a user is assigned to a role, access keys are created dynamically and provided to the user temporarily.
+IAM Roles can be used to delegate access to users, applications, or services that don't normally have access to your AWS resources.
+A user who assumes a role temporarily gives up his or her own permissions and instead takes on the permissions of the role, like
+wearing many hats in order to perform different tasks.
+
+
+3. Use Case
+So how can an IAM role be used in a real-world scenario? Well, let's say that you have a custom application that is hosted on an Amazon EC2 Instance.
+This app needs to interact with objects stored in an S3 bucket. One way is to embed your AWS credentials in the application code, but doing so may
+compromise your credentials.
+Also changing or rotating the credentials would require an update in the code each time.
+The alternative and more secure option is to use an IAM Role to pass temporary security credentials as part of an Instance Profile.
+The application would use the identity assumed by the Instance to access the Amazon S3 bucket.
+
+Another use case for IAM roles is to provide users, groups, or resources with permissions that they wouldn't usually have assigned to them.
+Here we have an IAM user that has an IAM policy with restricted access to an Amazon S3 bucket.
+This user does not normally need administrative privileges to this bucket.
+However, the user may sometimes have to perform tasks that require administrative privileges.
+For this purpose, a new IAM Admin Policy is created, then, a new role is created, and the admin policy is attached to the role.
+When required, the user can be allowed to assume the IAM Admin Role and gain administrative access to the designated resources.
+When the user no longer needs to use the role, the original user permissions are restored.
+
+Leveraging IAM roles removes the need to modify a user's policy each time a change is required.
+
+4. Summary
+Now let's summarize what we have learned so far. With AWS Identity and Access Management, you can create users and groups, 
+assign them individual security credentials, or request temporary credentials via IAM roles to provide users access to AWS services and resources.
+IAM also enables you to use Identity Federation and allow existing entities in your enterprise to access AWS without the need to 
+create an IAM account for each identity.
+I hope you learned a little something regarding AWS IAM, and we'll continue to explore other videos. I'm Andy Cummings with AWS Training and Certification.
+Thanks for watching.
